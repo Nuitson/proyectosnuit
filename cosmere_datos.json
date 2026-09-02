@@ -1,0 +1,2435 @@
+{
+ "version": "1.0",
+ "generado": "2026-09-02",
+ "base": "TRASPASO 27 · Escuelas Roshar v2.0 · catálogo de talentos 46",
+ "escuelas": [
+  {
+   "n": 1,
+   "nombre": "Fervoroso vorin",
+   "enc": "Esclavo de la iglesia, consejero, maestro de oficios y doctrina. No posee nada y aconseja a quien lo posee todo.",
+   "atr": "Inteligencia +1, Comunicación +1",
+   "cur": "Teología, Historia, Filosofía natural, Persuasión, Etiqueta, Arte, Medicina",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Medio (formalmente esclavo; respetado en la práctica)",
+   "cap": "Jurisdicción. Ámbito: quien profese el vorinismo. La doctrina obliga; desobedecerla ante testigos deja al creyente en falta registrada ante su comunidad y su ojosclaros.",
+   "tec": "Devocionario — 1 Oportunidad: invocas el pasaje adecuado; un aliado que siga tu consejo gana +3 a su siguiente tirada social.",
+   "eq": "Hábitos, útiles de escritura, símbolo del Todopoderoso (banda Trivial; la iglesia provee).",
+   "titN": "Ardiente mayor",
+   "titT": "Tu dictamen doctrinal es vinculante: ante creyentes, tu Jurisdicción alcanza incluso a ojosclaros de rango.",
+   "territorio": "Transnacionales vorin",
+   "curl": [
+    "Teología",
+    "Historia",
+    "Filosofía natural",
+    "Persuasión",
+    "Etiqueta",
+    "Arte",
+    "Medicina"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 2,
+   "nombre": "Escriba vorin",
+   "enc": "Mujer letrada (o ardiente) de una casa: lectora, ingeniera, cronista. Quien escribe la carta decide qué dice.",
+   "atr": "Inteligencia +1, Percepción +1",
+   "cur": "Escritura y archivo, Historia, Leyes y gobierno, Etiqueta, Filosofía natural, Comercio, Perspicacia",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Alto o medio, según la casa",
+   "cap": "Vía establecida. Ámbito: correspondencia, contratos y registro de una casa.",
+   "tec": "Correspondencia — 1 Oportunidad: una carta o registro que redactaste en el pasado contiene ya la cláusula o el dato que ahora necesitas (detalle verdadero documental, retroactivo).",
+   "eq": "Vinculacaña de la casa en préstamo, útiles de escritura finos (banda Normal, de la casa).",
+   "titN": "Consejera de casa",
+   "titT": "Los documentos que certificas hacen fe: nadie tira contra su autenticidad, y falsificarte es delito registrado.",
+   "territorio": "Transnacionales vorin",
+   "curl": [
+    "Escritura y archivo",
+    "Historia",
+    "Leyes y gobierno",
+    "Etiqueta",
+    "Filosofía natural",
+    "Comercio",
+    "Perspicacia"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 3,
+   "nombre": "Duelista de arena",
+   "enc": "Ojosclaros que resuelve la política con la espada. Las esquirlas se apuestan; el estatus también.",
+   "atr": "Destreza +1, Presencia +1",
+   "cur": "Armas, Lucha, Aptitud física, Etiqueta, Perspicacia, Persuasión, Historia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Alto",
+   "cap": "Filo medido",
+   "tec": "Floritura — 1 Oportunidad tras impactar: tu próximo efecto especial de hasta +3 (contacto, agarrar, derribar) no paga el modificador de dificultad.",
+   "eq": "Espada de duelo de buena factura (banda Caro, préstamo familiar), atuendo de arena.",
+   "titN": "Campeón",
+   "titT": "Puedes batirte en nombre de otro: mientras representes una causa, tus apuestas comprometen estatus ajeno. Palanca directa de intriga.",
+   "territorio": "Alezkar",
+   "curl": [
+    "Armas",
+    "Lucha",
+    "Aptitud física",
+    "Etiqueta",
+    "Perspicacia",
+    "Persuasión",
+    "Historia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 4,
+   "nombre": "Oficial de ejército",
+   "enc": "Mando ojosclaros en el ejército de un alto príncipe. La guerra alezi es formación, grado y linaje.",
+   "atr": "Presencia +1, Inteligencia +1",
+   "cur": "Armas, Aptitud física, Mando, Etiqueta, Leyes y gobierno, Historia, Persuasión",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Alto",
+   "cap": "Jurisdicción. Ámbito: la cadena de mando. Quien reconozca tu grado obedece la orden o queda en insubordinación registrada.",
+   "tec": "Orden en el caos — 1 Oportunidad: un aliado que pueda oírte cambia de actitud inmediatamente, fuera de su turno.",
+   "eq": "Uniforme de casa, espada de oficial, montura según casa (banda Normal a Caro).",
+   "titN": "Alto oficial",
+   "titT": "Una vez por enfrentamiento, toda tu unidad ignora un Conflicto simultáneo: la formación absorbe el golpe.",
+   "territorio": "Alezkar",
+   "curl": [
+    "Armas",
+    "Aptitud física",
+    "Mando",
+    "Etiqueta",
+    "Leyes y gobierno",
+    "Historia",
+    "Persuasión"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 5,
+   "nombre": "Cazador de abismos",
+   "enc": "Cuadrillas que bajan a las Llanuras por corazones de gema. La presa pesa cien veces más que tú.",
+   "atr": "Vigor +1, Percepción +1",
+   "cur": "Tiro, Aptitud física, Supervivencia, Vigilancia, Táctica, Trato con animales, Comercio",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+   "est": "Bajo a medio; la gema paga bien",
+   "cap": "Lectura del terreno. Ámbito: los abismos y las Llanuras Quebradas.",
+   "tec": "Ritmo de la bestia — 1 Oportunidad al vigilar una presa grande: la DJ te dice su próxima acción declarada.",
+   "eq": "Arpones y cuerda, arnés de descenso, capa encerada (banda Barato a Normal).",
+   "titN": "Capataz de caza",
+   "titT": "Ojos del abismo: una vez por cacería, declaras un hecho mayor del terreno (dónde emerge la presa, dónde está el refugio) sin coste de Oportunidad.",
+   "territorio": "Alezkar",
+   "curl": [
+    "Tiro",
+    "Aptitud física",
+    "Supervivencia",
+    "Vigilancia",
+    "Táctica",
+    "Trato con animales",
+    "Comercio"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Marcial",
+    "Campo"
+   ]
+  },
+  {
+   "n": 6,
+   "nombre": "Milicia herdaziana",
+   "enc": "Soldado de un país pequeño rodeado de vecinos grandes. Se sobrevive por hermandad, no por número.",
+   "atr": "Destreza +1, Comunicación +1",
+   "cur": "Tiro, Lucha, Sigilo, Vigilancia, Engaño, Perspicacia, Supervivencia",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+   "est": "Bajo",
+   "cap": "Sincronía",
+   "tec": "Chanza — 1 Oportunidad: una burla en herdaziano obliga al enemigo a elegir: te ataca a ti o sufre −3 a su próxima tirada.",
+   "eq": "Honda y cuchillos, colores de la milicia (banda Trivial a Barato).",
+   "titN": "Héroe de Herdaz",
+   "titT": "Tu presencia basta: cualquier herdaziano que luche a tu vista cuenta con Sincronía sin necesidad de declarar la misma acción.",
+   "territorio": "Herdaz",
+   "curl": [
+    "Tiro",
+    "Lucha",
+    "Sigilo",
+    "Vigilancia",
+    "Engaño",
+    "Perspicacia",
+    "Supervivencia"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Marcial",
+    "Campo"
+   ]
+  },
+  {
+   "n": 7,
+   "nombre": "Errante herdaziano",
+   "enc": "Media familia vive fuera; tú eres el que va y viene. En casi cualquier ciudad hay un primo.",
+   "atr": "Comunicación +1, Destreza +1",
+   "cur": "Persuasión, Perspicacia, Comercio, Supervivencia, Trato con animales, Arte, Etiqueta",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+   "est": "Bajo",
+   "cap": "Mundo conocido. Ámbito: parientes y compadres repartidos por Roshar.",
+   "tec": "Casa llena — 1 Oportunidad: el contacto declarado con Mundo conocido no cobra: lo hace por la familia. Anula el carril de la DJ una vez.",
+   "eq": "Carro o mula, mercancía menuda (banda Barato).",
+   "titN": "Patriarca / Matriarca",
+   "titT": "La red familiar entra al registro de facciones: mueve recursos, refugio y recados a escala de organización.",
+   "territorio": "Herdaz",
+   "curl": [
+    "Persuasión",
+    "Perspicacia",
+    "Comercio",
+    "Supervivencia",
+    "Trato con animales",
+    "Arte",
+    "Etiqueta"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Social",
+    "Campo"
+   ]
+  },
+  {
+   "n": 8,
+   "nombre": "Hijo de hacienda",
+   "enc": "Heredero o brazo de una de las 203. La hacienda es la unidad social del reino y tú la representas.",
+   "atr": "Vigor +1, Comunicación +1",
+   "cur": "Aptitud física, Trato con animales, Supervivencia, Comercio, Artesanía, Mando, Persuasión",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Oficio, Campo",
+   "est": "Medio",
+   "cap": "Gajes del oficio. Oficio: el campo y la hacienda (Artesanía, Trato con animales, Supervivencia).",
+   "tec": "Manos de sobra — 1 Oportunidad: un grupo de peones de la hacienda llega a tiempo de hacer el trabajo físico que declares.",
+   "eq": "Aperos, bestia de tiro, respaldo de la casa familiar (banda Normal, en especie).",
+   "titN": "Señor de hacienda",
+   "titT": "La hacienda entra como facción menor: rentas anuales (banda Normal) y asiento en el consejo de las 203.",
+   "territorio": "Herdaz",
+   "curl": [
+    "Aptitud física",
+    "Trato con animales",
+    "Supervivencia",
+    "Comercio",
+    "Artesanía",
+    "Mando",
+    "Persuasión"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Oficio",
+    "Campo"
+   ]
+  },
+  {
+   "n": 9,
+   "nombre": "Escriba examinado",
+   "enc": "Has aprobado el primer examen y llevas registros de distrito. La carrera va a ministerio y, si llegas, al visirato.",
+   "atr": "Inteligencia +1, Comunicación +1",
+   "cur": "Leyes y gobierno, Historia, Escritura y archivo, Etiqueta, Persuasión, Perspicacia, Comercio",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Medio (funcionario)",
+   "cap": "Vía establecida. Texto cerrado en el doc de diseño; sin cambios.",
+   "tec": "Sello de distrito — 1 Oportunidad: un trámite que iniciaste consta ya informado favorablemente (hecho lateral burocrático retroactivo).",
+   "eq": "Credencial, útiles de escritura, casaca de funcionario (banda Barato).",
+   "titN": "Visir",
+   "titT": "Puedes abrir vía: conviertes un conflicto social en procedimiento oficial aunque no lo fuera. Creas el expediente que los demás tendrán que seguir.",
+   "territorio": "Imperio azishiano",
+   "curl": [
+    "Leyes y gobierno",
+    "Historia",
+    "Escritura y archivo",
+    "Etiqueta",
+    "Persuasión",
+    "Perspicacia",
+    "Comercio"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 10,
+   "nombre": "Alguacil imperial",
+   "enc": "Recién destinado, rotando de zona cada pocos meses. Nunca echas raíces y nunca le debes nada a nadie.",
+   "atr": "Percepción +1, Presencia +1",
+   "cur": "Leyes y gobierno, Vigilancia, Perspicacia, Persuasión, Mando, Armas, Aptitud física",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Medio",
+   "cap": "Jurisdicción. Texto cerrado en el doc de diseño; sin cambios.",
+   "tec": "Registro en regla — 1 Oportunidad: el delito queda registrado con testigos: el infractor sufre +3 en contra en su próxima tirada social ante cualquier autoridad.",
+   "eq": "Porra, media armadura, placa imperial (banda Normal; el imperio provee).",
+   "titN": "Prefecto",
+   "titT": "Tu palabra es el registro: dictas en el acto penas menores ejecutables (multa, arresto breve) sin proceso.",
+   "territorio": "Imperio azishiano",
+   "curl": [
+    "Leyes y gobierno",
+    "Vigilancia",
+    "Perspicacia",
+    "Persuasión",
+    "Mando",
+    "Armas",
+    "Aptitud física"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 11,
+   "nombre": "Soldado del batallón",
+   "enc": "Recluta de una unidad de mil. Tu fuerza no eres tú: es que los mil os movéis igual.",
+   "atr": "Vigor +1, Destreza +1",
+   "cur": "Armas, Tiro, Lucha, Aptitud física, Táctica, Mando, Leyes y gobierno",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Bajo a medio; paga estable",
+   "cap": "Sincronía. Texto cerrado en el doc de diseño; sin cambios.",
+   "tec": "Muro de mil — 1 Oportunidad cuando atacan a un aliado adyacente: intercambiáis posición y el ataque te apunta a ti, contra tu Defensa.",
+   "eq": "Lanza y coraza de batallón (equipo del ejército; efectos personales en banda Barato).",
+   "titN": "Capitán de mil",
+   "titT": "El batallón mantiene Sincronía aunque tú caigas: la orden se considera declarada mientras siga en pie.",
+   "territorio": "Imperio azishiano",
+   "curl": [
+    "Armas",
+    "Tiro",
+    "Lucha",
+    "Aptitud física",
+    "Táctica",
+    "Mando",
+    "Leyes y gobierno"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 12,
+   "nombre": "Agente de información tashikki",
+   "enc": "Empiezas de escriba en una estación transmisora, transcribiendo correspondencia ajena. La carrera va a agente independiente y luego a dueño de red.",
+   "atr": "Percepción +1, Inteligencia +1",
+   "cur": "Escritura y archivo, Engaño, Perspicacia, Sigilo, Vigilancia, Etiqueta, Comercio",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+   "est": "Medio",
+   "cap": "Tarifa vigente. Texto cerrado en el doc de diseño; sin cambios. Sigue siendo la primera candidata a limitarse tras el playtest.",
+   "tec": "Copia fiel — 1 Oportunidad: transcribiste íntegro un documento que pasó por tus manos y lo recuerdas (detalle verdadero documental).",
+   "eq": "Acceso a estación transmisora, cifras propias (banda Barato).",
+   "titN": "Dueño de red",
+   "titT": "Tus Secretos se gastan a través de agentes: éxito automático social sin estar presente. El Secreto se quema igual, pero el objetivo no sabe quién lo sabe.",
+   "territorio": "Imperio azishiano",
+   "curl": [
+    "Escritura y archivo",
+    "Engaño",
+    "Perspicacia",
+    "Sigilo",
+    "Vigilancia",
+    "Etiqueta",
+    "Comercio"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Social",
+    "Campo"
+   ]
+  },
+  {
+   "n": 13,
+   "nombre": "Cazador emuli",
+   "enc": "Frontera oriental de Makabak: guía, arquero y anfitrión. La hospitalidad hacia el Valle es ley no escrita.",
+   "atr": "Percepción +1, Comunicación +1",
+   "cur": "Tiro, Supervivencia, Vigilancia, Trato con animales, Etiqueta, Persuasión, Sigilo",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+   "est": "Bajo",
+   "cap": "Lectura del terreno. Ámbito: fronteras y estepas de Emul.",
+   "tec": "Mesa puesta — 1 Oportunidad: la hospitalidad emuli obliga: un desconocido acepta tu techo y comida, y la tregua que implican, hasta el alba.",
+   "eq": "Arco largo, tienda, provisiones (banda Barato).",
+   "titN": "Guardián del Valle",
+   "titT": "Conoces los pasos hacia el Valle: rutas que oficialmente no existen. Acceso que no se puede comprar.",
+   "territorio": "Imperio azishiano",
+   "curl": [
+    "Tiro",
+    "Supervivencia",
+    "Vigilancia",
+    "Trato con animales",
+    "Etiqueta",
+    "Persuasión",
+    "Sigilo"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Social"
+   ]
+  },
+  {
+   "n": 14,
+   "nombre": "Leemareas",
+   "enc": "Estudian las olas para leer impulso y crestas. El mar habla; ellos escuchan primero.",
+   "atr": "Percepción +1, Inteligencia +1",
+   "cur": "Navegación, Filosofía natural, Vigilancia, Supervivencia, Arte, Teología, Aptitud física",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+   "est": "Medio",
+   "cap": "Lectura del terreno. Ámbito: el mar, sus mareas y su oleaje.",
+   "tec": "Cresta contada — 1 Oportunidad en el mar: predices la ola exacta: toda la tripulación gana +3 a una misma maniobra.",
+   "eq": "Instrumentos de marea, plaza de a bordo (banda Barato).",
+   "titN": "Voz de las mareas",
+   "titT": "Antes de zarpar declaras una verdad sobre el viaje («llegaremos antes de la tormenta») y el mundo la sostiene salvo intervención mayor.",
+   "territorio": "Iri y Rira",
+   "curl": [
+    "Navegación",
+    "Filosofía natural",
+    "Vigilancia",
+    "Supervivencia",
+    "Arte",
+    "Teología",
+    "Aptitud física"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 15,
+   "nombre": "Innovador militar iriali",
+   "enc": "Investigador armamentístico y táctico, no mando. La guerra de tus abuelos te aburre por principio.",
+   "atr": "Inteligencia +1, Percepción +1",
+   "cur": "Filosofía natural, Artesanía, Táctica, Historia, Escritura y archivo, Comercio, Tiro",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+   "est": "Medio a alto",
+   "cap": "Mundo conocido. Ámbito: el estado del arte militar: doctrinas, armas, quién usa qué y contra quién.",
+   "tec": "Prototipo — 1 Oportunidad: llevas encima el ajuste experimental adecuado: un objeto tuyo cuenta una vez como si tuviera la propiedad que declares (MARCADOR: depende de la tabla de propiedades de armas).",
+   "eq": "Taller portátil, notas cifradas (banda Normal).",
+   "titN": "Nueva Experiencia",
+   "titT": "Presentas doctrina nueva: durante una campaña, tu bando repite un d6 de tensión por escena táctica.",
+   "territorio": "Iri y Rira",
+   "curl": [
+    "Filosofía natural",
+    "Artesanía",
+    "Táctica",
+    "Historia",
+    "Escritura y archivo",
+    "Comercio",
+    "Tiro"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Oficio"
+   ]
+  },
+  {
+   "n": 16,
+   "nombre": "Espía militar riranio",
+   "enc": "Rira niega pertenecer a Iri. Tú vives dentro de esa negación, con dos nombres y una frontera en disputa.",
+   "atr": "Destreza +1, Comunicación +1",
+   "cur": "Sigilo, Engaño, Vigilancia, Perspicacia, Hurto, Etiqueta, Escritura y archivo",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+   "est": "Bajo",
+   "cap": "Tarifa vigente",
+   "tec": "Doble bandera — 1 Oportunidad: la tapadera aguanta: un Conflicto que te identificaría se convierte en confirmación de tu identidad falsa.",
+   "eq": "Dos juegos de documentos, ropa de dos naciones (banda Barato).",
+   "titN": "Fantasma de la frontera",
+   "titT": "Mantienes identidades completas: cada una con su propio estatus y su propia red social.",
+   "territorio": "Iri y Rira",
+   "curl": [
+    "Sigilo",
+    "Engaño",
+    "Vigilancia",
+    "Perspicacia",
+    "Hurto",
+    "Etiqueta",
+    "Escritura y archivo"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Social"
+   ]
+  },
+  {
+   "n": 17,
+   "nombre": "Guía de Tai-na",
+   "enc": "Vives sobre un dios y negocias con su rumbo. La isla respira debajo de tu casa.",
+   "atr": "Percepción +1, Presencia +1",
+   "cur": "Trato con animales, Supervivencia, Navegación, Aptitud física, Teología, Perspicacia, Vigilancia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+   "est": "Medio (prestigio isleño)",
+   "cap": "Lectura del terreno. Ámbito: el lomo del Tai-na y sus aguas.",
+   "tec": "Pulso del dios — 1 Oportunidad: el Tai-na responde: un movimiento menor de la isla (inclinación, chorro, sombra) ocurre a tu favor.",
+   "eq": "Arpón ceremonial, cordaje (banda Trivial).",
+   "titN": "Escogido del Tai-na",
+   "titT": "Una vez por historia pides a la criatura un movimiento mayor: cerrar un estrecho, sumergir el lomo, virar.",
+   "territorio": "Islas Reshi",
+   "curl": [
+    "Trato con animales",
+    "Supervivencia",
+    "Navegación",
+    "Aptitud física",
+    "Teología",
+    "Perspicacia",
+    "Vigilancia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 18,
+   "nombre": "Isleño reshi",
+   "enc": "El mundo viene a las islas y tú le sacas partido. Sin ropas ni cargas, y sin necesitarlas.",
+   "atr": "Comunicación +1, Vigor +1",
+   "cur": "Persuasión, Aptitud física, Comercio, Arte, Perspicacia, Supervivencia, Lucha",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+   "est": "Bajo",
+   "cap": "Mundo conocido. Ámbito: visitantes, anfitriones y quién es quién entre las islas.",
+   "tec": "Franqueza — 1 Oportunidad: tu desparpajo desarma: en esta escena, mentirte cuesta +3 al interlocutor.",
+   "eq": "Casi nada, y no lo necesitas (banda Trivial).",
+   "titN": "Rey / Reina de isla",
+   "titT": "Hospitalidad soberana: quien está bajo tu techo está en tregua vinculante; romperla es delito ante todas las islas.",
+   "territorio": "Islas Reshi",
+   "curl": [
+    "Persuasión",
+    "Aptitud física",
+    "Comercio",
+    "Arte",
+    "Perspicacia",
+    "Supervivencia",
+    "Lucha"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Social",
+    "Campo"
+   ]
+  },
+  {
+   "n": 19,
+   "nombre": "Estratega veden",
+   "enc": "El campo de batalla se elige antes de pisarlo. Asalto pequeño, rápido y en el terreno equivocado para el enemigo.",
+   "atr": "Inteligencia +1, Destreza +1",
+   "cur": "Táctica, Tiro, Vigilancia, Supervivencia, Sigilo, Engaño, Mando",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+   "est": "Alto a medio",
+   "cap": "Lectura del terreno. Ámbito: el campo de batalla que tú has elegido o preparado.",
+   "tec": "Emboscada dispuesta — 1 Oportunidad al iniciar combate en terreno preparado: tu bando declara actitudes después de ver las del enemigo.",
+   "eq": "Mapas, catalejo, arco de caza (banda Normal).",
+   "titN": "General veden",
+   "titT": "Una vez por batalla, conviertes un Conflicto de cualquier aliado en Oportunidad tuya: el plan absorbe el error.",
+   "territorio": "Jah Keved",
+   "curl": [
+    "Táctica",
+    "Tiro",
+    "Vigilancia",
+    "Supervivencia",
+    "Sigilo",
+    "Engaño",
+    "Mando"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Marcial",
+    "Campo"
+   ]
+  },
+  {
+   "n": 20,
+   "nombre": "Artesano de Valath",
+   "enc": "Vinculacañas: el oficio más caro de Roshar sale de tu banco de trabajo.",
+   "atr": "Destreza +1, Inteligencia +1",
+   "cur": "Artesanía, Filosofía natural, Comercio, Escritura y archivo, Etiqueta, Perspicacia, Historia",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+   "est": "Medio a alto",
+   "cap": "Gajes del oficio. Oficio: instrumentos de precisión (Artesanía, Filosofía natural).",
+   "tec": "Marca de Valath — 1 Oportunidad al terminar una obra: queda por encima de su banda: cuenta como calidad de maestro (CD 17 lograda) en un rasgo que declares.",
+   "eq": "Herramientas de precisión, banco en taller del gremio (banda Caro, del gremio).",
+   "titN": "Maestro vinculacañero",
+   "titT": "Tus obras emparejadas no fallan por distancia dentro de Roshar, y el gremio te debe asiento.",
+   "territorio": "Jah Keved",
+   "curl": [
+    "Artesanía",
+    "Filosofía natural",
+    "Comercio",
+    "Escritura y archivo",
+    "Etiqueta",
+    "Perspicacia",
+    "Historia"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Oficio",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 21,
+   "nombre": "Minero de Bavlandia",
+   "enc": "Polvo, vetas y derrumbes. La región es pobre en todo menos en lo que está debajo.",
+   "atr": "Vigor +1, Percepción +1",
+   "cur": "Aptitud física, Supervivencia, Vigilancia, Artesanía, Comercio, Lucha, Filosofía natural",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Oficio, Campo",
+   "est": "Bajo",
+   "cap": "Lectura del terreno. Ámbito: el subsuelo: túneles, vetas y cuevas.",
+   "tec": "Oído a la roca — 1 Oportunidad bajo tierra: la roca avisa: cancelas un peligro del terreno (derrumbe, gas, hundimiento) declarándolo antes de que ocurra.",
+   "eq": "Pico, lámparas de gema pobre, cuerda (banda Trivial).",
+   "titN": "Capataz de veta",
+   "titT": "Una vez por historia declaras dónde hay veta o gema; la disputa por ella es tuya. Gancho directo de facción.",
+   "territorio": "Jah Keved",
+   "curl": [
+    "Aptitud física",
+    "Supervivencia",
+    "Vigilancia",
+    "Artesanía",
+    "Comercio",
+    "Lucha",
+    "Filosofía natural"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Oficio",
+    "Campo"
+   ]
+  },
+  {
+   "n": 22,
+   "nombre": "Cirujano de Kharbranth",
+   "enc": "Los hospitales incomparables te formaron. La muerte no es un fallo: es un plazo que se negocia.",
+   "atr": "Inteligencia +1, Destreza +1",
+   "cur": "Medicina, Filosofía natural, Escritura y archivo, Perspicacia, Etiqueta, Persuasión, Historia",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Medio a alto",
+   "cap": "Gajes del oficio. Oficio: la medicina (Medicina, Filosofía natural). La operación no fracasa: se alarga o consume material.",
+   "tec": "Triaje — 1 Oportunidad al examinar heridos: conoces Gravedad exacta, plazo real y prioridad, y das +3 a la primera tirada de curación derivada.",
+   "eq": "Instrumental completo, credencial de los hospitales (banda Caro).",
+   "titN": "Médico de cámara",
+   "titT": "Tus pacientes tiran recuperación un intervalo más rápido (mensual pasa a semanal, semanal a diario) mientras los atiendas.",
+   "territorio": "Kharbranth",
+   "curl": [
+    "Medicina",
+    "Filosofía natural",
+    "Escritura y archivo",
+    "Perspicacia",
+    "Etiqueta",
+    "Persuasión",
+    "Historia"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 23,
+   "nombre": "Erudito del Palanaeum",
+   "enc": "El archivo más grande del mundo cobra la entrada. Tú ya amortizaste la tuya.",
+   "atr": "Inteligencia +1, Percepción +1",
+   "cur": "Historia, Filosofía natural, Teología, Escritura y archivo, Leyes y gobierno, Perspicacia, Arte",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Medio",
+   "cap": "Vía establecida. Aplicación de escuela: cuando puedas citar fuente, tiras la erudición pertinente en lugar de Persuasión; el objetivo opone saber propio o cede.",
+   "tec": "Cita exacta — 1 Oportunidad: recuerdas la fuente y dónde está: tu afirmación pasa a documentada y nadie puede descartarla sin fuente propia.",
+   "eq": "Credencial de acceso, notas de años (banda Normal: la entrada del Palanaeum se paga).",
+   "titN": "Maestro del Palanaeum",
+   "titT": "Acceso total y préstamo: el documento que la trama necesita existe en el archivo si es plausible; la DJ tasa el carril, no lo niega.",
+   "territorio": "Kharbranth",
+   "curl": [
+    "Historia",
+    "Filosofía natural",
+    "Teología",
+    "Escritura y archivo",
+    "Leyes y gobierno",
+    "Perspicacia",
+    "Arte"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 24,
+   "nombre": "Asaltante de las Tierras Heladas",
+   "enc": "Golpear y desaparecer en el hielo. La ley termina donde empieza la ventisca.",
+   "atr": "Vigor +1, Destreza +1",
+   "cur": "Lucha, Tiro, Sigilo, Supervivencia, Vigilancia, Hurto, Aptitud física",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+   "est": "Bajo",
+   "cap": "Lectura del terreno. Ámbito: hielo, ventisca y tierra marginal.",
+   "tec": "Golpe y niebla — 1 Oportunidad tras tu ataque: te desplazas una banda de distancia sin provocar Explotar la apertura.",
+   "eq": "Pieles, hacha corta, trineo ligero (banda Trivial).",
+   "titN": "Señor del deshielo",
+   "titT": "Tu banda es facción: los asentamientos marginales pagan paso o protección. Renta e influencia fuera de la ley.",
+   "territorio": "Tierras Heladas",
+   "curl": [
+    "Lucha",
+    "Tiro",
+    "Sigilo",
+    "Supervivencia",
+    "Vigilancia",
+    "Hurto",
+    "Aptitud física"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Marcial",
+    "Campo"
+   ]
+  },
+  {
+   "n": 25,
+   "nombre": "Cazador de las tundras",
+   "enc": "Sobrevivir donde nada debería. Cada invierno que vuelves es un argumento.",
+   "atr": "Percepción +1, Vigor +1",
+   "cur": "Supervivencia, Tiro, Vigilancia, Trato con animales, Sigilo, Medicina, Artesanía",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Oficio",
+   "est": "Bajo",
+   "cap": "Lectura del terreno. Ámbito: tundra y clima extremo.",
+   "tec": "Refugio — 1 Oportunidad: siempre hay refugio: el grupo pasa la noche sin tiradas de clima ni consumo extra.",
+   "eq": "Arco, trampas, abrigo doble (banda Trivial).",
+   "titN": "El que vuelve",
+   "titT": "Una vez por historia, una muerte por entorno (frío, caída, hambre) se convierte en herida Grave. Solo entorno, nunca combate.",
+   "territorio": "Tierras Heladas",
+   "curl": [
+    "Supervivencia",
+    "Tiro",
+    "Vigilancia",
+    "Trato con animales",
+    "Sigilo",
+    "Medicina",
+    "Artesanía"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Oficio"
+   ]
+  },
+  {
+   "n": 26,
+   "nombre": "Cuarto hijo",
+   "enc": "Los tres primeros sostienen la casa; el cuarto protege al pueblo. Currículo de cazador, no de soldado.",
+   "atr": "Vigor +1, Percepción +1",
+   "cur": "Tiro, Supervivencia, Vigilancia, Aptitud física, Trato con animales, Medicina, Sigilo",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+   "est": "Medio (honor familiar)",
+   "cap": "Lectura del terreno. Ámbito: la montaña y sus pasos.",
+   "tec": "Deber del cuarto — 1 Oportunidad cuando atacan a tu protegido: el ataque te apunta a ti y ganas +3 a tu próxima tirada contra ese enemigo.",
+   "eq": "Arco de cuerno, abrigos, amuleto familiar (banda Trivial).",
+   "titN": "Escudo del pueblo",
+   "titT": "Mientras guardes un lugar declarado, la sorpresa contra tu gente es imposible dentro de tu ámbito.",
+   "territorio": "Picos Comecuernos",
+   "curl": [
+    "Tiro",
+    "Supervivencia",
+    "Vigilancia",
+    "Aptitud física",
+    "Trato con animales",
+    "Medicina",
+    "Sigilo"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Campo",
+    "Marcial"
+   ]
+  },
+  {
+   "n": 27,
+   "nombre": "Cocinero unkalaki",
+   "enc": "El prestigio de los Picos se sirve caliente. Nadie discute con la boca llena.",
+   "atr": "Comunicación +1, Percepción +1",
+   "cur": "Artesanía, Comercio, Etiqueta, Persuasión, Perspicacia, Trato con animales, Supervivencia",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+   "est": "Medio a alto entre unkalaki",
+   "cap": "Gajes del oficio. Oficio: la cocina (Artesanía, Comercio).",
+   "tec": "Mesa de paz — 1 Oportunidad al servir: la escena social baja un nivel de tensión (mínimo 0 fuera de combate).",
+   "eq": "Cuchillos, ollas de cobre, especias (banda Normal: las especias no son baratas).",
+   "titN": "Cocinero de nuatoma",
+   "titT": "Tu mesa es territorio: quien come de ella queda en tregua y en deuda menor. Palanca social vinculante.",
+   "territorio": "Picos Comecuernos",
+   "curl": [
+    "Artesanía",
+    "Comercio",
+    "Etiqueta",
+    "Persuasión",
+    "Perspicacia",
+    "Trato con animales",
+    "Supervivencia"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Oficio",
+    "Social"
+   ]
+  },
+  {
+   "n": 28,
+   "nombre": "Kaluk&apos;i&apos;iki (guía)",
+   "enc": "Lagos de cráter, aire fino y los dioses cerca. Alguien tiene que saber por dónde y hablar con qué.",
+   "atr": "Percepción +1, Inteligencia +1",
+   "cur": "Supervivencia, Vigilancia, Teología, Medicina, Trato con animales, Navegación, Perspicacia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+   "est": "Medio",
+   "cap": "Lectura del terreno. Ámbito: los Picos: lagos de cráter, aguas shishi y pasos altos.",
+   "tec": "Agua que ve — 1 Oportunidad junto a un lago de cráter: haces una pregunta sobre lo que el agua ha visto pasar; la respuesta es verdadera.",
+   "eq": "Bastón, ofrendas, los pasos en la memoria (banda Trivial).",
+   "titN": "Voz junto al agua",
+   "titT": "Los spren del lago te reconocen: una vez por historia pides su intervención (MARCADOR: los lagos tocan Shadesmar; depende de la cola de spren).",
+   "territorio": "Picos Comecuernos",
+   "curl": [
+    "Supervivencia",
+    "Vigilancia",
+    "Teología",
+    "Medicina",
+    "Trato con animales",
+    "Navegación",
+    "Perspicacia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 29,
+   "nombre": "Chamán de piedra",
+   "enc": "La orden que gobierna Shinovar y guarda la Piedra. La ley aquí no se discute: se administra.",
+   "atr": "Presencia +1, Inteligencia +1",
+   "cur": "Teología, Leyes y gobierno, Historia, Persuasión, Etiqueta, Perspicacia, Medicina",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Alto",
+   "cap": "Jurisdicción. Ámbito: quien pise Shinovar o profese sus leyes. La piedra es sagrada y tu palabra la administra.",
+   "tec": "Ley de la piedra — 1 Oportunidad: declaras tabú un objeto o lugar concreto: los shin no lo tocarán; el forastero que lo haga queda marcado con delito registrado.",
+   "eq": "Vestiduras, símbolo de la orden (banda Barato; la orden provee).",
+   "titN": "Guardián de la Piedra",
+   "titT": "Custodias reliquias: sabes qué son las Hojas de honor y decides quién las porta. Palanca mayor de campaña.",
+   "territorio": "Shinovar",
+   "curl": [
+    "Teología",
+    "Leyes y gobierno",
+    "Historia",
+    "Persuasión",
+    "Etiqueta",
+    "Perspicacia",
+    "Medicina"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 30,
+   "nombre": "El que sustrae",
+   "enc": "Soldado de monasterio. Sustraer vidas es lo más bajo que existe; por eso lo cargáis vosotros y nadie más.",
+   "atr": "Destreza +1, Vigor +1",
+   "cur": "Armas, Lucha, Aptitud física, Teología, Historia, Etiqueta, Perspicacia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Erudición",
+   "est": "Bajo en Shinovar; temido fuera",
+   "cap": "Filo medido",
+   "tec": "Peso asumido — 1 Oportunidad al herir: matar solo cuando se elige: reduces en 2 la Gravedad que infliges, declarándolo tras ver el daño.",
+   "eq": "Armas del monasterio (las mejores de Shinovar), hábito (banda Normal).",
+   "titN": "Portador de honor",
+   "titT": "Puedes ser juzgado digno de una Hoja de honor. Acceso, no posesión: el Guardián de la Piedra decide.",
+   "territorio": "Shinovar",
+   "curl": [
+    "Armas",
+    "Lucha",
+    "Aptitud física",
+    "Teología",
+    "Historia",
+    "Etiqueta",
+    "Perspicacia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 31,
+   "nombre": "El que añade",
+   "enc": "Granjero o cocinero: que nadie pase hambre. En Shinovar, eso te pone por encima del guerrero.",
+   "atr": "Vigor +1, Comunicación +1",
+   "cur": "Artesanía, Supervivencia, Trato con animales, Comercio, Persuasión, Medicina, Teología",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+   "est": "Medio: los que añaden, por encima",
+   "cap": "Gajes del oficio. Oficio: labranza y cocina (Artesanía, Supervivencia, Trato con animales).",
+   "tec": "Añadir siempre — 1 Oportunidad: de lo poco sale bastante: raciones o material para el grupo entero donde solo había para uno.",
+   "eq": "Aperos y semillas, la tierra blanda de Shinovar en la memoria (banda Trivial).",
+   "titN": "Anciano de los campos",
+   "titT": "En Shinovar tu palabra pesa como la de un chamán en lo civil: Jurisdicción de hecho en disputas de tierra y sustento.",
+   "territorio": "Shinovar",
+   "curl": [
+    "Artesanía",
+    "Supervivencia",
+    "Trato con animales",
+    "Comercio",
+    "Persuasión",
+    "Medicina",
+    "Teología"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Oficio",
+    "Social"
+   ]
+  },
+  {
+   "n": 32,
+   "nombre": "Oficial naval",
+   "enc": "La dotación es un solo cuerpo y tú eres su voz. El mar no perdona órdenes tardías.",
+   "atr": "Presencia +1, Percepción +1",
+   "cur": "Navegación, Mando, Táctica, Vigilancia, Aptitud física, Comercio, Etiqueta",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Medio a alto",
+   "cap": "Sincronía. Aplicación de escuela: la dotación a tus órdenes cuenta como aliados para tu Sincronía.",
+   "tec": "Barlovento — 1 Oportunidad en maniobra naval: robas la posición: tu nave gana la banda de distancia que quieras respecto al rival.",
+   "eq": "Uniforme, sable, catalejo, plaza a bordo (banda Normal).",
+   "titN": "Capitán de flota",
+   "titT": "Hasta tres naves maniobran con Sincronía bajo tus señales.",
+   "territorio": "Thaylenah",
+   "curl": [
+    "Navegación",
+    "Mando",
+    "Táctica",
+    "Vigilancia",
+    "Aptitud física",
+    "Comercio",
+    "Etiqueta"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 33,
+   "nombre": "Aprendiz de gremio",
+   "enc": "Subastas, contratos y astilleros: todo lo que Thaylenah vende pasa por un gremio, y tú aprendes el tuyo.",
+   "atr": "Comunicación +1, Inteligencia +1",
+   "cur": "Comercio, Persuasión, Etiqueta, Perspicacia, Artesanía, Navegación, Leyes y gobierno",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+   "est": "Medio",
+   "cap": "Gajes del oficio. Oficio: el ramo del gremio elegido (dos habilidades del elige 5).",
+   "tec": "Letra pequeña — 1 Oportunidad al cerrar trato: añades una cláusula que la otra parte no leyó; se descubre cuando te convenga.",
+   "eq": "Libros de cuentas, aval del gremio (banda Normal; crédito hasta Caro).",
+   "titN": "Maestro de gremio",
+   "titT": "Asiento y voto: fijas los precios locales de tu ramo una banda arriba o abajo. Palanca económica de facción.",
+   "territorio": "Thaylenah",
+   "curl": [
+    "Comercio",
+    "Persuasión",
+    "Etiqueta",
+    "Perspicacia",
+    "Artesanía",
+    "Navegación",
+    "Leyes y gobierno"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Oficio",
+    "Social"
+   ]
+  },
+  {
+   "n": 34,
+   "nombre": "Alto guardia",
+   "enc": "Casas juradas a defender el reino: cinco hojas y tres armaduras. Tú juras antes de tocar ninguna.",
+   "atr": "Vigor +1, Presencia +1",
+   "cur": "Armas, Lucha, Aptitud física, Etiqueta, Vigilancia, Perspicacia, Historia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+   "est": "Alto",
+   "cap": "Filo medido",
+   "tec": "Juramento en pie — 1 Oportunidad cuando atacan a tu protegido a tu alcance: el ataque te apunta a ti y tu próximo Explotar la apertura no consume acción.",
+   "eq": "Media armadura de calidad, espada jurada, librea (banda Caro; de la casa).",
+   "titN": "Portador jurado",
+   "titT": "La casa te confía esquirla (hoja o armadura) mientras el juramento viva. Préstamo condicional: la esquirla es de la corona.",
+   "territorio": "Thaylenah",
+   "curl": [
+    "Armas",
+    "Lucha",
+    "Aptitud física",
+    "Etiqueta",
+    "Vigilancia",
+    "Perspicacia",
+    "Historia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Marcial",
+    "Social"
+   ]
+  },
+  {
+   "n": 35,
+   "nombre": "Polemista marabeziano",
+   "enc": "La disputa formal como deporte nacional. Ganar a gritos es perder dos veces.",
+   "atr": "Comunicación +1, Inteligencia +1",
+   "cur": "Persuasión, Perspicacia, Filosofía natural, Historia, Etiqueta, Arte, Leyes y gobierno",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+   "est": "Medio",
+   "cap": "Vía establecida. Aplicación de escuela: puedes forzar que un conflicto social se resuelva como debate reglado; eso lo convierte en procedimiento.",
+   "tec": "Tercera réplica — 1 Oportunidad en debate: guardas la réplica: cancela el próximo +3 en contra que compren contra ti.",
+   "eq": "La palabra y una barca (banda Trivial).",
+   "titN": "Árbitro",
+   "titT": "Presides disputas: en el debate que arbitras defines qué resultado significa qué. Cambias las apuestas del conflicto social.",
+   "territorio": "Lagopuro",
+   "curl": [
+    "Persuasión",
+    "Perspicacia",
+    "Filosofía natural",
+    "Historia",
+    "Etiqueta",
+    "Arte",
+    "Leyes y gobierno"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Social",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 36,
+   "nombre": "Nómada Tu Bayla",
+   "enc": "Los caminos del interior entre Marabezia, Emul y Tukar. Sin asentamiento fijo, con todas las rutas.",
+   "atr": "Vigor +1, Comunicación +1",
+   "cur": "Supervivencia, Trato con animales, Comercio, Vigilancia, Aptitud física, Persuasión, Sigilo",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+   "est": "Bajo",
+   "cap": "Lectura del terreno. Ámbito: rutas del interior y tierra de nadie.",
+   "tec": "El camino largo — 1 Oportunidad viajando: el atajo que no está en mapas: el grupo gana un intervalo de tiempo y llega antes de lo posible.",
+   "eq": "Recua, tiendas, mercancía de trueque (banda Barato).",
+   "titN": "Madre / Padre de ruta",
+   "titT": "El clan mueve lo que nadie más: contrabando y paso franco como facción. Las rutas son renta e influencia.",
+   "territorio": "Lagopuro",
+   "curl": [
+    "Supervivencia",
+    "Trato con animales",
+    "Comercio",
+    "Vigilancia",
+    "Aptitud física",
+    "Persuasión",
+    "Sigilo"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Social"
+   ]
+  },
+  {
+   "n": 37,
+   "nombre": "Guardián de las canciones",
+   "enc": "La memoria del pueblo cabe en ritmos. Si tú olvidas, olvidan todos.",
+   "atr": "Comunicación +1, Inteligencia +1",
+   "cur": "Arte, Historia, Teología, Persuasión, Perspicacia, Medicina, Etiqueta",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+   "est": "Medio",
+   "cap": "Mundo conocido. Ámbito: la memoria cantada del pueblo oyente: hechos, linajes y pactos.",
+   "tec": "Ritmo de la Memoria — 1 Oportunidad: entonas el ritmo exacto: un oyente presente recuerda o reconoce lo que la canción manda.",
+   "eq": "Nada que no lleves dentro (banda Trivial).",
+   "titN": "Cantor de los Cinco",
+   "titT": "Compones canción nueva: lo que cantas entra en la memoria del pueblo. Creas precedente cultural vinculante.",
+   "territorio": "Oyentes de las Llanuras",
+   "curl": [
+    "Arte",
+    "Historia",
+    "Teología",
+    "Persuasión",
+    "Perspicacia",
+    "Medicina",
+    "Etiqueta"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Erudición",
+    "Social"
+   ]
+  },
+  {
+   "n": 38,
+   "nombre": "Pareja de guerra",
+   "enc": "Dos que luchan como uno. La mitad de tu Defensa camina al lado.",
+   "atr": "Destreza +1, Percepción +1",
+   "cur": "Lucha, Armas, Aptitud física, Vigilancia, Perspicacia, Táctica, Medicina",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+   "est": "Medio",
+   "cap": "Sincronía. Aplicación de escuela: con tu pareja no exige declarar la misma acción; basta actuar sobre el mismo objetivo.",
+   "tec": "Espalda con espalda — 1 Oportunidad: tu pareja y tú transferís hasta 3 puntos de fatiga entre ambos.",
+   "eq": "Armas gemelas; forma guerrera (ascendencia, sin coste).",
+   "titN": "Pareja jurada",
+   "titT": "Si tu pareja cae a 0 de fatiga, actúas dos turnos por ronda hasta el final de la escena. Una vez por escena.",
+   "territorio": "Oyentes de las Llanuras",
+   "curl": [
+    "Lucha",
+    "Armas",
+    "Aptitud física",
+    "Vigilancia",
+    "Perspicacia",
+    "Táctica",
+    "Medicina"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Marcial",
+    "Campo"
+   ]
+  },
+  {
+   "n": 39,
+   "nombre": "Cantor de los abismos",
+   "enc": "Las Llanuras Quebradas eran vuestras antes de los humanos. Los abismos no son obstáculo: son casa.",
+   "atr": "Destreza +1, Percepción +1",
+   "cur": "Supervivencia, Sigilo, Vigilancia, Tiro, Aptitud física, Trato con animales, Historia",
+   "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+   "est": "Bajo a medio",
+   "cap": "Lectura del terreno. Ámbito: las Llanuras Quebradas y sus abismos.",
+   "tec": "Salto de grieta — 1 Oportunidad al moverte por los abismos: cruzas donde nadie puede seguirte; el perseguidor necesita un rodeo de escena.",
+   "eq": "Cuerda, lanzas ligeras; forma apropiada (ascendencia, sin coste).",
+   "titN": "Voz de las Llanuras",
+   "titT": "Las Llanuras esconden a los tuyos: tu banda entera cuenta el terreno como ámbito propio mientras la guíes.",
+   "territorio": "Oyentes de las Llanuras",
+   "curl": [
+    "Supervivencia",
+    "Sigilo",
+    "Vigilancia",
+    "Tiro",
+    "Aptitud física",
+    "Trato con animales",
+    "Historia"
+   ],
+   "nHab": 5,
+   "nTal": 2,
+   "tipos": [
+    "Campo",
+    "Marcial"
+   ]
+  },
+  {
+   "n": 40,
+   "nombre": "Siervo de los Fusionados",
+   "enc": "Voz o brazo de un dios menor con milenios de rabia. Sobrevivir a tu señor ya es carrera.",
+   "atr": "Presencia +1, y a elegir: Comunicación +1 (vía Voz) o Destreza +1 (vía Brazo)",
+   "cur": "Etiqueta, Perspicacia, Persuasión, Mando, Armas, Vigilancia, Historia",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Social, Marcial",
+   "est": "Medio a alto dentro del imperio",
+   "cap": "Jurisdicción. Ámbito: autoridad delegada: quien reconozca al Fusionado que sirves.",
+   "tec": "En su nombre — 1 Oportunidad: la amenaza cuenta como hecha por tu señor: el objetivo responde a ese miedo y ganas +3 a tu próxima tirada social de coacción.",
+   "eq": "Librea del señor; arma o sellos según vía (banda Normal; del Fusionado).",
+   "titN": "Favorito",
+   "titT": "Tu señor te escucha: una vez por historia pides su intervención directa. La factura la decide él.",
+   "territorio": "Imperio cantor",
+   "curl": [
+    "Etiqueta",
+    "Perspicacia",
+    "Persuasión",
+    "Mando",
+    "Armas",
+    "Vigilancia",
+    "Historia"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Social",
+    "Marcial"
+   ]
+  },
+  {
+   "n": 41,
+   "nombre": "Peregrino / sin tierra",
+   "enc": "Sin nación, sin casa, sin retorno. El camino es la identidad y la falta de equipaje, el método.",
+   "atr": "Vigor +1, Percepción +1",
+   "cur": "Supervivencia, Teología, Persuasión, Perspicacia, Medicina, Historia, Arte",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+   "est": "Bajo",
+   "cap": "Mundo conocido. Ámbito: santuarios, caridades y casas que acogen.",
+   "tec": "Nada que quitarme — 1 Oportunidad al sufrir un Conflicto de Recurso o de Vínculo: no tienes nada que perder: el Conflicto se disuelve.",
+   "eq": "Bastón, manto, cuenco (banda Trivial).",
+   "titN": "El que llegó",
+   "titT": "Eliges el destino final del peregrinaje: alcanzarlo cuenta como meta mayor cumplida (PX de meta) y te da figura moral en el registro de facciones.",
+   "territorio": "Sin país",
+   "curl": [
+    "Supervivencia",
+    "Teología",
+    "Persuasión",
+    "Perspicacia",
+    "Medicina",
+    "Historia",
+    "Arte"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Social"
+   ]
+  },
+  {
+   "n": 42,
+   "nombre": "Agente Sangre Espectral",
+   "enc": "Una organización con los ojos puestos más allá de Roshar. No sabes el propósito; sabes tu parte.",
+   "atr": "Inteligencia +1, Destreza +1",
+   "cur": "Engaño, Sigilo, Hurto, Perspicacia, Vigilancia, Filosofía natural, Etiqueta",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+   "est": "Medio (financiación oscura)",
+   "cap": "Tarifa vigente",
+   "tec": "Tres vidas — 1 Oportunidad: la organización ya preparó esta ciudad: hay un alijo o piso franco donde lo necesitas.",
+   "eq": "Fondos operativos renovables (banda Normal), un símbolo que no debes enseñar.",
+   "titN": "Portador del sello",
+   "titT": "Conoces parte del propósito: acceso a medios de otros mundos. Un objeto invertido menor de Scadrial: el puente entre escenarios.",
+   "territorio": "Sin país",
+   "curl": [
+    "Engaño",
+    "Sigilo",
+    "Hurto",
+    "Perspicacia",
+    "Vigilancia",
+    "Filosofía natural",
+    "Etiqueta"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 43,
+   "nombre": "Cantamundos",
+   "enc": "Llevas los pueblos dentro y los cuentas donde no los conocen. El mundo se sostiene sobre quien lo narra.",
+   "atr": "Comunicación +1, Inteligencia +1",
+   "cur": "Arte, Historia, Perspicacia, Engaño, Etiqueta, Comercio, Supervivencia",
+   "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+   "est": "Bajo a medio",
+   "cap": "Mundo conocido. Ámbito: pueblos, costumbres y quién manda dónde.",
+   "tec": "El cuento adecuado — 1 Oportunidad ante un público: cuentas la historia que necesitaban: su disposición mejora un paso (MARCADOR: escalera de disposición pendiente del módulo de escenas sociales).",
+   "eq": "Instrumento, memoria enorme, calzado gastado (banda Trivial).",
+   "titN": "Cantamundos mayor",
+   "titT": "Te preceden: en cualquier asentamiento tu nombre llegó antes: estatus efectivo medio-alto y audiencia con quien mande.",
+   "territorio": "Sin país",
+   "curl": [
+    "Arte",
+    "Historia",
+    "Perspicacia",
+    "Engaño",
+    "Etiqueta",
+    "Comercio",
+    "Supervivencia"
+   ],
+   "nHab": 3,
+   "nTal": 4,
+   "tipos": [
+    "Social",
+    "Erudición"
+   ]
+  },
+  {
+   "n": 44,
+   "nombre": "Niño de la calle",
+   "enc": "Todas las ciudades tienen calles y tú eres de todas. Lo que se cae, se recoge.",
+   "atr": "Destreza +1, Percepción +1",
+   "cur": "Hurto, Sigilo, Perspicacia, Persuasión, Supervivencia, Aptitud física, Comercio",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+   "est": "Bajo",
+   "cap": "Mundo conocido. Ámbito: las calles: quién manda, qué se mueve, por dónde no pasar.",
+   "tec": "Por los tejados — 1 Oportunidad al huir: la calle te traga: escapas de la vista; retomarte exige una escena nueva.",
+   "eq": "Lo puesto y tres escondrijos (banda Trivial).",
+   "titN": "El que salió",
+   "titT": "Las calles te recuerdan: red de informantes menores en cada ciudad. Ojos por todas partes, como facción informal.",
+   "territorio": "Sin país",
+   "curl": [
+    "Hurto",
+    "Sigilo",
+    "Perspicacia",
+    "Persuasión",
+    "Supervivencia",
+    "Aptitud física",
+    "Comercio"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Campo",
+    "Social"
+   ]
+  },
+  {
+   "n": 45,
+   "nombre": "Revolucionario",
+   "enc": "Siempre hay alguien harto. Tu oficio es encontrarlo, juntarlo con los demás y ponerle fecha.",
+   "atr": "Comunicación +1, Presencia +1",
+   "cur": "Persuasión, Mando, Engaño, Escritura y archivo, Sigilo, Perspicacia, Leyes y gobierno",
+   "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+   "est": "Bajo, o el que finjas",
+   "cap": "Mundo conocido. Ámbito: los descontentos: en cada ciudad sabes quién está harto y de qué.",
+   "tec": "La chispa — 1 Oportunidad en una escena pública: el malestar se hace acto: la multitud hace una cosa ahora (bloquear, abuchear, dispersarse, esconder a alguien).",
+   "eq": "Plantillas de imprenta de mano, nombres que no apuntas (banda Trivial a Barato).",
+   "titN": "Comité",
+   "titT": "La célula es facción: células coordinadas en varias ciudades. El registro de facciones te trata como poder emergente con agenda propia.",
+   "territorio": "Sin país",
+   "curl": [
+    "Persuasión",
+    "Mando",
+    "Engaño",
+    "Escritura y archivo",
+    "Sigilo",
+    "Perspicacia",
+    "Leyes y gobierno"
+   ],
+   "nHab": 4,
+   "nTal": 3,
+   "tipos": [
+    "Social",
+    "Campo"
+   ]
+  }
+ ],
+ "talentos": [
+  {
+   "nombre": "Través de la batalla",
+   "meta": "R2 · destreza · acción de movimiento",
+   "rango": 2,
+   "grupo": "Marcial",
+   "cuerpo": "2d10 + Aptitud física + Destreza contra 17. Cruzas hasta dos bandas atravesando espacios ocupados por enemigos, sin provocar Explotar la apertura.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "un aliado adyacente al empezar te acompaña"
+    },
+    {
+     "coste": "1+",
+     "efecto": "una banda más por punto"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Carga impetuosa",
+   "meta": "R1 · vigor · acción de ataque y movimiento",
+   "rango": 1,
+   "grupo": "Marcial",
+   "cuerpo": "Cruzas una banda en línea recta y atacas en la misma acción, a −3. Si impactas, +2 al daño y el objetivo supera Aptitud física + Vigor contra tu tirada o queda Tumbado. Hasta tu próximo turno, −3 a tu Defensa.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el −3 a tu Defensa no se aplica"
+    },
+    {
+     "coste": "2",
+     "efecto": "avanzas otra banda tras el golpe"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Danza de la lanza",
+   "meta": "R2 · general · gasto · exige arma con Alcance",
+   "rango": 2,
+   "grupo": "Marcial",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el ataque alcanza a un segundo enemigo dentro de tu alcance"
+    },
+    {
+     "coste": "1",
+     "efecto": "quien quiera entrar en banda 0 contigo supera 17 en Aptitud física o no avanza"
+    },
+    {
+     "coste": "2",
+     "efecto": "tras impactar, empujas al objetivo una banda"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Tanto en la corte como en la batalla",
+   "meta": "R3 · general · cuenta como marcial y social",
+   "rango": 3,
+   "grupo": "Marcial",
+   "cuerpo": "Su ranura se paga con cualquiera de los dos grupos. Tu arma De gala no baja la Tolerancia de una escena y además cuenta como Discreta. En combate puedes leer a un oponente con Etiqueta.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "desafiar a alguien a las armas es petición de CD 14 en lugar de 17"
+    },
+    {
+     "coste": "1",
+     "efecto": "en combate, conoces la actitud que declaró un enemigo"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Peso del yunque",
+   "meta": "R1 · general · gasto con arma Aturdidora o de Impacto",
+   "rango": 1,
+   "grupo": "Marcial",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el objetivo retrocede una banda, empujado"
+    },
+    {
+     "coste": "2",
+     "efecto": "queda Aturdido"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Leer la guardia",
+   "meta": "R1 · percepción · acción de apoyo",
+   "rango": 1,
+   "grupo": "Marcial",
+   "cuerpo": "2d10 + Táctica + Percepción contra la Defensa del objetivo. Conoces su actitud declarada y su Fatiga aproximada.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "conoces también su arma y su desvío"
+    },
+    {
+     "coste": "2",
+     "efecto": "tu siguiente ataque ignora el bono de actitud a su Defensa"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Aguantar la línea",
+   "meta": "R2 · percepción · pasiva",
+   "rango": 2,
+   "grupo": "Marcial",
+   "cuerpo": "Mientras estés en actitud Defensiva y con un aliado adyacente, ninguno de los dos puede quedar Vulnerable.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el aliado recibe tu bono de actitud a la Defensa hasta tu próximo turno"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El golpe que abre",
+   "meta": "R3 · destreza · acción de ataque",
+   "rango": 3,
+   "grupo": "Marcial",
+   "cuerpo": "Atacas a −3. Si impactas no haces daño: el objetivo queda Vulnerable y el siguiente aliado que lo ataque este turno ignora su desvío.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "también haces el daño normal"
+    },
+    {
+     "coste": "2",
+     "efecto": "dos aliados en lugar de uno"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Pie firme",
+   "meta": "R1 · percepción · gasto al ser objetivo de derribo, empuje o agarre",
+   "rango": 1,
+   "grupo": "Marcial",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "no te mueves"
+    },
+    {
+     "coste": "2",
+     "efecto": "además, quien lo intentó queda Vulnerable"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Arquero de campaña",
+   "meta": "R2 · general · pasiva",
+   "rango": 2,
+   "grupo": "Marcial",
+   "cuerpo": "Tu banda mínima baja en 1. El arco largo te dispara a −3 en banda 0 en lugar de −6.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "ignoras la cobertura parcial de un objetivo"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "La segunda intención",
+   "meta": "R3 · general · gasto en ataque",
+   "rango": 3,
+   "grupo": "Marcial",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "declaras el efecto especial después de ver la tirada, sin pagar la mitad de daño si el margen no llega"
+    },
+    {
+     "coste": "2",
+     "efecto": "cambias el efecto por otro de coste igual o menor"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Murmullos en la corte",
+   "meta": "R1 · acción de escena",
+   "rango": 1,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Engaño + Comunicación contra su Defensa mental. Pones a correr un rumor: quien lo crea mueve su disposición un paso hacia donde apunte.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "rastrearlo hasta ti exige superar 17"
+    },
+    {
+     "coste": "1",
+     "efecto": "te enteras de otro rumor que ya circulaba"
+    },
+    {
+     "coste": "2",
+     "efecto": "el rumor alcanza a alguien que no está en la escena"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Sonrisa del veneno",
+   "meta": "R2 · gasto en tirada social",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "Cada vez que la uses, anota una línea en tu cuenta abierta: has amenazado a alguien, y él lo sabe.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "tu petición baja un escalón: el objetivo entiende qué pasa si dice que no"
+    },
+    {
+     "coste": "2",
+     "efecto": "no puede contarlo, porque contarlo lo pondría a él en falta"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Orden imperiosa",
+   "meta": "R2 · acción de apoyo",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Mando + Presencia contra 17, sobre un aliado. Actúa de inmediato, fuera de su turno, con la acción que tú declares.",
+   "gastos": [
+    {
+     "coste": "1+",
+     "efecto": "un aliado más por punto"
+    },
+    {
+     "coste": "2",
+     "efecto": "esa acción no le consume la suya"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "La deuda recordada",
+   "meta": "R1 · gasto en tirada social",
+   "rango": 1,
+   "grupo": "Social",
+   "cuerpo": "La cuenta abierta también recoge lo que otros te deben a ti. Este talento lee esas líneas.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "le recuerdas la deuda: la CD baja un escalón, y la deuda sigue viva"
+    },
+    {
+     "coste": "2",
+     "efecto": "la cobras: 2 éxitos directos al contador, y la línea se tacha"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Hablar en su idioma",
+   "meta": "R2 · acción de escena · requiere su pericia cultural",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Etiqueta + Comunicación contra 17. Encuadras tu petición en sus términos: su Tolerancia sube 2 y su conducta no le resta esta escena.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "descubres su Interés sin gastar turno"
+    },
+    {
+     "coste": "2",
+     "efecto": "alcanza a los suyos presentes: +2 de Tolerancia a todos"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El silencio que pesa",
+   "meta": "R2 · gasto en escena social",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "no dices nada y el otro llena el hueco: un fallo tuyo no gasta Tolerancia"
+    },
+    {
+     "coste": "2",
+     "efecto": "revela algo que no pretendía: ganas un Secreto menor"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "La palabra dada",
+   "meta": "R3 · acción de escena",
+   "rango": 3,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Persuasión + Determinación contra la CD. Empeñas tu palabra ante testigos y el objetivo sube dos pasos de disposición. Si incumples, tu disposición baja un paso de forma permanente con todos los que lo presenciaron y ganas el rasgo «Sin palabra».",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "los testigos cuentan como PNJ a favor en escenas futuras sobre ese asunto"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Quién manda aquí",
+   "meta": "R1 · acción de escena",
+   "rango": 1,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Perspicacia + Percepción contra 17 al entrar en una sala. Sabes quién decide de verdad, que no siempre es quien preside.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sabes quién le debe algo a quién"
+    },
+    {
+     "coste": "2",
+     "efecto": "sabes quién no debería estar ahí"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Cortar por lo sano",
+   "meta": "R2 · gasto en escena social",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "cierras la escena ahora y pides desde donde estés, sin gastar el turno"
+    },
+    {
+     "coste": "2",
+     "efecto": "además, la Tolerancia que te sobraba se convierte en un éxito"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El favor pequeño",
+   "meta": "R2 · acción de interludio",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Persuasión + Comunicación contra 14. Pides algo menor a alguien de disposición Neutral o mejor. Te lo concede, y anotas la deuda a su favor.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "no genera deuda: lo hace por gusto"
+    },
+    {
+     "coste": "2",
+     "efecto": "el favor es mayor de lo que pediste"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Nadie recuerda mi cara",
+   "meta": "R2 · pasiva",
+   "rango": 2,
+   "grupo": "Social",
+   "cuerpo": "Fuera de una escena que te tenga por objetivo, describirte después exige superar 17.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "en una escena pública, tu presencia no cuenta como PNJ presente para nadie"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Palabras de hierro",
+   "meta": "R3 · acción de escena",
+   "rango": 3,
+   "grupo": "Social",
+   "cuerpo": "2d10 + Mando + Determinación contra la CD. No convences: impones. El objetivo cumple, y su disposición baja un paso.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "la disposición no baja: entiende que no había otra"
+    },
+    {
+     "coste": "2",
+     "efecto": "los suyos presentes también cumplen"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El triaje del cirujano",
+   "meta": "R1 · acción de apoyo",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Medicina + Percepción contra 14. Conoces la Gravedad exacta y el plazo de cada herido, y en qué orden atenderlos. +3 a la primera tirada de recuperación derivada.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "detienes una Hemorragia sin tirada aparte"
+    },
+    {
+     "coste": "2",
+     "efecto": "un herido Leve queda estabilizado sin tirar"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Sifón de gemas",
+   "meta": "R2 · acción de escena · requiere pericia Thayleño y un diapasón",
+   "rango": 2,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Artesanía + Percepción contra 17. Trasvasas hasta tu margen en puntos de luz de una gema a otra, sin pérdida. Sin diapasón son horas de trabajo y se pierde por el camino.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "pasa a acción de interludio sobre cualquier número de gemas"
+    },
+    {
+     "coste": "1",
+     "efecto": "tasas de un vistazo cuánta luz queda en cada gema que veas"
+    },
+    {
+     "coste": "2",
+     "efecto": "sin que se note: la gema origen sigue pareciendo llena"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Nada se desecha",
+   "meta": "R1 · acción de interludio",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Artesanía + Inteligencia contra 14. De material de desecho sacas un objeto de banda Trivial o Barato. Si es Barato, se rompe tras un uso.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "aguanta la escena entera"
+    },
+    {
+     "coste": "1",
+     "efecto": "sale material para un segundo"
+    },
+    {
+     "coste": "2",
+     "efecto": "sube una banda"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "El precio justo",
+   "meta": "R1 · gasto en tirada de Comercio",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "conoces el precio real y si te están engañando"
+    },
+    {
+     "coste": "1",
+     "efecto": "el trato se cierra una banda mejor para ti"
+    },
+    {
+     "coste": "2",
+     "efecto": "el otro queda convencido de haber ganado él: no genera carril de Vínculo"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Todo tiene un valor",
+   "meta": "R2 · acción de escena",
+   "rango": 2,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Comercio + Percepción contra 17, sobre un objeto. Sabes qué es, cuánto vale, de dónde salió y quién lo querría.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sabes quién lo hizo o quién lo tuvo antes"
+    },
+    {
+     "coste": "2",
+     "efecto": "sabes a quién vendérselo hoy y por cuánto"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "El valor de las personas",
+   "meta": "R3 · acción de escena",
+   "rango": 3,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Comercio + Perspicacia contra su Defensa mental. Sabes qué la compraría, qué la vendería y a quién le importa. Lo que averigües es un Secreto.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sabes también qué no se vende en ella"
+    },
+    {
+     "coste": "2",
+     "efecto": "sabes a quién le debe algo"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "La mano firme",
+   "meta": "R1 · gasto en tirada de oficio",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el trabajo sale una banda por encima de lo que pagaste"
+    },
+    {
+     "coste": "1",
+     "efecto": "no consumes el material del intento"
+    },
+    {
+     "coste": "2",
+     "efecto": "además queda listo en la mitad de tiempo"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Anotado queda",
+   "meta": "R1 · acción de interludio",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Escritura y archivo + Inteligencia contra 14. Dejas registro de algo. Quien lo consulte gana +3 a una tirada sobre ese asunto, y el registro se acepta como prueba sin discusión: desmentirlo exige otro documento, no una tirada.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el registro dice lo que tú quieras, y se sigue aceptando igual"
+    },
+    {
+     "coste": "2",
+     "efecto": "sabrás quién lo ha consultado"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El ojo del tasador",
+   "meta": "R2 · acción de escena",
+   "rango": 2,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Comercio o Artesanía + Percepción contra 17. Distingues lo auténtico de lo falso y sabes por dónde se hizo la falsificación.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sabes quién la hizo"
+    },
+    {
+     "coste": "2",
+     "efecto": "puedes replicarla"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Lo que la pieza pide",
+   "meta": "R3 · pasiva más gasto",
+   "rango": 3,
+   "grupo": "Oficio",
+   "cuerpo": "Al empezar un trabajo sabes qué necesita de verdad: el material correcto, el defecto de fábrica, o que no tiene arreglo. La DJ te lo dice antes de que gastes nada.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "el material que falta lo tienes, o sabes dónde está"
+    },
+    {
+     "coste": "2",
+     "efecto": "el trabajo revela algo de quien lo hizo o de quien lo usó"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Segunda opinión",
+   "meta": "R1 · gasto en tirada de erudición",
+   "rango": 1,
+   "grupo": "Oficio",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sabes si tu conclusión es firme o hay algo que no encaja"
+    },
+    {
+     "coste": "2",
+     "efecto": "sabes qué te falta por saber"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Etimología de las lenguas",
+   "meta": "R2 · acción de escena",
+   "rango": 2,
+   "grupo": "Oficio",
+   "cuerpo": "2d10 + Historia + Inteligencia contra 17. Ante una lengua que no hablas, sacas el sentido general por parentesco. No conversas: entiendes de qué va.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "distingues de qué región es quien lo escribió"
+    },
+    {
+     "coste": "2",
+     "efecto": "entiendes lo suficiente como para responder mal, pero responder"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "La fortuna es de los que arriesgan",
+   "meta": "R2 · acción libre, antes de tirar",
+   "rango": 2,
+   "grupo": "Argucias",
+   "cuerpo": "Subes 2 el nivel de tensión de esa tirada. En ella, cada Conflicto que salga te suma +3 al total, y sigue siendo un Conflicto: la DJ lo cobra igual, y más caro.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "si arriesgaste y saliste con éxito, ganas 1 de Confianza"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "Puñales en las sombras",
+   "meta": "R2 · acción de ataque · exige arma Discreta y Arrojadiza",
+   "rango": 2,
+   "grupo": "Argucias",
+   "cuerpo": "Lanzas hasta tres a objetivos distintos en banda 0-1. Una tirada, aplicada a cada uno por separado, a −3 por cada objetivo más allá del primero.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "uno de los impactados queda Vulnerable"
+    },
+    {
+     "coste": "2",
+     "efecto": "los lanzas sin que se vea de dónde"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "La letalidad de lo pequeño",
+   "meta": "R3 · pasiva más gasto con arma Discreta",
+   "rango": 3,
+   "grupo": "Argucias",
+   "cuerpo": "Tus armas Discretas cuentan como Afiladas.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "reduces el desvío del objetivo en 2 para ese golpe"
+    },
+    {
+     "coste": "2",
+     "efecto": "hieres directamente: tira mitigación contra la Letalidad base de tu arma, sin pasar por su fatiga"
+    }
+   ],
+   "invocable": false
+  },
+  {
+   "nombre": "No estaba allí",
+   "meta": "R1 · gasto al FALLAR una tirada de Sigilo o Engaño",
+   "rango": 1,
+   "grupo": "Argucias",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "te han visto, pero no a ti: no pueden describirte ni reconocerte"
+    },
+    {
+     "coste": "2",
+     "efecto": "describen a otro, que eliges tú"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Manos de más",
+   "meta": "R2 · acción libre, una vez por escena",
+   "rango": 2,
+   "grupo": "Argucias",
+   "cuerpo": "Declaras que ya llevabas encima un objeto de banda Trivial o Barato, plausible para tu personaje. Lo tienes.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sube a banda Normal"
+    },
+    {
+     "coste": "1",
+     "efecto": "lo llevaba un aliado, no tú"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "La salida de atrás",
+   "meta": "R3 · acción de movimiento",
+   "rango": 3,
+   "grupo": "Argucias",
+   "cuerpo": "2d10 + Sigilo + Percepción contra 17, en un edificio o calle cerrada. Declaras una vía de salida que nadie había mencionado: existe, y sales por ella.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "sacas contigo a un aliado por punto"
+    },
+    {
+     "coste": "2",
+     "efecto": "la vía sigue abierta y solo tú la conoces"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "La mano ligera",
+   "meta": "R1 · gasto en tirada de Hurto",
+   "rango": 1,
+   "grupo": "Argucias",
+   "cuerpo": "",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "te llevas también algo pequeño que no buscabas"
+    },
+    {
+     "coste": "2",
+     "efecto": "dejas algo en su lugar, y tarda en notarse"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "El tercer juego de llaves",
+   "meta": "R1 · acción de escena",
+   "rango": 1,
+   "grupo": "Argucias",
+   "cuerpo": "2d10 + Hurto + Inteligencia contra 17. Una cerradura, un pestillo o un cierre cede. Sin herramientas, +3.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "queda como estaba: nadie sabrá que se abrió"
+    },
+    {
+     "coste": "2",
+     "efecto": "puedes volver a abrirlo cuando quieras"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Contarlo distinto",
+   "meta": "R2 · acción de escena",
+   "rango": 2,
+   "grupo": "Argucias",
+   "cuerpo": "2d10 + Engaño + Inteligencia contra la Defensa mental más alta de los presentes. Reordenas lo ocurrido en un relato plausible. Desmentirte exige un testigo o un documento.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "también se lo cree alguien que sí estuvo"
+    },
+    {
+     "coste": "2",
+     "efecto": "el relato culpa a alguien concreto"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Peso muerto",
+   "meta": "R2 · acción de maniobra",
+   "rango": 2,
+   "grupo": "Argucias",
+   "cuerpo": "2d10 + Aptitud física + Destreza contra 17. Dejas a alguien inconsciente sin matarlo ni hacer ruido, si no te ha visto o está Vulnerable.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "no despierta hasta el final de la escena"
+    },
+    {
+     "coste": "2",
+     "efecto": "cuando despierte no recordará el último minuto"
+    }
+   ],
+   "invocable": true
+  },
+  {
+   "nombre": "Las paredes oyen",
+   "meta": "R3 · acción de escena",
+   "rango": 3,
+   "grupo": "Argucias",
+   "cuerpo": "2d10 + Sigilo + Percepción contra 17. Escuchas una conversación que ocurre en otra parte del edificio, si hay una vía plausible.",
+   "gastos": [
+    {
+     "coste": "1",
+     "efecto": "también ves"
+    },
+    {
+     "coste": "2",
+     "efecto": "puedes hacer un ruido allí sin estar"
+    }
+   ],
+   "invocable": true
+  }
+ ],
+ "referencia": [
+  {
+   "t": "La tirada",
+   "filas": [
+    [
+     "Base",
+     "2d10 + habilidad + atributo contra una CD. Media 11."
+    ],
+    [
+     "Escalera de CD",
+     "11 rutinario · 14 difícil · 17 exigente · 20 heroico"
+    ],
+    [
+     "Margen",
+     "diferencia sobre la CD. En ataque, +1 al daño por cada 3 completos."
+    ],
+    [
+     "Dobles",
+     "doble 0 = Oportunidad especial · doble 1 = Conflicto especial"
+    ]
+   ]
+  },
+  {
+   "t": "Tensión",
+   "filas": [
+    [
+     "Los d6 no suman",
+     "dicen qué pasa alrededor. 2 caras Oportunidad, 2 neutras, 2 Conflicto."
+    ],
+    [
+     "Niveles",
+     "0 / 1 / 2 / 3 dados. Mínimo 1 en combate."
+    ],
+    [
+     "Cancelar un Conflicto",
+     "1 Oportunidad + 1 Confianza · o 2 Confianza · o 2 Oportunidades"
+    ],
+    [
+     "Los cinco carriles",
+     "Vínculo · Recurso · Tiempo · Discreción · Condición"
+    ]
+   ]
+  },
+  {
+   "t": "Gastar 1 Oportunidad",
+   "filas": [
+    [
+     "+3",
+     "a tu SIGUIENTE tirada, nunca a la que la generó"
+    ],
+    [
+     "Lectura",
+     "preguntas algo del entorno o del rival y la DJ responde"
+    ],
+    [
+     "Talento",
+     "activas la propiedad de un talento que tengas"
+    ],
+    [
+     "En combate",
+     "dejar Vulnerable · dañar arma o armadura · Lectura de combate"
+    ]
+   ]
+  },
+  {
+   "t": "Confianza · 1 + Determinación",
+   "filas": [
+    [
+     "Se recarga",
+     "1 por partida · al actuar contra lo óptimo por coherencia · cuando la DJ activa tu defecto y aceptas"
+    ],
+    [
+     "1",
+     "detalle verdadero de la escena · repetir un d6 · relanzar 1d10 por tu virtud (eliges dado) · negarte al defecto"
+    ],
+    [
+     "2",
+     "anular un Conflicto sin Oportunidad"
+    ],
+    [
+     "Nunca",
+     "da bonificador numérico"
+    ]
+   ]
+  },
+  {
+   "t": "Actitudes de combate",
+   "filas": [
+    [
+     "Móvil",
+     "sin modificadores · mitiga con Destreza · actúa primero · esquiva el contragolpe atacando a −2"
+    ],
+    [
+     "Beligerante",
+     "+3 ataque, −2 Defensa · mitiga con Vigor · el resto de acciones solo con aproximaciones de Vigor"
+    ],
+    [
+     "Defensiva",
+     "+3 Defensa · mitiga con Percepción · contragolpe a −1 · puede atacar a −2 si nadie la atacó"
+    ],
+    [
+     "Se declara",
+     "al FINAL de tu turno, a ciegas, y vale hasta el final del siguiente"
+    ],
+    [
+     "Iniciativa",
+     "Móvil → Beligerante → Defensiva. No se tira. Los empates los gana el jugador."
+    ]
+   ]
+  },
+  {
+   "t": "El golpe, paso a paso",
+   "filas": [
+    [
+     "1 · Tirada",
+     "2d10 + Armas + atributo contra su Defensa (11 + Lucha + Destreza + actitud)"
+    ],
+    [
+     "2 · Margen",
+     "+1 al daño por cada 3 puntos completos por encima"
+    ],
+    [
+     "3 · Daño efectivo",
+     "(daño del arma + margen) − su Desvío. Mínimo 0"
+    ],
+    [
+     "4 · Fatiga",
+     "el daño efectivo se le consume de la reserva"
+    ],
+    [
+     "5 · Desbordamiento",
+     "lo que la fatiga no absorbe: Letalidad +1 por cada punto"
+    ],
+    [
+     "6 · Mitigación",
+     "2d10 + Aptitud física + atributo de su actitud contra 15. Lo que falte es la Gravedad."
+    ]
+   ]
+  },
+  {
+   "t": "Heridas · cinco niveles",
+   "filas": [
+    [
+     "Roce (1 o menos)",
+     "no hiere. Si llevaba armadura, queda Dañada."
+    ],
+    [
+     "Leve (2-3)",
+     "−1"
+    ],
+    [
+     "Grave (4-5)",
+     "−3"
+    ],
+    [
+     "Muy grave (6-8)",
+     "cicatriz: tira en la tabla de su tipo de daño, más Hemorragia"
+    ],
+    [
+     "Agonizante (9 o más)",
+     "Hemorragia y Moribundo, con ventana para recuperarte en combate"
+    ],
+    [
+     "Acumulación",
+     "cada herida se anota aparte. La nueva suma la Gravedad acumulada. Penalizadores de herida se sustituyen; los de mutilación se acumulan."
+    ]
+   ]
+  },
+  {
+   "t": "Escenas sociales",
+   "filas": [
+    [
+     "Defensa mental",
+     "11 + Inteligencia + Perspicacia. Se tira contra ella para engañar, mentir, leer u ocultarse. Convencer no."
+    ],
+    [
+     "Tolerancia",
+     "los fallos que aguanta. Base 3, de 1 a 5. Se anuncia antes de la primera tirada."
+    ],
+    [
+     "Éxito",
+     "1 al contador, 2 con margen de 6. Fallo: 1 al reloj, 2 fallando por 6."
+    ],
+    [
+     "Fin",
+     "al alcanzar el paso buscado o al llegar la Tolerancia a cero. En ambos casos se hace la petición."
+    ],
+    [
+     "Leer",
+     "con Perspicacia revela disposición, Tolerancia, Interés y conducta. Cuesta el turno, no da éxitos."
+    ]
+   ]
+  },
+  {
+   "t": "Dinero · bandas",
+   "filas": [
+    [
+     "Trivial",
+     "hasta 50 — ropa de faena, útiles de escritura, un cuchillo, raciones"
+    ],
+    [
+     "Barato",
+     "50 – 400 — cuero endurecido, arco corto, herramientas, una mula"
+    ],
+    [
+     "Normal",
+     "400 – 3.000 — brigantina, espada corta, un caballo, instrumental médico"
+    ],
+    [
+     "Caro",
+     "3.000 – 10.000 — cota de malla, coraza, espada larga de buena factura"
+    ],
+    [
+     "Muy caro",
+     "más de 10.000 — placa completa, vinculacaña emparejada"
+    ],
+    [
+     "Bolsa inicial",
+     "alta 10.000 · media 3.000 · baja 400"
+    ]
+   ]
+  }
+ ],
+ "pnjs": [
+  {
+   "id": "pnj-ejemplo",
+   "nombre": "Ejemplo — bórralo",
+   "escalon": "Adversario",
+   "conducta": "Artero",
+   "faccion": "",
+   "descripcion": "Sustituye esta ficha por tus PNJ. Los jugadores solo pueden leerla; sus notas se guardan en su propio Drive.",
+   "publico": "Lo que los jugadores saben.",
+   "privado": "Solo la DJ ve este campo."
+  }
+ ],
+ "partidas": [
+  {
+   "id": "s0",
+   "titulo": "Sesión 0 — ejemplo",
+   "fecha": "",
+   "resumen": "Edita cosmere_datos.json para añadir sesiones.",
+   "ganchos": []
+  }
+ ]
+}
