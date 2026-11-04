@@ -2,12 +2,11 @@
 <html lang="es"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sistema Cosmere</title>
+<title>SETTE</title>
 <style>*{box-sizing:border-box}html,body{margin:0;padding:0}
 body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#0b1017;color:#dde5f0}
 button{font:inherit;background:none;border:none;color:inherit;padding:0}
-input,select,textarea{font:inherit}
-textarea{resize:vertical}
+input,select,textarea{font:inherit}textarea{resize:vertical}
 select{appearance:auto;-webkit-appearance:auto}
 ::placeholder{color:#63748c}
 input[type=checkbox]{width:15px;height:15px;accent-color:#6f9ff0}</style>
@@ -320,11 +319,13 @@ const {
   useMemo,
   useRef
 } = React;
-const DATOS_URL = "./cosmere_datos.json";
-const NOMBRE_ARCHIVO = "cosmere_personajes.json";
+const URL_ESC = "./sette_escuelas.json";
+const URL_TAL = "./sette_talentos.json";
+const URL_REG = "./sette_reglas.json";
+const ARCHIVO = "sette_datos.json";
 const SCOPE = "https://www.googleapis.com/auth/drive.file";
-const LS_CLIENT = "cosmere_client_id";
-const LS_CACHE = "cosmere_cache_local";
+const LS_CLIENT = "sette_client_id";
+const LS_CACHE = "sette_cache";
 const C = {
   bg: "#0b1017",
   panel: "#131b28",
@@ -351,80 +352,45 @@ const GRUPOS = {
   "Oficio": ["Artesanía", "Comercio", "Navegación", "Escritura y archivo", "Arte"],
   "Campo": ["Sigilo", "Hurto", "Vigilancia", "Supervivencia", "Trato con animales"]
 };
-const HABS = Object.values(GRUPOS).flat();
-const HERIDAS = [["Roce", "1 o menos", "no hiere; la armadura queda Dañada"], ["Leve", "2–3", "−1"], ["Grave", "4–5", "−3"], ["Muy grave", "6–8", "cicatriz + Hemorragia"], ["Agonizante", "9 o más", "Hemorragia y Moribundo"]];
-const clonar = o => typeof structuredClone === "function" ? structuredClone(o) : JSON.parse(JSON.stringify(o));
+const UMBRAL = {
+  1: 24,
+  2: 32,
+  3: 44
+};
+const PAREJAS = ["hierro y acero", "estaño y peltre", "cinc y latón", "cobre y bronce", "cadmio y bendaleo", "oro y electro", "cromo y nicrosil", "aluminio y duraluminio"];
+const TIT_ALO = ["Atraedor (hierro)", "Lanzamonedas (acero)", "Ojo de estaño", "Brazo de peltre", "Encendedor (cinc)", "Aplacador (latón)", "Ahumador (cobre)", "Buscador (bronce)", "Pulsador (cadmio)", "Deslizador (bendaleo)", "Augur (oro)", "Oráculo (electro)", "Sanguijuela (cromo)", "Nicroestallante", "Mosquito de aluminio", "Mosquito de duraluminio"];
+const TIT_FER = ["Ajustador (hierro)", "Mensajero de acero", "Susurravientos (estaño)", "Bruto (peltre)", "Chispeante (cinc)", "Alma de fuego (latón)", "Archivero (cobre)", "Centinela (bronce)", "Resollante (cadmio)", "Incorporador (bendaleo)", "Hacedor de sangre (oro)", "Pináculo (electro)", "Hilador (cromo)", "Portaalmas (nicrosil)", "Genuino (aluminio)", "Conector (duraluminio)"];
+const BOLSA = {
+  "Era 1": {
+    alta: 250,
+    media: 75,
+    baja: 10
+  },
+  "Era 2": {
+    alta: 2500,
+    media: 750,
+    baja: 100
+  }
+};
+const HER = [[1, "Roce", "no hiere; la armadura queda Dañada"], [3, "Leve", "−1"], [5, "Grave", "−3"], [8, "Muy grave", "−3, Hemorragia y mutilación"], [99, "Agonizante", "−3, Hemorragia, mutilación y Moribundo"]];
 const uid = () => crypto.randomUUID ? crypto.randomUUID() : "id" + Date.now() + Math.random();
-const norm = s => (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const clonar = o => typeof structuredClone === "function" ? structuredClone(o) : JSON.parse(JSON.stringify(o));
+const norm = s => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+const nivelHerida = g => HER.find(h => g <= h[0]) || HER[4];
 
-/* ═════════ modelo ═════════ */
-const nuevoPJ = () => ({
-  id: uid(),
-  mod: Date.now(),
-  nombre: "",
-  jugador: "",
-  escuela: "",
-  rango: 1,
-  atr: Object.fromEntries(ATRS.map(([k]) => [k, 1])),
-  hab: {},
-  talentos: [],
-  pericias: [],
-  virtud: "",
-  defecto: "",
-  meta: "",
-  obstaculo: "",
-  chips: 0,
-  armadura: {
-    desc: "",
-    desvio: 0,
-    danada: false
-  },
-  armas: [],
-  objetos: "",
-  heridas: [],
-  estado: {
-    fatiga: null,
-    confianza: null,
-    actitud: "",
-    virtudUsada: false,
-    defectoUsado: false
-  },
-  notas: ""
-});
-function calc(pj) {
-  const a = pj.atr,
-    h = pj.hab;
-  const g = k => Number(a[k]) || 0,
-    s = k => Number(h[k]) || 0;
-  const acum = pj.heridas.reduce((t, w) => t + (Number(w.gravedad) || 0), 0);
-  const peor = pj.heridas.reduce((m, w) => Math.max(m, Number(w.gravedad) || 0), 0);
-  const penal = peor <= 1 ? 0 : peor <= 3 ? -1 : peor <= 5 ? -3 : peor <= 8 ? -3 : -3;
-  return {
-    fatiga: (g("vigor") + g("determinacion")) * 2,
-    confianza: 1 + g("determinacion"),
-    defensa: 11 + s("Lucha") + g("destreza"),
-    mental: 11 + g("inteligencia") + s("Perspicacia"),
-    techo: g("determinacion") + 2,
-    acum,
-    peor,
-    penal,
-    nivel: peor <= 0 ? "Ileso" : peor <= 1 ? "Roce" : peor <= 3 ? "Leve" : peor <= 5 ? "Grave" : peor <= 8 ? "Muy grave" : "Agonizante"
-  };
-}
-
-/* ═════════ Drive ═════════ */
-const API = "https://www.googleapis.com/drive/v3";
-const UP = "https://www.googleapis.com/upload/drive/v3";
+/* ═══════ Drive ═══════ */
+const API = "https://www.googleapis.com/drive/v3",
+  UP = "https://www.googleapis.com/upload/drive/v3";
 function crearDrive() {
   let token = null,
-    expira = 0,
-    cliente = null;
-  const vivo = () => token && Date.now() < expira - 60000;
+    exp = 0,
+    cli = null;
+  const vivo = () => token && Date.now() < exp - 60000;
   return {
     get conectado() {
       return vivo();
     },
-    async init(clientId) {
+    async init(id) {
       await new Promise((res, rej) => {
         if (window.google && google.accounts) return res();
         const s = document.createElement("script");
@@ -433,22 +399,22 @@ function crearDrive() {
         s.onerror = () => rej(new Error("No se pudo cargar el script de Google."));
         document.head.appendChild(s);
       });
-      cliente = google.accounts.oauth2.initTokenClient({
-        client_id: clientId,
+      cli = google.accounts.oauth2.initTokenClient({
+        client_id: id,
         scope: SCOPE,
         callback: () => {}
       });
     },
     entrar(prompt) {
       return new Promise((res, rej) => {
-        if (!cliente) return rej(new Error("Falta configurar el Client ID."));
-        cliente.callback = r => {
+        if (!cli) return rej(new Error("Falta el Client ID."));
+        cli.callback = r => {
           if (r.error) return rej(new Error(r.error_description || r.error));
           token = r.access_token;
-          expira = Date.now() + (r.expires_in || 3600) * 1000;
+          exp = Date.now() + (r.expires_in || 3600) * 1000;
           res(true);
         };
-        cliente.requestAccessToken({
+        cli.requestAccessToken({
           prompt: prompt === undefined ? "" : prompt
         });
       });
@@ -456,41 +422,39 @@ function crearDrive() {
     salir() {
       if (token) google.accounts.oauth2.revoke(token, () => {});
       token = null;
-      expira = 0;
+      exp = 0;
     },
-    async fetch(url, opts = {}) {
+    async fetch(url, o = {}) {
       if (!vivo()) await this.entrar("");
       const r = await fetch(url, {
-        ...opts,
+        ...o,
         headers: {
-          ...(opts.headers || {}),
+          ...(o.headers || {}),
           Authorization: "Bearer " + token
         }
       });
       if (r.status === 401) {
         token = null;
         await this.entrar("");
-        return this.fetch(url, opts);
+        return this.fetch(url, o);
       }
-      if (!r.ok) throw new Error("Drive " + r.status + ": " + (await r.text()).slice(0, 200));
+      if (!r.ok) throw new Error("Drive " + r.status + ": " + (await r.text()).slice(0, 160));
       return r;
     },
     async localizar() {
-      const q = encodeURIComponent(`name='${NOMBRE_ARCHIVO}' and trashed=false`);
-      const r = await this.fetch(`${API}/files?q=${q}&spaces=drive&fields=files(id,modifiedTime)`);
-      const j = await r.json();
+      const q = encodeURIComponent(`name='${ARCHIVO}' and trashed=false`);
+      const j = await (await this.fetch(`${API}/files?q=${q}&spaces=drive&fields=files(id)`)).json();
       return j.files && j.files[0] ? j.files[0].id : null;
     },
     async leer(id) {
       return (await this.fetch(`${API}/files/${id}?alt=media`)).json();
     },
-    async crear(datos) {
-      const meta = {
-        name: NOMBRE_ARCHIVO,
+    async crear(d) {
+      const b = "-sette-" + Date.now();
+      const cuerpo = `--${b}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify({
+        name: ARCHIVO,
         mimeType: "application/json"
-      };
-      const b = "-cosmere-" + Date.now();
-      const cuerpo = `--${b}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify(meta)}\r\n` + `--${b}\r\nContent-Type: application/json\r\n\r\n${JSON.stringify(datos)}\r\n--${b}--`;
+      })}\r\n--${b}\r\nContent-Type: application/json\r\n\r\n${JSON.stringify(d)}\r\n--${b}--`;
       const r = await this.fetch(`${UP}/files?uploadType=multipart&fields=id`, {
         method: "POST",
         headers: {
@@ -500,20 +464,97 @@ function crearDrive() {
       });
       return (await r.json()).id;
     },
-    async guardar(id, datos) {
+    async guardar(id, d) {
       await this.fetch(`${UP}/files/${id}?uploadType=media`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify(datos)
+        body: JSON.stringify(d)
       });
     }
   };
 }
 const drive = crearDrive();
 
-/* ═════════ UI ═════════ */
+/* ═══════ modelo ═══════ */
+const nuevoPJ = () => ({
+  id: uid(),
+  mod: Date.now(),
+  nombre: "",
+  jugador: "",
+  era: "Era 2",
+  escuela: "",
+  rango: 1,
+  atr: Object.fromEntries(ATRS.map(([k]) => [k, 1])),
+  hab: {},
+  talentos: [],
+  pericias: [],
+  posicion: "media",
+  bolsa: null,
+  px: 0,
+  pxGastados: 0,
+  pxMeta: 0,
+  pxMetaGastados: 0,
+  contador: 0,
+  inv: {
+    arte: "",
+    metal: "",
+    titulo: "",
+    potencia: 0,
+    reserva: 5,
+    mentes: ""
+  },
+  rasgos: ["", "", ""],
+  meta: "",
+  tecnica: "",
+  armas: [],
+  armadura: {
+    desc: "",
+    desvio: 0,
+    danada: false
+  },
+  objetos: "",
+  heridas: [],
+  mutilaciones: [],
+  cicatrices: [],
+  estado: {
+    fatiga: null,
+    confianza: null,
+    actitud: "",
+    parapetado: false,
+    cicatrizUsada: false
+  },
+  notas: ""
+});
+function calc(pj) {
+  const g = k => Number(pj.atr[k]) || 0,
+    s = k => Number(pj.hab[k]) || 0;
+  const peor = pj.heridas.reduce((m, w) => Math.max(m, Number(w.g) || 0), 0);
+  const penalHerida = peor <= 1 ? 0 : peor <= 3 ? -1 : -3;
+  const penalMut = pj.mutilaciones.reduce((t, m) => t + (Number(m.pen) || 0), 0);
+  const actMod = pj.estado.actitud === "Beligerante" ? -2 : pj.estado.actitud === "Defensiva" ? 3 : 0;
+  const base = 11 + s("Lucha") + g("destreza");
+  return {
+    fatiga: (g("vigor") + g("determinacion")) * 2,
+    confianza: 1 + g("determinacion"),
+    defBase: base,
+    defensa: base + actMod + (pj.estado.parapetado ? 3 : 0),
+    mental: 11 + g("inteligencia") + s("Perspicacia"),
+    techo: g("determinacion") + 2,
+    acum: pj.heridas.reduce((t, w) => t + (Number(w.g) || 0), 0),
+    peor,
+    penal: penalHerida + penalMut,
+    penalHerida,
+    penalMut,
+    nivel: peor <= 0 ? "Ileso" : nivelHerida(peor)[1],
+    pxDisp: (Number(pj.px) || 0) - (Number(pj.pxGastados) || 0),
+    metaDisp: (Number(pj.pxMeta) || 0) - (Number(pj.pxMetaGastados) || 0),
+    umbral: UMBRAL[pj.rango] || 44
+  };
+}
+
+/* ═══════ UI ═══════ */
 const inp = {
   background: C.panel2,
   border: `1px solid ${C.line}`,
@@ -536,45 +577,55 @@ const btnP = {
   border: `1px solid ${C.sap}`,
   color: C.gem
 };
-function Caja({
+const Caja = ({
   children,
   style
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      background: C.panel,
-      border: `1px solid ${C.line}`,
-      borderRadius: 12,
-      padding: 14,
-      marginBottom: 12,
-      ...style
-    }
-  }, children);
-}
-function Tit({
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    background: C.panel,
+    border: `1px solid ${C.line}`,
+    borderRadius: 12,
+    padding: 14,
+    marginBottom: 12,
+    ...style
+  }
+}, children);
+const Tit = ({
   children,
   sub
-}) {
-  return /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginBottom: 8
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontFamily: SERIF,
-      fontSize: 14,
-      letterSpacing: ".1em",
-      textTransform: "uppercase",
-      color: C.gem
-    }
-  }, children), sub && /*#__PURE__*/React.createElement("div", {
-    style: {
-      color: C.faint,
-      fontSize: 11,
-      marginTop: 2
-    }
-  }, sub));
-}
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: 8
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    fontFamily: SERIF,
+    fontSize: 14,
+    letterSpacing: ".1em",
+    textTransform: "uppercase",
+    color: C.gem
+  }
+}, children), sub && /*#__PURE__*/React.createElement("div", {
+  style: {
+    color: C.faint,
+    fontSize: 11,
+    marginTop: 2
+  }
+}, sub));
+const Campo = ({
+  l,
+  children
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: 8
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    color: C.faint,
+    fontSize: 11,
+    marginBottom: 3
+  }
+}, l), children);
 function Plegable({
   t,
   meta,
@@ -653,7 +704,7 @@ function Paso({
   }, "−"), /*#__PURE__*/React.createElement("span", {
     style: {
       ...NUM,
-      width: 18,
+      width: 20,
       textAlign: "center"
     }
   }, v), /*#__PURE__*/React.createElement("button", {
@@ -674,7 +725,7 @@ function Gemas({
       gap: 5
     }
   }, Array.from({
-    length: Math.max(0, max)
+    length: Math.max(0, Math.min(max, 40))
   }).map((_, i) => {
     const on = i < val;
     return /*#__PURE__*/React.createElement("button", {
@@ -691,60 +742,86 @@ function Gemas({
     });
   }));
 }
-function Tabla({
+const Tabla = ({
   filas
-}) {
-  return /*#__PURE__*/React.createElement("div", null, filas.map(([k, v], i) => /*#__PURE__*/React.createElement("div", {
-    key: i,
-    style: {
-      display: "flex",
-      gap: 10,
-      padding: "5px 0",
-      borderBottom: `1px solid ${C.line}55`
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 130,
-      flexShrink: 0,
-      color: C.gem,
-      fontSize: 12.5
-    }
-  }, k), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 13,
-      color: C.mut
-    }
-  }, v))));
-}
+}) => /*#__PURE__*/React.createElement("div", null, filas.map(([k, v], i) => /*#__PURE__*/React.createElement("div", {
+  key: i,
+  style: {
+    display: "flex",
+    gap: 10,
+    padding: "5px 0",
+    borderBottom: `1px solid ${C.line}55`
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    width: 138,
+    flexShrink: 0,
+    color: C.gem,
+    fontSize: 12.5
+  }
+}, k), /*#__PURE__*/React.createElement("div", {
+  style: {
+    fontSize: 13,
+    color: C.mut
+  }
+}, v))));
+const chip = (activo, onClick, txt) => /*#__PURE__*/React.createElement("button", {
+  key: txt,
+  onClick: onClick,
+  style: {
+    borderRadius: 999,
+    padding: "5px 11px",
+    fontSize: 12,
+    cursor: "pointer",
+    marginRight: 6,
+    marginBottom: 6,
+    border: `1px solid ${activo ? C.sap : C.line}`,
+    background: activo ? "#1b2a47" : C.panel2,
+    color: activo ? C.gem : C.mut
+  }
+}, txt);
+const FilasRango = ({
+  e,
+  rango
+}) => /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginTop: 6
+  }
+}, (e.filas || []).map((f, i) => /*#__PURE__*/React.createElement("div", {
+  key: i,
+  style: {
+    padding: "7px 9px",
+    marginBottom: 5,
+    borderRadius: 8,
+    border: `1px solid ${rango === i + 1 ? C.sap : C.line}`,
+    background: rango === i + 1 ? "#16213a" : C.panel2
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    color: rango === i + 1 ? C.gem : C.faint,
+    fontSize: 11,
+    marginBottom: 3
+  }
+}, f.r, rango === i + 1 ? " · fila vigente" : ""), /*#__PURE__*/React.createElement(Tabla, {
+  filas: [["Grupo abierto", f.grupo], ["Nombradas", (f.nombradas || []).join(" · ")], ["Talento libre", f.libre], ["Adelantado", f.adel], ["Acceso", f.acc]]
+}))));
 
-/* ═════════ Reglas ═════════ */
+/* ═══════ Reglas ═══════ */
 function Reglas({
-  datos
+  esc,
+  tal,
+  reg
 }) {
   const [sub, setSub] = useState("escuelas");
   const [q, setQ] = useState("");
-  const [terr, setTerr] = useState("");
-  const [grupo, setGrupo] = useState("");
+  const [mundo, setMundo] = useState("");
+  const [etq, setEtq] = useState("");
+  const [fam, setFam] = useState("");
   const [rango, setRango] = useState("");
   const nq = norm(q);
-  const territorios = useMemo(() => [...new Set(datos.escuelas.map(e => e.territorio))].sort(), [datos]);
-  const escuelas = datos.escuelas.filter(e => (!terr || e.territorio === terr) && (!nq || norm(e.nombre + e.enc + e.cur + e.cap + e.tec + e.territorio).includes(nq)));
-  const talentos = datos.talentos.filter(t => (!grupo || t.grupo === grupo) && (!rango || t.rango === Number(rango)) && (!nq || norm(t.nombre + t.meta + t.cuerpo + t.gastos.map(x => x.efecto).join(" ")).includes(nq)));
-  const chip = (activo, onClick, txt) => /*#__PURE__*/React.createElement("button", {
-    key: txt,
-    onClick: onClick,
-    style: {
-      borderRadius: 999,
-      padding: "5px 11px",
-      fontSize: 12,
-      cursor: "pointer",
-      marginRight: 6,
-      marginBottom: 6,
-      border: `1px solid ${activo ? C.sap : C.line}`,
-      background: activo ? "#1b2a47" : C.panel2,
-      color: activo ? C.gem : C.mut
-    }
-  }, txt);
+  const etiquetas = useMemo(() => [...new Set(esc.filter(e => !mundo || e.mundo === mundo).map(e => e.etq))].sort(), [esc, mundo]);
+  const escuelas = esc.filter(e => (!mundo || e.mundo === mundo) && (!etq || e.etq === etq) && (!nq || norm(e.nombre + e.enc + e.cur + e.cap + e.tec + e.etq + (e.era || "")).includes(nq)));
+  const talentos = tal.filter(t => (!fam || t.fam === fam) && (!rango || t.r === Number(rango)) && (!mundo || (t.mundos || []).includes(mundo)) && (!nq || norm(t.n + (t.cuerpo || "") + (t.eje || "")).includes(nq)));
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
     value: q,
     onChange: e => setQ(e.target.value),
@@ -755,10 +832,21 @@ function Reglas({
     }
   }), /*#__PURE__*/React.createElement("div", {
     style: {
+      marginBottom: 8
+    }
+  }, chip(!mundo, () => {
+    setMundo("");
+    setEtq("");
+  }, "Los dos mundos"), ["Roshar", "Scadrial"].map(m => chip(mundo === m, () => {
+    setMundo(mundo === m ? "" : m);
+    setEtq("");
+  }, m))), /*#__PURE__*/React.createElement("div", {
+    style: {
       display: "flex",
       gap: 4,
       marginBottom: 12,
-      borderBottom: `1px solid ${C.line}`
+      borderBottom: `1px solid ${C.line}`,
+      flexWrap: "wrap"
     }
   }, [["escuelas", `Escuelas ${escuelas.length}`], ["talentos", `Talentos ${talentos.length}`], ["ref", "Referencia"]].map(([k, l]) => /*#__PURE__*/React.createElement("button", {
     key: k,
@@ -775,10 +863,10 @@ function Reglas({
     style: {
       marginBottom: 8
     }
-  }, chip(!terr, () => setTerr(""), "Todas"), territorios.map(t => chip(terr === t, () => setTerr(terr === t ? "" : t), t))), escuelas.map(e => /*#__PURE__*/React.createElement(Plegable, {
-    key: e.n,
-    t: e.nombre,
-    meta: `${e.territorio} · ${e.atr} · ${e.cre || ""}`
+  }, chip(!etq, () => setEtq(""), "Todas"), etiquetas.map(t => chip(etq === t, () => setEtq(etq === t ? "" : t), t))), escuelas.map(e => /*#__PURE__*/React.createElement(Plegable, {
+    key: e.mundo + e.n,
+    t: `${e.n} · ${e.nombre}`,
+    meta: `${e.mundo}${e.era ? " · " + e.era : ""} · ${e.etq} · ${e.atr}`
   }, /*#__PURE__*/React.createElement("p", {
     style: {
       color: C.mut,
@@ -787,27 +875,41 @@ function Reglas({
       marginBottom: 8
     }
   }, e.enc), /*#__PURE__*/React.createElement(Tabla, {
-    filas: [["Currículo", e.cur], ["Estatus", e.est], ["Capacidad", e.cap], ["Técnica ◈", e.tec], ["Equipo", e.eq], ["Título (R4)", `${e.titN || "—"} — ${e.titT || ""}`]]
+    filas: [["Currículo", e.cur], ["Composición", e.cre], ["Estatus", e.est], ["Capacidad", e.cap], ["Técnica ◈", e.tec], ["Equipo", e.eq], ["Título (R4)", `${e.titN || "—"} — ${e.titT || ""}`]]
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.gem,
+      fontSize: 12,
+      marginTop: 10
+    }
+  }, "Programa de rangos"), /*#__PURE__*/React.createElement(FilasRango, {
+    e: e
   })))), sub === "talentos" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       marginBottom: 8
     }
-  }, chip(!grupo, () => setGrupo(""), "Todos"), ["Marcial", "Social", "Oficio", "Argucias"].map(g => chip(grupo === g, () => setGrupo(grupo === g ? "" : g), g)), /*#__PURE__*/React.createElement("span", {
+  }, chip(!fam, () => setFam(""), "Todas"), ["Marcial", "Social", "Erudición", "Oficio", "Campo", "Investidura"].map(f => chip(fam === f, () => setFam(fam === f ? "" : f), f)), /*#__PURE__*/React.createElement("span", {
     style: {
       display: "inline-block",
       width: 10
     }
-  }), [1, 2, 3].map(r => chip(rango === String(r), () => setRango(rango === String(r) ? "" : String(r)), "R" + r))), talentos.map((t, i) => /*#__PURE__*/React.createElement(Plegable, {
+  }), [1, 2, 3, 4].map(r => chip(rango === String(r), () => setRango(rango === String(r) ? "" : String(r)), "R" + r))), talentos.map((t, i) => /*#__PURE__*/React.createElement(Plegable, {
     key: i,
-    t: t.nombre + (t.invocable ? "  ▲" : ""),
-    meta: t.meta
-  }, t.cuerpo && /*#__PURE__*/React.createElement("p", {
+    t: t.n,
+    meta: `${t.fam} · R${t.r}${t.eje ? " · " + t.eje : ""}${t.nat ? " · " + t.nat : ""}${t.era ? " · solo Era " + t.era : ""}${t.capa === "roshar" ? " · solo Roshar" : ""}`
+  }, t.cuerpo ? /*#__PURE__*/React.createElement("p", {
     style: {
       color: C.mut,
       fontSize: 13,
       marginBottom: 8
     }
-  }, t.cuerpo), t.gastos.map((g, j) => /*#__PURE__*/React.createElement("div", {
+  }, t.cuerpo) : /*#__PURE__*/React.createElement("p", {
+    style: {
+      color: C.warn,
+      fontSize: 12,
+      marginBottom: 8
+    }
+  }, "Sin texto: este talento solo existe como nombre en el catálogo de Roshar."), (t.opps || []).map((o, j) => /*#__PURE__*/React.createElement("div", {
     key: j,
     style: {
       display: "flex",
@@ -820,36 +922,61 @@ function Reglas({
       fontSize: 12,
       flexShrink: 0
     }
-  }, "◈ ", g.coste), /*#__PURE__*/React.createElement("span", {
+  }, "◈ ", o[0]), /*#__PURE__*/React.createElement("span", {
     style: {
       color: C.mut,
       fontSize: 13
     }
-  }, g.efecto)))))), sub === "ref" && datos.referencia.map((r, i) => /*#__PURE__*/React.createElement(Caja, {
+  }, o[1]))), t.nota && /*#__PURE__*/React.createElement("p", {
+    style: {
+      color: C.faint,
+      fontSize: 11,
+      marginTop: 8,
+      fontStyle: "italic"
+    }
+  }, t.nota)))), sub === "ref" && (reg.bloques || []).map((b, i) => /*#__PURE__*/React.createElement(Caja, {
     key: i
-  }, /*#__PURE__*/React.createElement(Tit, null, r.t), /*#__PURE__*/React.createElement(Tabla, {
-    filas: r.filas
+  }, /*#__PURE__*/React.createElement(Tit, null, b.t), /*#__PURE__*/React.createElement(Tabla, {
+    filas: b.filas
   }))));
 }
 
-/* ═════════ Personaje ═════════ */
+/* ═══════ Personaje ═══════ */
 function Personaje({
   pj,
   set,
-  datos,
+  esc,
+  tal,
   volver
 }) {
   const d = calc(pj);
-  const esc = datos.escuelas.find(e => e.nombre === pj.escuela);
+  const escuela = esc.find(e => e.mundo === "Scadrial" && e.nombre === pj.escuela);
+  const cur = escuela ? escuela.cur.split(",").map(s => s.trim()) : [];
+  const fila = escuela && escuela.filas ? escuela.filas[Math.min(pj.rango, 3) - 1] : null;
+  const eraN = pj.era === "Era 1" ? 1 : 2;
   const fat = pj.estado.fatiga == null ? d.fatiga : Math.min(pj.estado.fatiga, d.fatiga);
   const conf = pj.estado.confianza == null ? d.confianza : Math.min(pj.estado.confianza, d.confianza);
   const [buscaTal, setBuscaTal] = useState("");
+  const disponibles = tal.filter(t => (t.mundos || []).includes("Scadrial") && (!t.era || t.era === eraN));
+  const enFila = t => {
+    if (!fila) return false;
+    if (fila.adel && fila.adel.startsWith(t.n)) return true;
+    if (fila.acc && fila.acc.startsWith(t.n)) return true;
+    const tipos = (escuela.cre.split("tipos de talento:")[1] || "").split(",").map(s => s.trim());
+    return tipos.includes(t.fam) && t.r <= pj.rango;
+  };
   const avisos = [];
   ATRS.forEach(([k, l]) => {
     if (k !== "determinacion" && pj.atr[k] > d.techo) avisos.push(`${l} ${pj.atr[k]} pasa del techo Det+2 = ${d.techo}.`);
     if (pj.atr[k] > 5) avisos.push(`${l} ${pj.atr[k]} pasa del tope humano 5.`);
   });
-  const sumaAtr = ATRS.reduce((t, [k]) => t + (Number(pj.atr[k]) || 0), 0);
+  Object.entries(pj.hab).forEach(([h, v]) => {
+    if (v > 5) avisos.push(`${h} ${v} pasa del máximo humano 5.`);
+  });
+  if (pj.contador >= d.umbral) avisos.push(`Contador ${pj.contador}/${d.umbral}: puedes subir a rango ${pj.rango + 1}.`);
+  if (d.pxDisp < 0) avisos.push("PX en negativo.");
+  if (d.metaDisp < 0) avisos.push("PX de meta en negativo.");
+  const bolsa = pj.bolsa == null ? (BOLSA[pj.era] || BOLSA["Era 2"])[pj.posicion] : pj.bolsa;
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
     onClick: volver,
     style: {
@@ -903,7 +1030,13 @@ function Personaje({
       textTransform: "uppercase",
       letterSpacing: ".06em"
     }
-  }, l)))), avisos.length > 0 && /*#__PURE__*/React.createElement(Caja, {
+  }, l)))), d.penal !== 0 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.bad,
+      fontSize: 12,
+      marginBottom: 10
+    }
+  }, "Penalizador actual ", d.penal, " (herida ", d.penalHerida, d.penalMut ? `, mutilación ${d.penalMut}` : "", ") · nivel: ", d.nivel), avisos.length > 0 && /*#__PURE__*/React.createElement(Caja, {
     style: {
       background: "#2a2110",
       borderColor: C.warn + "55"
@@ -915,35 +1048,19 @@ function Personaje({
       fontSize: 12
     }
   }, "· ", a))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: `Actitud: ${pj.estado.actitud || "sin declarar"} · herida peor: ${d.nivel}${d.penal ? ` (${d.penal})` : ""} · acumulada ${d.acum}`
-  }, "En juego"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginBottom: 8
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      color: C.faint,
-      fontSize: 11,
-      marginBottom: 4
-    }
-  }, "Fatiga ", fat, "/", d.fatiga), /*#__PURE__*/React.createElement(Gemas, {
+    sub: `Defensa base ${d.defBase} · actitud: ${pj.estado.actitud || "sin declarar"}`
+  }, "En juego"), /*#__PURE__*/React.createElement(Campo, {
+    l: `Fatiga ${fat}/${d.fatiga}`
+  }, /*#__PURE__*/React.createElement(Gemas, {
     max: d.fatiga,
     val: fat,
     color: "#8fd6ff",
     set: v => set(c => {
       c.estado.fatiga = v;
     })
-  })), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginBottom: 10
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      color: C.faint,
-      fontSize: 11,
-      marginBottom: 4
-    }
-  }, "Confianza ", conf, "/", d.confianza), /*#__PURE__*/React.createElement(Gemas, {
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: `Confianza ${conf}/${d.confianza}`
+  }, /*#__PURE__*/React.createElement(Gemas, {
     max: d.confianza,
     val: conf,
     color: "#7de0a8",
@@ -971,30 +1088,31 @@ function Personaje({
     }
   }, a)), /*#__PURE__*/React.createElement("button", {
     onClick: () => set(c => {
-      c.estado.virtudUsada = !c.estado.virtudUsada;
+      c.estado.parapetado = !c.estado.parapetado;
     }),
     style: {
       ...btn,
       padding: "5px 11px",
       fontSize: 12,
-      color: pj.estado.virtudUsada ? C.warn : C.mut
+      color: pj.estado.parapetado ? C.gem : C.mut,
+      borderColor: pj.estado.parapetado ? C.sap : C.line
     }
-  }, "Virtud ", pj.estado.virtudUsada ? "usada" : "libre"), /*#__PURE__*/React.createElement("button", {
+  }, "Parapetado"), /*#__PURE__*/React.createElement("button", {
     onClick: () => set(c => {
-      c.estado.defectoUsado = !c.estado.defectoUsado;
+      c.estado.cicatrizUsada = !c.estado.cicatrizUsada;
     }),
     style: {
       ...btn,
       padding: "5px 11px",
       fontSize: 12,
-      color: pj.estado.defectoUsado ? C.warn : C.mut
+      color: pj.estado.cicatrizUsada ? C.warn : C.mut
     }
-  }, "Defecto ", pj.estado.defectoUsado ? "usado" : "libre"), /*#__PURE__*/React.createElement("button", {
+  }, "Cicatriz: ", pj.estado.cicatrizUsada ? "la gratis, gastada" : "1ª gratis"), /*#__PURE__*/React.createElement("button", {
     onClick: () => set(c => {
       c.estado.fatiga = null;
       c.estado.confianza = null;
-      c.estado.virtudUsada = false;
-      c.estado.defectoUsado = false;
+      c.estado.cicatrizUsada = false;
+      c.estado.parapetado = false;
     }),
     style: {
       ...btn,
@@ -1007,7 +1125,7 @@ function Personaje({
       fontSize: 11,
       marginBottom: 6
     }
-  }, "Heridas — cada una aparte; la nueva suma la Gravedad acumulada"), pj.heridas.map((w, i) => /*#__PURE__*/React.createElement("div", {
+  }, "Heridas — cada una con su Gravedad; acumulada ", d.acum, ". El penalizador NO se suma: cuenta la peor."), pj.heridas.map((w, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       display: "flex",
@@ -1016,15 +1134,22 @@ function Personaje({
       marginBottom: 6
     }
   }, /*#__PURE__*/React.createElement(Paso, {
-    v: w.gravedad,
-    max: 14,
+    v: w.g,
+    max: 20,
     set: v => set(c => {
-      c.heridas[i].gravedad = v;
+      c.heridas[i].g = v;
     })
-  }), /*#__PURE__*/React.createElement("input", {
-    value: w.desc,
+  }), /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 11,
+      color: C.faint,
+      width: 74,
+      flexShrink: 0
+    }
+  }, nivelHerida(w.g)[1]), /*#__PURE__*/React.createElement("input", {
+    value: w.d,
     onChange: e => set(c => {
-      c.heridas[i].desc = e.target.value;
+      c.heridas[i].d = e.target.value;
     }),
     placeholder: "tipo de daño y descripción",
     style: {
@@ -1042,19 +1167,273 @@ function Personaje({
   }, "✕"))), /*#__PURE__*/React.createElement("button", {
     onClick: () => set(c => {
       c.heridas.push({
-        gravedad: 1,
-        desc: ""
+        g: 2,
+        d: ""
       });
     }),
     style: btn
   }, "+ Herida"), /*#__PURE__*/React.createElement("div", {
     style: {
+      color: C.faint,
+      fontSize: 11,
+      margin: "12px 0 6px"
+    }
+  }, "Mutilaciones — abiertas, penalizan y SÍ se suman"), pj.mutilaciones.map((m, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement(Paso, {
+    v: Math.abs(m.pen) || 0,
+    max: 6,
+    set: v => set(c => {
+      c.mutilaciones[i].pen = -v;
+    })
+  }), /*#__PURE__*/React.createElement("input", {
+    value: m.d,
+    onChange: e => set(c => {
+      c.mutilaciones[i].d = e.target.value;
+    }),
+    placeholder: "qué parte y qué le pasa",
+    style: {
+      ...inp,
+      flex: 1
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      const m2 = c.mutilaciones.splice(i, 1)[0];
+      c.cicatrices.push({
+        d: m2.d
+      });
+    }),
+    style: {
+      color: C.ok,
+      fontSize: 11,
+      cursor: "pointer",
+      flexShrink: 0
+    }
+  }, "curada →"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.mutilaciones.splice(i, 1);
+    }),
+    style: {
+      color: C.bad,
+      cursor: "pointer"
+    }
+  }, "✕"))), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.mutilaciones.push({
+        pen: -1,
+        d: ""
+      });
+    }),
+    style: btn
+  }, "+ Mutilación"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.faint,
+      fontSize: 11,
+      margin: "12px 0 6px"
+    }
+  }, "Cicatrices — sin modificador, se invocan como un rasgo"), pj.cicatrices.map((x, i) => /*#__PURE__*/React.createElement("div", {
+    key: i,
+    style: {
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      marginBottom: 6
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    value: x.d,
+    onChange: e => set(c => {
+      c.cicatrices[i].d = e.target.value;
+    }),
+    style: {
+      ...inp,
+      flex: 1
+    }
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.cicatrices.splice(i, 1);
+    }),
+    style: {
+      color: C.bad,
+      cursor: "pointer"
+    }
+  }, "✕"))), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.cicatrices.push({
+        d: ""
+      });
+    }),
+    style: btn
+  }, "+ Cicatriz")), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
+    sub: "el contador se lleva por escuela: lo de la fila cuenta completo, lo de fuera la mitad"
+  }, "Rango y progresión"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 8,
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement(Campo, {
+    l: "Era"
+  }, /*#__PURE__*/React.createElement("select", {
+    value: pj.era,
+    onChange: e => set(c => {
+      c.era = e.target.value;
+      c.escuela = "";
+    }),
+    style: inp
+  }, /*#__PURE__*/React.createElement("option", null, "Era 1"), /*#__PURE__*/React.createElement("option", null, "Era 2"))), /*#__PURE__*/React.createElement(Campo, {
+    l: "Rango"
+  }, /*#__PURE__*/React.createElement(Paso, {
+    v: pj.rango,
+    min: 1,
+    max: 4,
+    set: v => set(c => {
+      c.rango = v;
+      c.contador = 0;
+    })
+  }))), /*#__PURE__*/React.createElement(Campo, {
+    l: "Escuela"
+  }, /*#__PURE__*/React.createElement("select", {
+    value: pj.escuela,
+    onChange: e => set(c => {
+      c.escuela = e.target.value;
+    }),
+    style: inp
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "— elegir —"), esc.filter(e => e.mundo === "Scadrial" && (e.era || "").startsWith(pj.era)).map(e => /*#__PURE__*/React.createElement("option", {
+    key: e.n,
+    value: e.nombre
+  }, e.n, " · ", e.nombre, " (", e.etq, ")")))), escuela && /*#__PURE__*/React.createElement(Tabla, {
+    filas: [["Capacidad", escuela.cap], ["Técnica ◈", escuela.tec], ["Equipo", escuela.eq], ["Título (R4)", `${escuela.titN} — ${escuela.titT}`]]
+  }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      margin: "10px 0 4px",
+      color: C.gem,
+      fontSize: 12
+    }
+  }, "Contador ", pj.contador, " / ", d.umbral, pj.rango >= 4 ? " (Título)" : ""), /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: 8,
+      background: C.panel2,
+      borderRadius: 999,
+      overflow: "hidden",
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      height: "100%",
+      width: `${Math.min(100, pj.contador / d.umbral * 100)}%`,
+      background: pj.contador >= d.umbral ? C.ok : C.sap
+    }
+  })), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      flexWrap: "wrap",
+      marginBottom: 10
+    }
+  }, [1, 2, 3, 5].map(n => /*#__PURE__*/React.createElement("button", {
+    key: n,
+    onClick: () => set(c => {
+      c.contador += n;
+    }),
+    style: {
+      ...btn,
+      padding: "4px 9px",
+      fontSize: 12
+    }
+  }, "+", n)), [1, 2, 3].map(n => /*#__PURE__*/React.createElement("button", {
+    key: "h" + n,
+    onClick: () => set(c => {
+      c.contador += n / 2;
+    }),
+    style: {
+      ...btn,
+      padding: "4px 9px",
+      fontSize: 12,
+      color: C.faint
+    }
+  }, "+", n / 2, " fuera")), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.contador = 0;
+    }),
+    style: {
+      ...btn,
+      padding: "4px 9px",
+      fontSize: 12
+    }
+  }, "poner a 0")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(Campo, {
+    l: `PX ganados (disponibles ${d.pxDisp})`
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "number",
+    value: pj.px,
+    onChange: e => set(c => {
+      c.px = Number(e.target.value) || 0;
+    }),
+    style: {
+      ...inp,
+      ...NUM
+    }
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: "PX gastados"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "number",
+    value: pj.pxGastados,
+    onChange: e => set(c => {
+      c.pxGastados = Number(e.target.value) || 0;
+    }),
+    style: {
+      ...inp,
+      ...NUM
+    }
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: `PX de meta (disponibles ${d.metaDisp})`
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "number",
+    value: pj.pxMeta,
+    onChange: e => set(c => {
+      c.pxMeta = Number(e.target.value) || 0;
+    }),
+    style: {
+      ...inp,
+      ...NUM
+    }
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: "PX de meta gastados"
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "number",
+    value: pj.pxMetaGastados,
+    onChange: e => set(c => {
+      c.pxMetaGastados = Number(e.target.value) || 0;
+    }),
+    style: {
+      ...inp,
+      ...NUM
+    }
+  }))), escuela && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.gem,
+      fontSize: 12,
       marginTop: 10
     }
-  }, /*#__PURE__*/React.createElement(Tabla, {
-    filas: HERIDAS.map(([n, g, e]) => [`${n} (${g})`, e])
+  }, "Programa — la fila vigente marca qué cuenta completo"), /*#__PURE__*/React.createElement(FilasRango, {
+    e: escuela,
+    rango: pj.rango
   }))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: `suma ${sumaAtr} · techo Det+2 = ${d.techo}`
+    sub: `suma ${ATRS.reduce((t, [k]) => t + (Number(pj.atr[k]) || 0), 0)} · techo Det+2 = ${d.techo}`
   }, "Atributos"), ATRS.map(([k, l]) => /*#__PURE__*/React.createElement("div", {
     key: k,
     style: {
@@ -1075,7 +1454,7 @@ function Personaje({
       c.atr[k] = v;
     })
   })))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: "tope humano 5"
+    sub: "◆ currículo de tu escuela · tope humano 5"
   }, "Habilidades"), Object.entries(GRUPOS).map(([g, hs]) => /*#__PURE__*/React.createElement("div", {
     key: g,
     style: {
@@ -1090,51 +1469,108 @@ function Personaje({
       color: C.sap,
       marginBottom: 4
     }
-  }, g), hs.map(h => {
-    const enCur = esc && esc.curl && esc.curl.includes(h);
-    return /*#__PURE__*/React.createElement("div", {
-      key: h,
-      style: {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "3px 0"
-      }
-    }, /*#__PURE__*/React.createElement("span", {
-      style: {
-        fontSize: 13.5
-      }
-    }, enCur && /*#__PURE__*/React.createElement("span", {
-      style: {
-        color: C.sap
-      }
-    }, "◆ "), h), /*#__PURE__*/React.createElement(Paso, {
-      v: Number(pj.hab[h]) || 0,
-      max: 10,
-      set: v => set(c => {
-        if (v) c.hab[h] = v;else delete c.hab[h];
-      })
-    }));
-  })))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: esc ? `${esc.territorio} · ${esc.atr}` : "sin escuela"
-  }, "Escuela"), /*#__PURE__*/React.createElement("select", {
-    value: pj.escuela,
-    onChange: e => set(c => {
-      c.escuela = e.target.value;
-    }),
+  }, g), hs.map(h => /*#__PURE__*/React.createElement("div", {
+    key: h,
     style: {
-      ...inp,
-      marginBottom: 8
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+      padding: "3px 0"
     }
+  }, /*#__PURE__*/React.createElement("span", {
+    style: {
+      fontSize: 13.5
+    }
+  }, cur.includes(h) && /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.sap
+    }
+  }, "◆ "), h), /*#__PURE__*/React.createElement(Paso, {
+    v: Number(pj.hab[h]) || 0,
+    max: 10,
+    set: v => set(c => {
+      if (v) c.hab[h] = v;else delete c.hab[h];
+    })
+  })))))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
+    sub: "brumoso o ferrín · el título es una entrada de la fila y su Potencia cuenta completo"
+  }, "Investidura"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(Campo, {
+    l: "Arte"
+  }, /*#__PURE__*/React.createElement("select", {
+    value: pj.inv.arte,
+    onChange: e => set(c => {
+      c.inv.arte = e.target.value;
+      c.inv.titulo = "";
+    }),
+    style: inp
   }, /*#__PURE__*/React.createElement("option", {
     value: ""
-  }, "— elegir escuela —"), datos.escuelas.map(e => /*#__PURE__*/React.createElement("option", {
-    key: e.n,
-    value: e.nombre
-  }, e.nombre, " (", e.territorio, ")"))), esc && /*#__PURE__*/React.createElement(Tabla, {
-    filas: [["Capacidad", esc.cap], ["Técnica ◈", esc.tec], ["Equipo", esc.eq]]
-  })), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: `${pj.talentos.length} elegidos`
+  }, "— ninguna —"), /*#__PURE__*/React.createElement("option", null, "Alomancia"), /*#__PURE__*/React.createElement("option", null, "Feruquimia"))), /*#__PURE__*/React.createElement(Campo, {
+    l: "Pareja (Potencia)"
+  }, /*#__PURE__*/React.createElement("select", {
+    value: pj.inv.metal,
+    onChange: e => set(c => {
+      c.inv.metal = e.target.value;
+    }),
+    style: inp
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "—"), PAREJAS.map(p => /*#__PURE__*/React.createElement("option", {
+    key: p
+  }, p))))), pj.inv.arte && /*#__PURE__*/React.createElement(Campo, {
+    l: "Título"
+  }, /*#__PURE__*/React.createElement("select", {
+    value: pj.inv.titulo,
+    onChange: e => set(c => {
+      c.inv.titulo = e.target.value;
+    }),
+    style: inp
+  }, /*#__PURE__*/React.createElement("option", {
+    value: ""
+  }, "—"), (pj.inv.arte === "Alomancia" ? TIT_ALO : TIT_FER).map(t => /*#__PURE__*/React.createElement("option", {
+    key: t
+  }, t)))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement(Campo, {
+    l: "Potencia"
+  }, /*#__PURE__*/React.createElement(Paso, {
+    v: pj.inv.potencia,
+    max: 10,
+    set: v => set(c => {
+      c.inv.potencia = v;
+    })
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: pj.inv.arte === "Feruquimia" ? "Mentes de metal cargadas" : "Reserva (puntos de metal)"
+  }, /*#__PURE__*/React.createElement(Paso, {
+    v: pj.inv.reserva,
+    max: 7,
+    set: v => set(c => {
+      c.inv.reserva = v;
+    })
+  }))), /*#__PURE__*/React.createElement(Campo, {
+    l: pj.inv.arte === "Feruquimia" ? "Qué guarda cada mente" : "Viales encima"
+  }, /*#__PURE__*/React.createElement("input", {
+    value: pj.inv.mentes,
+    onChange: e => set(c => {
+      c.inv.mentes = e.target.value;
+    }),
+    style: inp
+  })), pj.inv.arte && /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.faint,
+      fontSize: 11
+    }
+  }, "Factor 1, siempre. Tope por acción = Potencia, mínimo 1. Todo talento de Investidura se compra fuera de la fila y cuenta la mitad.")), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
+    sub: `${pj.talentos.length} elegidos · ✓ cuenta completo para el contador`
   }, "Talentos"), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
@@ -1142,21 +1578,25 @@ function Personaje({
       gap: 6,
       marginBottom: 8
     }
-  }, pj.talentos.map((t, i) => /*#__PURE__*/React.createElement("button", {
-    key: i,
-    onClick: () => set(c => {
-      c.talentos.splice(i, 1);
-    }),
-    style: {
-      borderRadius: 999,
-      padding: "4px 10px",
-      fontSize: 12,
-      cursor: "pointer",
-      border: `1px solid ${C.sap}88`,
-      background: "#1b2a47",
-      color: C.gem
-    }
-  }, t, " ✕")), !pj.talentos.length && /*#__PURE__*/React.createElement("span", {
+  }, pj.talentos.map((n, i) => {
+    const t = tal.find(x => x.n === n);
+    const dentro = t && enFila(t);
+    return /*#__PURE__*/React.createElement("button", {
+      key: i,
+      onClick: () => set(c => {
+        c.talentos.splice(i, 1);
+      }),
+      style: {
+        borderRadius: 999,
+        padding: "4px 10px",
+        fontSize: 12,
+        cursor: "pointer",
+        border: `1px solid ${dentro ? C.ok : C.line}`,
+        background: dentro ? "#13301f" : C.panel2,
+        color: dentro ? C.gem : C.mut
+      }
+    }, dentro ? "✓ " : "", n, " ✕");
+  }), !pj.talentos.length && /*#__PURE__*/React.createElement("span", {
     style: {
       color: C.faint,
       fontSize: 12
@@ -1168,15 +1608,15 @@ function Personaje({
     style: inp
   }), buscaTal && /*#__PURE__*/React.createElement("div", {
     style: {
-      maxHeight: 190,
+      maxHeight: 200,
       overflowY: "auto",
       marginTop: 6
     }
-  }, datos.talentos.filter(t => norm(t.nombre).includes(norm(buscaTal)) && !pj.talentos.includes(t.nombre)).slice(0, 12).map(t => /*#__PURE__*/React.createElement("button", {
-    key: t.nombre,
+  }, disponibles.filter(t => norm(t.n).includes(norm(buscaTal)) && !pj.talentos.includes(t.n)).slice(0, 14).map(t => /*#__PURE__*/React.createElement("button", {
+    key: t.n,
     onClick: () => {
       set(c => {
-        c.talentos.push(t.nombre);
+        c.talentos.push(t.n);
       });
       setBuscaTal("");
     },
@@ -1190,54 +1630,90 @@ function Personaje({
       fontSize: 13,
       borderBottom: `1px solid ${C.line}55`
     }
-  }, t.nombre, " ", /*#__PURE__*/React.createElement("span", {
+  }, enFila(t) ? /*#__PURE__*/React.createElement("span", {
+    style: {
+      color: C.ok
+    }
+  }, "✓ ") : "", t.n, " ", /*#__PURE__*/React.createElement("span", {
     style: {
       color: C.faint,
       fontSize: 11
     }
-  }, "· ", t.meta))))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, null, "Personalidad"), [["virtud", "Virtud"], ["defecto", "Defecto"], ["meta", "Meta"], ["obstaculo", "Obstáculo"]].map(([k, l]) => /*#__PURE__*/React.createElement("div", {
-    key: k,
+  }, "· ", t.fam, " R", t.r))))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
+    sub: "preguntas 12, 13 y 14 · el tercero siempre defecto · no hay lista de la que elegir"
+  }, "Los tres rasgos"), ["12 · El apodo", "13 · Lo que te marcó", "14 · La oscuridad — siempre defecto"].map((l, i) => /*#__PURE__*/React.createElement(Campo, {
+    key: i,
+    l: l
+  }, /*#__PURE__*/React.createElement("textarea", {
+    value: (pj.rasgos || ["", "", ""])[i] || "",
+    onChange: e => set(c => {
+      c.rasgos = c.rasgos || ["", "", ""];
+      c.rasgos[i] = e.target.value;
+    }),
+    placeholder: "Cuándo se dispara y en qué dirección te empuja",
     style: {
-      marginBottom: 8
+      ...inp,
+      minHeight: 50
     }
-  }, /*#__PURE__*/React.createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     style: {
       color: C.faint,
       fontSize: 11,
-      marginBottom: 3
-    }
-  }, l), /*#__PURE__*/React.createElement("input", {
-    value: pj[k],
-    onChange: e => set(c => {
-      c[k] = e.target.value;
-    }),
-    style: inp
-  })))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
-    sub: "daño del arma, Letalidad, alcance"
-  }, "Equipo"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "flex",
-      alignItems: "center",
-      gap: 8,
       marginBottom: 8
     }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      color: C.faint,
-      fontSize: 12
-    }
-  }, "Chips"), /*#__PURE__*/React.createElement("input", {
-    type: "number",
-    value: pj.chips,
+  }, "Si no se te ocurre una escena donde te salve y otra donde te hunda, reescríbelo."), /*#__PURE__*/React.createElement(Campo, {
+    l: "Meta — da PX de meta"
+  }, /*#__PURE__*/React.createElement("input", {
+    value: pj.meta,
     onChange: e => set(c => {
-      c.chips = Number(e.target.value) || 0;
+      c.meta = e.target.value;
+    }),
+    style: inp
+  }))), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
+    sub: `posición ${pj.posicion} · ${pj.era}`
+  }, "Equipo y bolsa"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 6,
+      marginBottom: 8
+    }
+  }, ["alta", "media", "baja"].map(p => /*#__PURE__*/React.createElement("button", {
+    key: p,
+    onClick: () => set(c => {
+      c.posicion = p;
+      c.bolsa = null;
+    }),
+    style: {
+      ...btn,
+      flex: 1,
+      padding: "6px 0",
+      borderColor: pj.posicion === p ? C.sap : C.line,
+      color: pj.posicion === p ? C.gem : C.mut
+    }
+  }, p))), /*#__PURE__*/React.createElement(Campo, {
+    l: "Arquillas"
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 8
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "number",
+    value: bolsa,
+    onChange: e => set(c => {
+      c.bolsa = Number(e.target.value) || 0;
     }),
     style: {
       ...inp,
       ...NUM,
-      width: 110
+      flex: 1
     }
-  })), pj.armas.map((a, i) => /*#__PURE__*/React.createElement("div", {
+  }), /*#__PURE__*/React.createElement("button", {
+    onClick: () => set(c => {
+      c.bolsa = null;
+    }),
+    style: btn
+  }, "inicial"))), pj.armas.map((a, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       display: "flex",
@@ -1245,9 +1721,9 @@ function Personaje({
       marginBottom: 6
     }
   }, /*#__PURE__*/React.createElement("input", {
-    value: a.nombre,
+    value: a.n,
     onChange: e => set(c => {
-      c.armas[i].nombre = e.target.value;
+      c.armas[i].n = e.target.value;
     }),
     placeholder: "Arma",
     style: {
@@ -1255,9 +1731,9 @@ function Personaje({
       flex: 2
     }
   }), /*#__PURE__*/React.createElement("input", {
-    value: a.dano,
+    value: a.d,
     onChange: e => set(c => {
-      c.armas[i].dano = e.target.value;
+      c.armas[i].d = e.target.value;
     }),
     placeholder: "Daño",
     style: {
@@ -1265,9 +1741,9 @@ function Personaje({
       flex: 1
     }
   }), /*#__PURE__*/React.createElement("input", {
-    value: a.letal,
+    value: a.l,
     onChange: e => set(c => {
-      c.armas[i].letal = e.target.value;
+      c.armas[i].l = e.target.value;
     }),
     placeholder: "Letal.",
     style: {
@@ -1285,9 +1761,9 @@ function Personaje({
   }, "✕"))), /*#__PURE__*/React.createElement("button", {
     onClick: () => set(c => {
       c.armas.push({
-        nombre: "",
-        dano: "",
-        letal: ""
+        n: "",
+        d: "",
+        l: ""
       });
     }),
     style: {
@@ -1322,23 +1798,7 @@ function Personaje({
     set: v => set(c => {
       c.armadura.desvio = v;
     })
-  })), /*#__PURE__*/React.createElement("label", {
-    style: {
-      display: "flex",
-      alignItems: "center",
-      gap: 8,
-      color: C.mut,
-      fontSize: 12.5,
-      cursor: "pointer",
-      marginBottom: 8
-    }
-  }, /*#__PURE__*/React.createElement("input", {
-    type: "checkbox",
-    checked: pj.armadura.danada,
-    onChange: e => set(c => {
-      c.armadura.danada = e.target.checked;
-    })
-  }), " Armadura Dañada"), /*#__PURE__*/React.createElement("textarea", {
+  })), /*#__PURE__*/React.createElement("textarea", {
     value: pj.objetos,
     onChange: e => set(c => {
       c.objetos = e.target.value;
@@ -1346,7 +1806,7 @@ function Personaje({
     placeholder: "Resto del equipo",
     style: {
       ...inp,
-      minHeight: 60
+      minHeight: 56
     }
   })), /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, null, "Notas"), /*#__PURE__*/React.createElement("textarea", {
     value: pj.notas,
@@ -1360,9 +1820,9 @@ function Personaje({
   })));
 }
 
-/* ═════════ Campaña ═════════ */
+/* ═══════ Campaña ═══════ */
 function Campana({
-  datos,
+  reg,
   bd,
   setBD
 }) {
@@ -1374,8 +1834,8 @@ function Campana({
     b.notas = b.notas || {};
     b.notas[id] = v;
   });
-  const pnjs = (datos.pnjs || []).filter(p => !nq || norm(p.nombre + p.faccion + p.descripcion + (p.publico || "")).includes(nq));
-  const partidas = (datos.partidas || []).filter(s => !nq || norm(s.titulo + s.resumen).includes(nq));
+  const pnjs = (reg.pnjs || []).filter(p => !nq || norm(p.nombre + (p.faccion || "") + (p.descripcion || "")).includes(nq));
+  const ses = (reg.partidas || []).filter(s => !nq || norm(s.titulo + (s.resumen || "")).includes(nq));
   return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("input", {
     value: q,
     onChange: e => setQ(e.target.value),
@@ -1391,7 +1851,7 @@ function Campana({
       marginBottom: 12,
       borderBottom: `1px solid ${C.line}`
     }
-  }, [["pnjs", `PNJs ${pnjs.length}`], ["sesiones", `Sesiones ${partidas.length}`], ["diario", "Diario"]].map(([k, l]) => /*#__PURE__*/React.createElement("button", {
+  }, [["pnjs", `PNJs ${pnjs.length}`], ["ses", `Sesiones ${ses.length}`], ["diario", "Diario"]].map(([k, l]) => /*#__PURE__*/React.createElement("button", {
     key: k,
     onClick: () => setSub(k),
     style: {
@@ -1427,7 +1887,7 @@ function Campana({
       ...inp,
       minHeight: 70
     }
-  }))), sub === "sesiones" && partidas.map(s => /*#__PURE__*/React.createElement(Plegable, {
+  }))), sub === "ses" && ses.map(s => /*#__PURE__*/React.createElement(Plegable, {
     key: s.id,
     t: s.titulo,
     meta: s.fecha
@@ -1458,7 +1918,7 @@ function Campana({
     }
   }))), sub === "diario" && /*#__PURE__*/React.createElement(Caja, null, /*#__PURE__*/React.createElement(Tit, {
     sub: "lo tuyo, en tu Drive. La DJ no lo ve."
-  }, "Diario de campaña"), /*#__PURE__*/React.createElement("textarea", {
+  }, "Diario"), /*#__PURE__*/React.createElement("textarea", {
     value: nota("diario"),
     onChange: e => setNota("diario", e.target.value),
     style: {
@@ -1468,29 +1928,497 @@ function Campana({
   })));
 }
 
-/* ═════════ App ═════════ */
+/* ═══════ Editor de la base de datos ═══════ */
+const CAMPOS_ESC = [["n", "Nº"], ["nombre", "Nombre"], ["mundo", "Mundo"], ["era", "Era"], ["etq", "Etiqueta"], ["atr", "Atributos"], ["enc", "Encuadre"], ["cur", "Currículo"], ["cre", "Composición"], ["est", "Estatus"], ["cap", "Capacidad"], ["tec", "Técnica ◈"], ["eq", "Equipo"], ["titN", "Título"], ["titT", "Qué da el Título"]];
+const CAMPOS_TAL = [["n", "Nombre"], ["fam", "Familia"], ["r", "Rango"], ["capa", "Capa"], ["eje", "Eje"], ["nat", "Naturaleza"], ["cuerpo", "Texto"], ["nota", "Nota"]];
+function Editor({
+  esc,
+  tal,
+  reg,
+  setEsc,
+  setTal,
+  setReg,
+  descargar
+}) {
+  const [sub, setSub] = useState("escuelas");
+  const [q, setQ] = useState("");
+  const [sel, setSel] = useState(null);
+  const nq = norm(q);
+  const lista = sub === "escuelas" ? esc.filter(e => !nq || norm(e.nombre + e.etq + e.mundo).includes(nq)) : sub === "talentos" ? tal.filter(t => !nq || norm(t.n + t.fam).includes(nq)) : sub === "pnjs" ? reg.pnjs || [] : reg.partidas || [];
+  const guardarEsc = (i, k, v) => setEsc(a => {
+    const c = clonar(a);
+    c[i][k] = k === "n" ? Number(v) || 0 : v;
+    return c;
+  });
+  const guardarTal = (i, k, v) => setTal(a => {
+    const c = clonar(a);
+    c[i][k] = k === "r" ? Number(v) || 1 : v;
+    return c;
+  });
+  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Caja, {
+    style: {
+      background: "#16213a",
+      borderColor: C.sap + "66"
+    }
+  }, /*#__PURE__*/React.createElement(Tit, {
+    sub: "Lo que cambies aquí se guarda en tu navegador y en tu Drive. Para que lo vean los jugadores, descarga el archivo y súbelo al repositorio."
+  }, "Editor de la base de datos"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 8,
+      flexWrap: "wrap"
+    }
+  }, /*#__PURE__*/React.createElement("button", {
+    onClick: () => descargar("sette_escuelas.json", esc),
+    style: btnP
+  }, "Descargar escuelas"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => descargar("sette_talentos.json", tal),
+    style: btnP
+  }, "Descargar talentos"), /*#__PURE__*/React.createElement("button", {
+    onClick: () => descargar("sette_reglas.json", reg),
+    style: btnP
+  }, "Descargar reglas"))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 4,
+      marginBottom: 12,
+      borderBottom: `1px solid ${C.line}`,
+      flexWrap: "wrap"
+    }
+  }, [["escuelas", `Escuelas ${esc.length}`], ["talentos", `Talentos ${tal.length}`], ["pnjs", `PNJs ${(reg.pnjs || []).length}`], ["ses", `Sesiones ${(reg.partidas || []).length}`]].map(([k, l]) => /*#__PURE__*/React.createElement("button", {
+    key: k,
+    onClick: () => {
+      setSub(k);
+      setSel(null);
+    },
+    style: {
+      padding: "8px 12px",
+      cursor: "pointer",
+      fontSize: 13,
+      fontFamily: SERIF,
+      color: sub === k ? C.gem : C.faint,
+      borderBottom: `2px solid ${sub === k ? C.sap : "transparent"}`
+    }
+  }, l))), (sub === "escuelas" || sub === "talentos") && /*#__PURE__*/React.createElement("input", {
+    value: q,
+    onChange: e => setQ(e.target.value),
+    placeholder: "Filtrar…",
+    style: {
+      ...inp,
+      marginBottom: 10
+    }
+  }), sub === "escuelas" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setEsc(a => [...a, {
+      n: 999,
+      nombre: "Escuela nueva",
+      mundo: "Scadrial",
+      era: "Era 2 · Tras el Catacendro",
+      etq: "Transversales",
+      atr: "",
+      enc: "",
+      cur: "",
+      cre: "3 hab. + 4 tal. · tipos de talento: Social, Oficio",
+      est: "",
+      cap: "",
+      tec: "",
+      eq: "",
+      titN: "",
+      titT: "",
+      filas: []
+    }]),
+    style: {
+      ...btn,
+      marginBottom: 10
+    }
+  }, "+ Escuela nueva"), lista.map(e => {
+    const i = esc.indexOf(e);
+    return /*#__PURE__*/React.createElement(Plegable, {
+      key: i,
+      t: `${e.n} · ${e.nombre}`,
+      meta: `${e.mundo} · ${e.etq}`
+    }, CAMPOS_ESC.map(([k, l]) => /*#__PURE__*/React.createElement(Campo, {
+      key: k,
+      l: l
+    }, ["enc", "cap", "tec", "eq", "titT", "cur"].includes(k) ? /*#__PURE__*/React.createElement("textarea", {
+      value: e[k] || "",
+      onChange: ev => guardarEsc(i, k, ev.target.value),
+      style: {
+        ...inp,
+        minHeight: 52
+      }
+    }) : /*#__PURE__*/React.createElement("input", {
+      value: e[k] == null ? "" : e[k],
+      onChange: ev => guardarEsc(i, k, ev.target.value),
+      style: inp
+    }))), /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: C.faint,
+        fontSize: 11,
+        marginTop: 6
+      }
+    }, "Las filas de rango se generaron con programa(); edítalas aquí si quieres corregir un adelantado fuera de tono."), (e.filas || []).map((f, j) => /*#__PURE__*/React.createElement("div", {
+      key: j,
+      style: {
+        marginTop: 6,
+        padding: 8,
+        border: `1px solid ${C.line}`,
+        borderRadius: 8
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: C.gem,
+        fontSize: 11,
+        marginBottom: 4
+      }
+    }, f.r), [["grupo", "Grupo abierto"], ["libre", "Talento libre"], ["adel", "Adelantado"], ["acc", "Acceso"]].map(([k, l]) => /*#__PURE__*/React.createElement(Campo, {
+      key: k,
+      l: l
+    }, /*#__PURE__*/React.createElement("input", {
+      value: f[k] || "",
+      onChange: ev => setEsc(a => {
+        const c = clonar(a);
+        c[i].filas[j][k] = ev.target.value;
+        return c;
+      }),
+      style: inp
+    }))), /*#__PURE__*/React.createElement(Campo, {
+      l: "Nombradas (separadas por coma)"
+    }, /*#__PURE__*/React.createElement("input", {
+      value: (f.nombradas || []).join(", "),
+      onChange: ev => setEsc(a => {
+        const c = clonar(a);
+        c[i].filas[j].nombradas = ev.target.value.split(",").map(s => s.trim());
+        return c;
+      }),
+      style: inp
+    })))), /*#__PURE__*/React.createElement("button", {
+      onClick: () => {
+        if (confirm("¿Borrar esta escuela?")) setEsc(a => a.filter((_, x) => x !== i));
+      },
+      style: {
+        color: C.bad,
+        fontSize: 12,
+        cursor: "pointer",
+        marginTop: 8
+      }
+    }, "Borrar escuela"));
+  })), sub === "talentos" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setTal(a => [...a, {
+      n: "Talento nuevo",
+      fam: "Marcial",
+      r: 1,
+      capa: "comun",
+      mundos: ["Roshar", "Scadrial"],
+      eje: "",
+      nat: "",
+      cuerpo: "",
+      opps: []
+    }]),
+    style: {
+      ...btn,
+      marginBottom: 10
+    }
+  }, "+ Talento nuevo"), lista.slice(0, 200).map(t => {
+    const i = tal.indexOf(t);
+    return /*#__PURE__*/React.createElement(Plegable, {
+      key: i,
+      t: t.n,
+      meta: `${t.fam} · R${t.r} · ${t.capa}`
+    }, CAMPOS_TAL.map(([k, l]) => /*#__PURE__*/React.createElement(Campo, {
+      key: k,
+      l: l
+    }, k === "cuerpo" || k === "nota" ? /*#__PURE__*/React.createElement("textarea", {
+      value: t[k] || "",
+      onChange: ev => guardarTal(i, k, ev.target.value),
+      style: {
+        ...inp,
+        minHeight: 60
+      }
+    }) : k === "fam" ? /*#__PURE__*/React.createElement("select", {
+      value: t.fam,
+      onChange: ev => guardarTal(i, k, ev.target.value),
+      style: inp
+    }, ["Marcial", "Social", "Erudición", "Oficio", "Campo", "Investidura"].map(f => /*#__PURE__*/React.createElement("option", {
+      key: f
+    }, f))) : /*#__PURE__*/React.createElement("input", {
+      value: t[k] == null ? "" : t[k],
+      onChange: ev => guardarTal(i, k, ev.target.value),
+      style: inp
+    }))), /*#__PURE__*/React.createElement(Campo, {
+      l: "Mundos (coma)"
+    }, /*#__PURE__*/React.createElement("input", {
+      value: (t.mundos || []).join(", "),
+      onChange: ev => setTal(a => {
+        const c = clonar(a);
+        c[i].mundos = ev.target.value.split(",").map(s => s.trim()).filter(Boolean);
+        return c;
+      }),
+      style: inp
+    })), /*#__PURE__*/React.createElement(Campo, {
+      l: "Era (0 = las dos)"
+    }, /*#__PURE__*/React.createElement("input", {
+      value: t.era || 0,
+      onChange: ev => setTal(a => {
+        const c = clonar(a);
+        c[i].era = Number(ev.target.value) || 0;
+        return c;
+      }),
+      style: inp
+    })), /*#__PURE__*/React.createElement("div", {
+      style: {
+        color: C.faint,
+        fontSize: 11,
+        margin: "6px 0 4px"
+      }
+    }, "Gastos de Oportunidad"), (t.opps || []).map((o, j) => /*#__PURE__*/React.createElement("div", {
+      key: j,
+      style: {
+        display: "flex",
+        gap: 6,
+        marginBottom: 5
+      }
+    }, /*#__PURE__*/React.createElement("input", {
+      value: o[0],
+      onChange: ev => setTal(a => {
+        const c = clonar(a);
+        c[i].opps[j][0] = ev.target.value;
+        return c;
+      }),
+      style: {
+        ...inp,
+        width: 54
+      }
+    }), /*#__PURE__*/React.createElement("input", {
+      value: o[1],
+      onChange: ev => setTal(a => {
+        const c = clonar(a);
+        c[i].opps[j][1] = ev.target.value;
+        return c;
+      }),
+      style: {
+        ...inp,
+        flex: 1
+      }
+    }), /*#__PURE__*/React.createElement("button", {
+      onClick: () => setTal(a => {
+        const c = clonar(a);
+        c[i].opps.splice(j, 1);
+        return c;
+      }),
+      style: {
+        color: C.bad,
+        cursor: "pointer"
+      }
+    }, "✕"))), /*#__PURE__*/React.createElement("button", {
+      onClick: () => setTal(a => {
+        const c = clonar(a);
+        c[i].opps = c[i].opps || [];
+        c[i].opps.push(["1", ""]);
+        return c;
+      }),
+      style: btn
+    }, "+ gasto"), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+      onClick: () => {
+        if (confirm("¿Borrar este talento?")) setTal(a => a.filter((_, x) => x !== i));
+      },
+      style: {
+        color: C.bad,
+        fontSize: 12,
+        cursor: "pointer",
+        marginTop: 8
+      }
+    }, "Borrar talento")));
+  }), lista.length > 200 && /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.faint,
+      fontSize: 12
+    }
+  }, "Mostrando 200 de ", lista.length, ". Filtra para ver el resto.")), sub === "pnjs" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setReg(r => {
+      const c = clonar(r);
+      c.pnjs = c.pnjs || [];
+      c.pnjs.push({
+        id: "pnj-" + uid().slice(0, 8),
+        nombre: "PNJ nuevo",
+        escalon: "Adversario",
+        conducta: "",
+        faccion: "",
+        descripcion: "",
+        publico: ""
+      });
+      return c;
+    }),
+    style: {
+      ...btn,
+      marginBottom: 10
+    }
+  }, "+ PNJ nuevo"), (reg.pnjs || []).map((p, i) => /*#__PURE__*/React.createElement(Plegable, {
+    key: p.id,
+    t: p.nombre,
+    meta: [p.escalon, p.faccion].filter(Boolean).join(" · ")
+  }, [["nombre", "Nombre"], ["escalon", "Escalón"], ["conducta", "Conducta"], ["faccion", "Facción"], ["descripcion", "Descripción"], ["publico", "Lo que se sabe"]].map(([k, l]) => /*#__PURE__*/React.createElement(Campo, {
+    key: k,
+    l: l
+  }, ["descripcion", "publico"].includes(k) ? /*#__PURE__*/React.createElement("textarea", {
+    value: p[k] || "",
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.pnjs[i][k] = e.target.value;
+      return c;
+    }),
+    style: {
+      ...inp,
+      minHeight: 56
+    }
+  }) : /*#__PURE__*/React.createElement("input", {
+    value: p[k] || "",
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.pnjs[i][k] = e.target.value;
+      return c;
+    }),
+    style: inp
+  }))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.faint,
+      fontSize: 11
+    }
+  }, "id: ", p.id, " — cambiarlo deja huérfanas las notas de los jugadores."), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      if (confirm("¿Borrar?")) setReg(r => {
+        const c = clonar(r);
+        c.pnjs.splice(i, 1);
+        return c;
+      });
+    },
+    style: {
+      color: C.bad,
+      fontSize: 12,
+      cursor: "pointer",
+      marginTop: 8
+    }
+  }, "Borrar PNJ")))), sub === "ses" && /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
+    onClick: () => setReg(r => {
+      const c = clonar(r);
+      c.partidas = c.partidas || [];
+      c.partidas.push({
+        id: "s-" + uid().slice(0, 8),
+        titulo: "Sesión nueva",
+        fecha: "",
+        resumen: "",
+        ganchos: []
+      });
+      return c;
+    }),
+    style: {
+      ...btn,
+      marginBottom: 10
+    }
+  }, "+ Sesión nueva"), (reg.partidas || []).map((s, i) => /*#__PURE__*/React.createElement(Plegable, {
+    key: s.id,
+    t: s.titulo,
+    meta: s.fecha
+  }, /*#__PURE__*/React.createElement(Campo, {
+    l: "Título"
+  }, /*#__PURE__*/React.createElement("input", {
+    value: s.titulo,
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.partidas[i].titulo = e.target.value;
+      return c;
+    }),
+    style: inp
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: "Fecha"
+  }, /*#__PURE__*/React.createElement("input", {
+    value: s.fecha || "",
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.partidas[i].fecha = e.target.value;
+      return c;
+    }),
+    style: inp
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: "Resumen"
+  }, /*#__PURE__*/React.createElement("textarea", {
+    value: s.resumen || "",
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.partidas[i].resumen = e.target.value;
+      return c;
+    }),
+    style: {
+      ...inp,
+      minHeight: 80
+    }
+  })), /*#__PURE__*/React.createElement(Campo, {
+    l: "Ganchos (uno por línea)"
+  }, /*#__PURE__*/React.createElement("textarea", {
+    value: (s.ganchos || []).join("\n"),
+    onChange: e => setReg(r => {
+      const c = clonar(r);
+      c.partidas[i].ganchos = e.target.value.split("\n").filter(Boolean);
+      return c;
+    }),
+    style: {
+      ...inp,
+      minHeight: 60
+    }
+  })), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      if (confirm("¿Borrar?")) setReg(r => {
+        const c = clonar(r);
+        c.partidas.splice(i, 1);
+        return c;
+      });
+    },
+    style: {
+      color: C.bad,
+      fontSize: 12,
+      cursor: "pointer"
+    }
+  }, "Borrar sesión")))));
+}
+
+/* ═══════ App ═══════ */
 function App() {
-  const [datos, setDatos] = useState(null);
-  const [errDatos, setErrDatos] = useState("");
+  const [escBase, setEscBase] = useState(null),
+    [talBase, setTalBase] = useState(null),
+    [regBase, setRegBase] = useState(null);
+  const [err, setErr] = useState("");
+  const [esc, setEsc] = useState(null),
+    [tal, setTal] = useState(null),
+    [reg, setReg] = useState(null);
   const [clientId, setClientId] = useState(() => localStorage.getItem(LS_CLIENT) || "");
-  const [conectado, setConectado] = useState(false);
-  const [usuario, setUsuario] = useState("");
-  const [fileId, setFileId] = useState(null);
+  const [conectado, setConectado] = useState(false),
+    [fileId, setFileId] = useState(null);
   const [bd, setBD] = useState({
     v: 1,
     personajes: [],
-    notas: {}
+    notas: {},
+    dbEsc: null,
+    dbTal: null,
+    dbReg: null
   });
-  const [tab, setTab] = useState("reglas");
-  const [abierto, setAbierto] = useState(null);
-  const [estado, setEstado] = useState("");
-  const [config, setConfig] = useState(false);
+  const [tab, setTab] = useState("reglas"),
+    [abierto, setAbierto] = useState(null);
+  const [estado, setEstado] = useState(""),
+    [config, setConfig] = useState(false),
+    [modoDJ, setModoDJ] = useState(false);
   const sucio = useRef(false);
   useEffect(() => {
-    fetch(DATOS_URL).then(r => {
-      if (!r.ok) throw new Error(r.status);
-      return r.json();
-    }).then(setDatos).catch(e => setErrDatos("No se pudo cargar cosmere_datos.json (" + e.message + "). Debe estar junto a index.html."));
+    (async () => {
+      try {
+        const [a, b, c] = await Promise.all([fetch(URL_ESC), fetch(URL_TAL), fetch(URL_REG)]);
+        if (!a.ok || !b.ok || !c.ok) throw new Error("faltan archivos");
+        const [A, B, Cc] = await Promise.all([a.json(), b.json(), c.json()]);
+        setEscBase(A);
+        setTalBase(B);
+        setRegBase(Cc);
+      } catch (e) {
+        setErr("No se pudieron cargar sette_escuelas.json, sette_talentos.json y sette_reglas.json. Tienen que estar en la misma carpeta que index.html.");
+      }
+    })();
     const cache = localStorage.getItem(LS_CACHE);
     if (cache) {
       try {
@@ -1498,11 +2426,17 @@ function App() {
       } catch (e) {}
     }
   }, []);
+
+  // la base vigente = la publicada, salvo que haya una versión editada guardada
+  useEffect(() => {
+    if (!escBase) return;
+    setEsc(bd.dbEsc || escBase);
+    setTal(bd.dbTal || talBase);
+    setReg(bd.dbReg || regBase);
+  }, [escBase, talBase, regBase]);
   useEffect(() => {
     localStorage.setItem(LS_CACHE, JSON.stringify(bd));
   }, [bd]);
-
-  // autoguardado en Drive
   useEffect(() => {
     if (!conectado || !sucio.current) return;
     setEstado("Guardando…");
@@ -1529,6 +2463,39 @@ function App() {
       return c;
     });
   };
+  const guardarDB = (k, val) => {
+    sucio.current = true;
+    setBD(b => {
+      const c = clonar(b);
+      c[k] = val;
+      return c;
+    });
+  };
+  const setEscD = f => {
+    const v = typeof f === "function" ? f(esc) : f;
+    setEsc(v);
+    guardarDB("dbEsc", v);
+  };
+  const setTalD = f => {
+    const v = typeof f === "function" ? f(tal) : f;
+    setTal(v);
+    guardarDB("dbTal", v);
+  };
+  const setRegD = f => {
+    const v = typeof f === "function" ? f(reg) : f;
+    setReg(v);
+    guardarDB("dbReg", v);
+  };
+  const descargar = (nombre, obj) => {
+    const b = new Blob([JSON.stringify(obj, null, 1)], {
+      type: "application/json"
+    });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(b);
+    a.download = nombre;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
   async function conectar() {
     try {
       if (!clientId.trim()) {
@@ -1543,20 +2510,21 @@ function App() {
       setEstado("Buscando tu archivo…");
       const id = await drive.localizar();
       if (id) {
-        const remoto = await drive.leer(id);
+        const rem = await drive.leer(id);
         setFileId(id);
-        setBD(local => {
-          const mapa = new Map((remoto.personajes || []).map(p => [p.id, p]));
-          (local.personajes || []).forEach(p => {
+        setBD(loc => {
+          const mapa = new Map((rem.personajes || []).map(p => [p.id, p]));
+          (loc.personajes || []).forEach(p => {
             const ex = mapa.get(p.id);
             if (!ex || (p.mod || 0) > (ex.mod || 0)) mapa.set(p.id, p);
           });
           return {
-            v: 1,
+            ...loc,
+            ...rem,
             personajes: [...mapa.values()],
             notas: {
-              ...(remoto.notas || {}),
-              ...(local.notas || {})
+              ...(rem.notas || {}),
+              ...(loc.notas || {})
             }
           };
         });
@@ -1578,19 +2546,21 @@ function App() {
       b.personajes[i].mod = Date.now();
     }
   });
-  if (errDatos) return /*#__PURE__*/React.createElement("div", {
+  if (err) return /*#__PURE__*/React.createElement("div", {
     style: {
       padding: 24,
       color: C.bad,
       fontSize: 14
     }
-  }, errDatos);
-  if (!datos) return /*#__PURE__*/React.createElement("div", {
+  }, err);
+  if (!esc || !tal || !reg) return /*#__PURE__*/React.createElement("div", {
     style: {
       padding: 24,
       color: C.faint
     }
-  }, "Cargando reglas…");
+  }, "Cargando la base de datos…");
+  const pestanas = [["reglas", "Reglas"], ["pjs", "Personajes"], ["camp", "Campaña"]];
+  if (modoDJ) pestanas.push(["editor", "Editor"]);
   return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: "100vh",
@@ -1599,7 +2569,7 @@ function App() {
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 620,
+      maxWidth: 660,
       margin: "0 auto",
       padding: "18px 14px 60px"
     }
@@ -1618,13 +2588,19 @@ function App() {
       letterSpacing: ".14em",
       color: C.gem
     }
-  }, "SISTEMA COSMERE"), /*#__PURE__*/React.createElement("div", {
+  }, "SETTE"), /*#__PURE__*/React.createElement("div", {
     style: {
       color: C.faint,
       fontSize: 10.5,
       letterSpacing: ".07em"
     }
-  }, datos.base)), /*#__PURE__*/React.createElement("button", {
+  }, "Sistema Estable de Tirada y Trama en Español"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.faint,
+      fontSize: 9.5,
+      marginTop: 1
+    }
+  }, reg.base, " · ", esc.length, " escuelas · ", tal.length, " talentos")), /*#__PURE__*/React.createElement("button", {
     onClick: () => setConfig(!config),
     style: {
       ...btn,
@@ -1645,7 +2621,8 @@ function App() {
     style: {
       display: "flex",
       gap: 8,
-      flexWrap: "wrap"
+      flexWrap: "wrap",
+      marginBottom: 8
     }
   }, /*#__PURE__*/React.createElement("button", {
     onClick: conectar,
@@ -1659,23 +2636,42 @@ function App() {
     },
     style: btn
   }, "Desconectar"), /*#__PURE__*/React.createElement("button", {
-    onClick: () => {
-      const b = new Blob([JSON.stringify(bd, null, 1)], {
-        type: "application/json"
-      });
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(b);
-      a.download = "cosmere_respaldo.json";
-      a.click();
-    },
+    onClick: () => descargar("sette_respaldo.json", bd),
     style: btn
-  }, "Descargar respaldo")), /*#__PURE__*/React.createElement("div", {
+  }, "Descargar respaldo")), /*#__PURE__*/React.createElement("label", {
     style: {
-      color: C.faint,
-      fontSize: 11,
+      display: "flex",
+      alignItems: "center",
+      gap: 8,
+      color: C.mut,
+      fontSize: 13,
+      cursor: "pointer"
+    }
+  }, /*#__PURE__*/React.createElement("input", {
+    type: "checkbox",
+    checked: modoDJ,
+    onChange: e => setModoDJ(e.target.checked)
+  }), " Modo DJ — muestra el editor de la base de datos"), (bd.dbEsc || bd.dbTal || bd.dbReg) && /*#__PURE__*/React.createElement("div", {
+    style: {
       marginTop: 8
     }
-  }, "Sin conectar, todo se guarda solo en este navegador. Al conectar, tus personajes y notas viven en tu Drive y te siguen a cualquier dispositivo. Las reglas no pasan por Drive: se leen del archivo que acompaña a la app.")), estado && /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      color: C.warn,
+      fontSize: 11,
+      marginBottom: 6
+    }
+  }, "Estás usando una versión editada de la base de datos, no la publicada."), /*#__PURE__*/React.createElement("button", {
+    onClick: () => {
+      setEsc(escBase);
+      setTal(talBase);
+      setReg(regBase);
+      guardarDB("dbEsc", null);
+      guardarDB("dbTal", null);
+      guardarDB("dbReg", null);
+    },
+    style: btn
+  }, "Volver a la publicada"))), estado && /*#__PURE__*/React.createElement("div", {
     style: {
       color: estado.startsWith("Error") ? C.bad : C.faint,
       fontSize: 11.5,
@@ -1688,7 +2684,7 @@ function App() {
       marginBottom: 14,
       borderBottom: `1px solid ${C.line}`
     }
-  }, [["reglas", "Reglas"], ["pjs", "Personajes"], ["camp", "Campaña"]].map(([k, l]) => /*#__PURE__*/React.createElement("button", {
+  }, pestanas.map(([k, l]) => /*#__PURE__*/React.createElement("button", {
     key: k,
     onClick: () => {
       setTab(k);
@@ -1704,11 +2700,14 @@ function App() {
       borderBottom: `2px solid ${tab === k ? C.sap : "transparent"}`
     }
   }, l))), tab === "reglas" && /*#__PURE__*/React.createElement(Reglas, {
-    datos: datos
+    esc: esc,
+    tal: tal,
+    reg: reg
   }), tab === "pjs" && (pj ? /*#__PURE__*/React.createElement(Personaje, {
     pj: pj,
     set: setPJ,
-    datos: datos,
+    esc: esc,
+    tal: tal,
     volver: () => setAbierto(null)
   }) : /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("button", {
     onClick: () => {
@@ -1725,7 +2724,7 @@ function App() {
       marginBottom: 14
     }
   }, "+ Nuevo personaje"), bd.personajes.map(p => {
-    const d = calc(p);
+    const dd = calc(p);
     return /*#__PURE__*/React.createElement(Caja, {
       key: p.id
     }, /*#__PURE__*/React.createElement("button", {
@@ -1746,16 +2745,17 @@ function App() {
         fontSize: 12,
         marginTop: 2
       }
-    }, p.escuela || "sin escuela"), /*#__PURE__*/React.createElement("div", {
+    }, [p.escuela || "sin escuela", p.era, "rango " + p.rango].join(" · ")), /*#__PURE__*/React.createElement("div", {
       style: {
         ...NUM,
         display: "flex",
         gap: 14,
         marginTop: 6,
         fontSize: 12,
-        color: C.faint
+        color: C.faint,
+        flexWrap: "wrap"
       }
-    }, /*#__PURE__*/React.createElement("span", null, "Fat ", d.fatiga), /*#__PURE__*/React.createElement("span", null, "Conf ", d.confianza), /*#__PURE__*/React.createElement("span", null, "Def ", d.defensa), /*#__PURE__*/React.createElement("span", null, "Mental ", d.mental))), /*#__PURE__*/React.createElement("button", {
+    }, /*#__PURE__*/React.createElement("span", null, "Fat ", dd.fatiga), /*#__PURE__*/React.createElement("span", null, "Conf ", dd.confianza), /*#__PURE__*/React.createElement("span", null, "Def ", dd.defBase), /*#__PURE__*/React.createElement("span", null, "Mental ", dd.mental), /*#__PURE__*/React.createElement("span", null, "Contador ", p.contador, "/", dd.umbral))), /*#__PURE__*/React.createElement("button", {
       onClick: () => {
         if (confirm("¿Eliminar " + (p.nombre || "este personaje") + "?")) mut(b => {
           b.personajes = b.personajes.filter(x => x.id !== p.id);
@@ -1776,9 +2776,17 @@ function App() {
       fontFamily: SERIF
     }
   }, "Sin personajes todavía."))), tab === "camp" && /*#__PURE__*/React.createElement(Campana, {
-    datos: datos,
+    reg: reg,
     bd: bd,
     setBD: mut
+  }), tab === "editor" && /*#__PURE__*/React.createElement(Editor, {
+    esc: esc,
+    tal: tal,
+    reg: reg,
+    setEsc: setEscD,
+    setTal: setTalD,
+    setReg: setRegD,
+    descargar: descargar
   })));
 }
 ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));</script>

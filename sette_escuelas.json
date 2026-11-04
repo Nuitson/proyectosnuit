@@ -1,0 +1,4786 @@
+[
+ {
+  "n": 1,
+  "nombre": "Fervoroso vorin",
+  "enc": "Esclavo de la iglesia, consejero, maestro de oficios y doctrina. No posee nada y aconseja a quien lo posee todo.",
+  "atr": "Inteligencia +1, Comunicación +1",
+  "cur": "Teología, Historia, Filosofía natural, Persuasión, Etiqueta, Arte, Medicina",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio (formalmente esclavo; respetado en la práctica)",
+  "cap": "Jurisdicción. Ámbito: quien profese el vorinismo. La doctrina obliga; desobedecerla ante testigos deja al creyente en falta registrada ante su comunidad y su ojosclaros.",
+  "tec": "Devocionario — 1 Oportunidad: invocas el pasaje adecuado; un aliado que siga tu consejo gana +3 a su siguiente tirada social.",
+  "eq": "Hábitos, útiles de escritura, símbolo del Todopoderoso (banda Trivial; la iglesia provee).",
+  "titN": "Ardiente mayor",
+  "titT": "Tu dictamen doctrinal es vinculante: ante creyentes, tu Jurisdicción alcanza incluso a ojosclaros de rango.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Transnacionales vorin",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Etimología de las lenguas (erudición, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Lo que la pieza pide (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Medicina"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudito nombrado 1 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "nombre": "Escriba vorin",
+  "enc": "Mujer letrada (o ardiente) de una casa: lectora, ingeniera, cronista. Quien escribe la carta decide qué dice.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Escritura y archivo, Historia, Leyes y gobierno, Etiqueta, Filosofía natural, Comercio, Perspicacia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Alto o medio, según la casa",
+  "cap": "Vía establecida. Ámbito: correspondencia, contratos y registro de una casa.",
+  "tec": "Correspondencia — 1 Oportunidad: una carta o registro que redactaste en el pasado contiene ya la cláusula o el dato que ahora necesitas (detalle verdadero documental, retroactivo).",
+  "eq": "Vinculacaña de la casa en préstamo, útiles de escritura finos (banda Normal, de la casa).",
+  "titN": "Consejera de casa",
+  "titT": "Los documentos que certificas hacen fe: nadie tira contra su autenticidad, y falsificarte es delito registrado.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Transnacionales vorin",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "El ojo del tasador (erudición, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Historia",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "La palabra dada (social, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudito nombrado 2 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "nombre": "Duelista de arena",
+  "enc": "Ojosclaros que resuelve la política con la espada. Las esquirlas se apuestan; el estatus también.",
+  "atr": "Destreza +1, Presencia +1",
+  "cur": "Armas, Lucha, Aptitud física, Etiqueta, Perspicacia, Persuasión, Historia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Alto",
+  "cap": "Filo medido",
+  "tec": "Floritura — 1 Oportunidad tras impactar: tu próximo efecto especial de hasta +3 (contacto, agarrar, derribar) no paga el modificador de dificultad.",
+  "eq": "Espada de duelo de buena factura (banda Caro, préstamo familiar), atuendo de arena.",
+  "titN": "Campeón",
+  "titT": "Puedes batirte en nombre de otro: mientras representes una causa, tus apuestas comprometen estatus ajeno. Palanca directa de intriga.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Alezkar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Través de la batalla (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "El golpe que abre (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Persuasión"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento marcial nombrado 1 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "nombre": "Oficial de ejército",
+  "enc": "Mando ojosclaros en el ejército de un alto príncipe. La guerra alezi es formación, grado y linaje.",
+  "atr": "Presencia +1, Inteligencia +1",
+  "cur": "Armas, Aptitud física, Mando, Etiqueta, Leyes y gobierno, Historia, Persuasión",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Alto",
+  "cap": "Jurisdicción. Ámbito: la cadena de mando. Quien reconozca tu grado obedece la orden o queda en insubordinación registrada.",
+  "tec": "Orden en el caos — 1 Oportunidad: un aliado que pueda oírte cambia de actitud inmediatamente, fuera de su turno.",
+  "eq": "Uniforme de casa, espada de oficial, montura según casa (banda Normal a Caro).",
+  "titN": "Alto oficial",
+  "titT": "Una vez por enfrentamiento, toda tu unidad ignora un Conflicto simultáneo: la formación absorbe el golpe.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Alezkar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Danza de la lanza (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Mando",
+     "Etiqueta"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Tanto en la corte como en la batalla (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Armas (repetida)"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento marcial nombrado 2 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "nombre": "Cazador de abismos",
+  "enc": "Cuadrillas que bajan a las Llanuras por corazones de gema. La presa pesa cien veces más que tú.",
+  "atr": "Vigor +1, Percepción +1",
+  "cur": "Tiro, Aptitud física, Supervivencia, Vigilancia, Táctica, Trato con animales, Comercio",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Bajo a medio; la gema paga bien",
+  "cap": "Lectura del terreno. Ámbito: los abismos y las Llanuras Quebradas.",
+  "tec": "Ritmo de la bestia — 1 Oportunidad al vigilar una presa grande: la DJ te dice su próxima acción declarada.",
+  "eq": "Arpones y cuerda, arnés de descenso, capa encerada (banda Barato a Normal).",
+  "titN": "Capataz de caza",
+  "titT": "Ojos del abismo: una vez por cacería, declaras un hecho mayor del terreno (dónde emerge la presa, dónde está el refugio) sin coste de Oportunidad.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Alezkar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Aguantar la línea (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "La segunda intención (marcial, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Táctica",
+     "Trato con animales"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "nombre": "Milicia herdaziana",
+  "enc": "Soldado de un país pequeño rodeado de vecinos grandes. Se sobrevive por hermandad, no por número.",
+  "atr": "Destreza +1, Comunicación +1",
+  "cur": "Tiro, Lucha, Sigilo, Vigilancia, Engaño, Perspicacia, Supervivencia",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Bajo",
+  "cap": "Sincronía",
+  "tec": "Chanza — 1 Oportunidad: una burla en herdaziano obliga al enemigo a elegir: te ataca a ti o sufre −3 a su próxima tirada.",
+  "eq": "Honda y cuchillos, colores de la milicia (banda Trivial a Barato).",
+  "titN": "Héroe de Herdaz",
+  "titT": "Tu presencia basta: cualquier herdaziano que luche a tu vista cuenta con Sincronía sin necesidad de declarar la misma acción.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Herdaz",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Arquero de campaña (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Sigilo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Postura de la enredadera (marcial, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Supervivencia",
+     "Tiro (repetida)"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Argucia nombrada 1 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "nombre": "Errante herdaziano",
+  "enc": "Media familia vive fuera; tú eres el que va y viene. En casi cualquier ciudad hay un primo.",
+  "atr": "Comunicación +1, Destreza +1",
+  "cur": "Persuasión, Perspicacia, Comercio, Supervivencia, Trato con animales, Arte, Etiqueta",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo",
+  "cap": "Mundo conocido. Ámbito: parientes y compadres repartidos por Roshar.",
+  "tec": "Casa llena — 1 Oportunidad: el contacto declarado con Mundo conocido no cobra: lo hace por la familia. Anula el carril de la DJ una vez.",
+  "eq": "Carro o mula, mercancía menuda (banda Barato).",
+  "titN": "Patriarca / Matriarca",
+  "titT": "La red familiar entra al registro de facciones: mueve recursos, refugio y recados a escala de organización.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Herdaz",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Comercio",
+     "Supervivencia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Sonrisa del veneno (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Palabras de hierro (social, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Arte",
+     "Etiqueta"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Talento social nombrado 1 (social, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "nombre": "Hijo de hacienda",
+  "enc": "Heredero o brazo de una de las 203. La hacienda es la unidad social del reino y tú la representas.",
+  "atr": "Vigor +1, Comunicación +1",
+  "cur": "Aptitud física, Trato con animales, Supervivencia, Comercio, Artesanía, Mando, Persuasión",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Oficio, Campo",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: el campo y la hacienda (Artesanía, Trato con animales, Supervivencia).",
+  "tec": "Manos de sobra — 1 Oportunidad: un grupo de peones de la hacienda llega a tiempo de hacer el trabajo físico que declares.",
+  "eq": "Aperos, bestia de tiro, respaldo de la casa familiar (banda Normal, en especie).",
+  "titN": "Señor de hacienda",
+  "titT": "La hacienda entra como facción menor: rentas anuales (banda Normal) y asiento en el consejo de las 203.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Herdaz",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Trato con animales"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤1",
+    "adel": "Sifón de gemas (oficio, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Supervivencia",
+     "Mando"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤2",
+    "adel": "El valor de las personas (oficio, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Artesanía"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤3",
+    "adel": "Talento de oficio nombrado 1 (oficio, R4)",
+    "acc": "Lo que la pieza pide (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "nombre": "Escriba examinado",
+  "enc": "Has aprobado el primer examen y llevas registros de distrito. La carrera va a ministerio y, si llegas, al visirato.",
+  "atr": "Inteligencia +1, Comunicación +1",
+  "cur": "Leyes y gobierno, Historia, Escritura y archivo, Etiqueta, Persuasión, Perspicacia, Comercio",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio (funcionario)",
+  "cap": "Vía establecida. Ámbito: el expediente y el procedimiento de distrito.",
+  "tec": "Sello de distrito — 1 Oportunidad: un trámite que iniciaste consta ya informado favorablemente (hecho lateral burocrático retroactivo).",
+  "eq": "Credencial, útiles de escritura, casaca de funcionario (banda Barato).",
+  "titN": "Visir",
+  "titT": "Puedes abrir vía: conviertes un conflicto social en procedimiento oficial aunque no lo fuera. Creas el expediente que los demás tendrán que seguir.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio azishiano",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Orden imperiosa (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento social nombrado 2 (social, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 10,
+  "nombre": "Alguacil imperial",
+  "enc": "Recién destinado, rotando de zona cada pocos meses. Nunca echas raíces y nunca le debes nada a nadie.",
+  "atr": "Percepción +1, Presencia +1",
+  "cur": "Leyes y gobierno, Vigilancia, Perspicacia, Persuasión, Mando, Armas, Aptitud física",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio",
+  "cap": "Jurisdicción. Ámbito: la ley imperial en el distrito al que estás destinado.",
+  "tec": "Registro en regla — 1 Oportunidad: el delito queda registrado con testigos: el infractor sufre +3 en contra en su próxima tirada social ante cualquier autoridad.",
+  "eq": "Porra, media armadura, placa imperial (banda Normal; el imperio provee).",
+  "titN": "Prefecto",
+  "titT": "Tu palabra es el registro: dictas en el acto penas menores ejecutables (multa, arresto breve) sin proceso.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio azishiano",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Postura del viento (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Perspicacia",
+     "Persuasión"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Postura de la piedra (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Mando",
+     "Armas"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 11,
+  "nombre": "Soldado del batallón",
+  "enc": "Recluta de una unidad de mil. Tu fuerza no eres tú: es que los mil os movéis igual.",
+  "atr": "Vigor +1, Destreza +1",
+  "cur": "Armas, Tiro, Lucha, Aptitud física, Táctica, Mando, Leyes y gobierno",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Bajo a medio; paga estable",
+  "cap": "Sincronía. Ámbito: tu unidad y quien forme contigo.",
+  "tec": "Muro de mil — 1 Oportunidad cuando atacan a un aliado adyacente: intercambiáis posición y el ataque te apunta a ti, contra tu Defensa.",
+  "eq": "Lanza y coraza de batallón (equipo del ejército; efectos personales en banda Barato).",
+  "titN": "Capitán de mil",
+  "titT": "El batallón mantiene Sincronía aunque tú caigas: la orden se considera declarada mientras siga en pie.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio azishiano",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Mando",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Postura del humo (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Tiro"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Postura de la sangre (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Lucha",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 12,
+  "nombre": "Agente de información tashikki",
+  "enc": "Empiezas de escriba en una estación transmisora, transcribiendo correspondencia ajena. La carrera va a agente independiente y luego a dueño de red.",
+  "atr": "Percepción +1, Inteligencia +1",
+  "cur": "Escritura y archivo, Engaño, Perspicacia, Sigilo, Vigilancia, Etiqueta, Comercio",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Medio",
+  "cap": "Tarifa vigente. Primera candidata a limitarse tras el playtest.",
+  "tec": "Copia fiel — 1 Oportunidad: transcribiste íntegro un documento que pasó por tus manos y lo recuerdas (detalle verdadero documental).",
+  "eq": "Acceso a estación transmisora, cifras propias (banda Barato).",
+  "titN": "Dueño de red",
+  "titT": "Tus Secretos se gastan a través de agentes: éxito automático social sin estar presente. El Secreto se quema igual, pero el objetivo no sabe quién lo sabe.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio azishiano",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Sigilo"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Hablar en su idioma (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "La letalidad de lo pequeño (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Etiqueta",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Argucia nombrada 2 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 13,
+  "nombre": "Cazador emuli",
+  "enc": "Frontera oriental de Makabak: guía, arquero y anfitrión. La hospitalidad hacia el Valle es ley no escrita.",
+  "atr": "Percepción +1, Comunicación +1",
+  "cur": "Tiro, Supervivencia, Vigilancia, Trato con animales, Etiqueta, Persuasión, Sigilo",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: fronteras y estepas de Emul.",
+  "tec": "Mesa puesta — 1 Oportunidad: la hospitalidad emuli obliga: un desconocido acepta tu techo y comida, y la tregua que implican, hasta el alba.",
+  "eq": "Arco largo, tienda, provisiones (banda Barato).",
+  "titN": "Guardián del Valle",
+  "titT": "Conoces los pasos hacia el Valle: rutas que oficialmente no existen. Acceso que no se puede comprar.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio azishiano",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Etiqueta"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Puñales en las sombras (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "La salida de atrás (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Trato con animales",
+     "Persuasión"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "Argucia nombrada 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 14,
+  "nombre": "Leemareas",
+  "enc": "Estudian las olas para leer impulso y crestas. El mar habla; ellos escuchan primero.",
+  "atr": "Percepción +1, Inteligencia +1",
+  "cur": "Navegación, Filosofía natural, Vigilancia, Supervivencia, Arte, Teología, Aptitud física",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+  "est": "Medio",
+  "cap": "Lectura del terreno. Ámbito: el mar, sus mareas y su oleaje.",
+  "tec": "Cresta contada — 1 Oportunidad en el mar: predices la ola exacta: toda la tripulación gana +3 a una misma maniobra.",
+  "eq": "Instrumentos de marea, plaza de a bordo (banda Barato).",
+  "titN": "Voz de las mareas",
+  "titT": "Antes de zarpar declaras una verdad sobre el viaje («llegaremos antes de la tormenta») y el mundo la sostiene salvo intervención mayor.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Iri y Rira",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Navegación",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤1",
+    "adel": "La fortuna es de los que arriesgan (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Supervivencia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤2",
+    "adel": "Las paredes oyen (campo, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Arte",
+     "Teología"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 15,
+  "nombre": "Innovador militar iriali",
+  "enc": "Investigador armamentístico y táctico, no mando. La guerra de tus abuelos te aburre por principio.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Filosofía natural, Artesanía, Táctica, Historia, Escritura y archivo, Comercio, Tiro",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Medio a alto",
+  "cap": "Mundo conocido. Ámbito: el estado del arte militar: doctrinas, armas, quién usa qué y contra quién.",
+  "tec": "Prototipo — 1 Oportunidad: llevas encima el ajuste experimental adecuado: un objeto tuyo cuenta una vez como si tuviera una de las etiquetas de arma o armadura que declares.",
+  "eq": "Taller portátil, notas cifradas (banda Normal).",
+  "titN": "Nueva Experiencia",
+  "titT": "Presentas doctrina nueva: durante una campaña, tu bando repite un d6 de tensión por escena táctica.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Iri y Rira",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Táctica"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "Todo tiene un valor (oficio, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Artesanía",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Comercio"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "Talento de oficio nombrado 2 (oficio, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 16,
+  "nombre": "Espía militar riranio",
+  "enc": "Rira niega pertenecer a Iri. Tú vives dentro de esa negación, con dos nombres y una frontera en disputa.",
+  "atr": "Destreza +1, Comunicación +1",
+  "cur": "Sigilo, Engaño, Vigilancia, Perspicacia, Hurto, Etiqueta, Escritura y archivo",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Tarifa vigente",
+  "tec": "Doble bandera — 1 Oportunidad: la tapadera aguanta: un Conflicto que te identificaría se convierte en confirmación de tu identidad falsa.",
+  "eq": "Dos juegos de documentos, ropa de dos naciones (banda Barato).",
+  "titN": "Fantasma de la frontera",
+  "titT": "Mantienes identidades completas: cada una con su propio estatus y su propia red social.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Iri y Rira",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Sigilo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Manos de más (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Hurto",
+     "Etiqueta"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 17,
+  "nombre": "Guía de Tai-na",
+  "enc": "Vives sobre un dios y negocias con su rumbo. La isla respira debajo de tu casa.",
+  "atr": "Percepción +1, Presencia +1",
+  "cur": "Trato con animales, Supervivencia, Navegación, Aptitud física, Teología, Perspicacia, Vigilancia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+  "est": "Medio (prestigio isleño)",
+  "cap": "Lectura del terreno. Ámbito: el lomo del Tai-na y sus aguas.",
+  "tec": "Pulso del dios — 1 Oportunidad: el Tai-na responde: un movimiento menor de la isla (inclinación, chorro, sombra) ocurre a tu favor.",
+  "eq": "Arpón ceremonial, cordaje (banda Trivial).",
+  "titN": "Escogido del Tai-na",
+  "titT": "Una vez por historia pides a la criatura un movimiento mayor: cerrar un estrecho, sumergir el lomo, virar.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Islas Reshi",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Navegación",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤1",
+    "adel": "Contarlo distinto (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Trato con animales",
+     "Supervivencia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 18,
+  "nombre": "Isleño reshi",
+  "enc": "El mundo viene a las islas y tú le sacas partido. Sin ropas ni cargas, y sin necesitarlas.",
+  "atr": "Comunicación +1, Vigor +1",
+  "cur": "Persuasión, Aptitud física, Comercio, Arte, Perspicacia, Supervivencia, Lucha",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo",
+  "cap": "Mundo conocido. Ámbito: visitantes, anfitriones y quién es quién entre las islas.",
+  "tec": "Franqueza — 1 Oportunidad: tu desparpajo desarma: en esta escena, mentirte cuesta +3 al interlocutor.",
+  "eq": "Casi nada, y no lo necesitas (banda Trivial).",
+  "titN": "Rey / Reina de isla",
+  "titT": "Hospitalidad soberana: quien está bajo tu techo está en tregua vinculante; romperla es delito ante todas las islas.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Islas Reshi",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Persuasión",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "El silencio que pesa (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Arte"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Talento social nombrado 2 (social, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Supervivencia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 19,
+  "nombre": "Estratega veden",
+  "enc": "El campo de batalla se elige antes de pisarlo. Asalto pequeño, rápido y en el terreno equivocado para el enemigo.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Táctica, Tiro, Vigilancia, Supervivencia, Sigilo, Engaño, Mando",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Alto a medio",
+  "cap": "Lectura del terreno. Ámbito: el campo de batalla que tú has elegido o preparado.",
+  "tec": "Emboscada dispuesta — 1 Oportunidad al iniciar combate en terreno preparado: tu bando declara actitudes después de ver las del enemigo.",
+  "eq": "Mapas, catalejo, arco de caza (banda Normal).",
+  "titN": "General veden",
+  "titT": "Una vez por batalla, conviertes un Conflicto de cualquier aliado en Oportunidad tuya: el plan absorbe el error.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Jah Keved",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Táctica",
+     "Tiro"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Postura del fuego (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Supervivencia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Sigilo",
+     "Táctica (repetida)"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 20,
+  "nombre": "Artesano de Valath",
+  "enc": "Vinculacañas: el oficio más caro de Roshar sale de tu banco de trabajo.",
+  "atr": "Destreza +1, Inteligencia +1",
+  "cur": "Artesanía, Filosofía natural, Comercio, Escritura y archivo, Etiqueta, Perspicacia, Historia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Medio a alto",
+  "cap": "Gajes del oficio. Oficio: instrumentos de precisión (Artesanía, Filosofía natural).",
+  "tec": "Marca de Valath — 1 Oportunidad al terminar una obra: queda por encima de su banda: cuenta como calidad de maestro (CD 17 lograda) en un rasgo que declares.",
+  "eq": "Herramientas de precisión, banco en taller del gremio (banda Caro, del gremio).",
+  "titN": "Maestro vinculacañero",
+  "titT": "Tus obras emparejadas no fallan por distancia dentro de Roshar, y el gremio te debe asiento.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Jah Keved",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Etiqueta"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "Talento oficio nombrado 1 (oficio, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "Talento oficio nombrado 2 (oficio, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "Talento de oficio nombrado 3 (oficio, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 21,
+  "nombre": "Minero de Bavlandia",
+  "enc": "Polvo, vetas y derrumbes. La región es pobre en todo menos en lo que está debajo.",
+  "atr": "Vigor +1, Percepción +1",
+  "cur": "Aptitud física, Supervivencia, Vigilancia, Artesanía, Comercio, Lucha, Filosofía natural",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Oficio, Campo",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: el subsuelo: túneles, vetas y cuevas.",
+  "tec": "Oído a la roca — 1 Oportunidad bajo tierra: la roca avisa: cancelas un peligro del terreno (derrumbe, gas, hundimiento) declarándolo antes de que ocurra.",
+  "eq": "Pico, lámparas de gema pobre, cuerda (banda Trivial).",
+  "titN": "Capataz de veta",
+  "titT": "Una vez por historia declaras dónde hay veta o gema; la disputa por ella es tuya. Gancho directo de facción.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Jah Keved",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤1",
+    "adel": "Peso muerto (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Aptitud física",
+     "Lucha"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤2",
+    "adel": "Talento oficio nombrado 2 (oficio, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤3",
+    "adel": "Talento oficio nombrado 3 (oficio, R4)",
+    "acc": "Lo que la pieza pide (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 22,
+  "nombre": "Cirujano de Kharbranth",
+  "enc": "Los hospitales incomparables te formaron. La muerte no es un fallo: es un plazo que se negocia.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Medicina, Filosofía natural, Escritura y archivo, Perspicacia, Etiqueta, Persuasión, Historia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio a alto",
+  "cap": "Gajes del oficio. Oficio: la medicina (Medicina, Filosofía natural). La operación no fracasa: se alarga o consume material.",
+  "tec": "Triaje — 1 Oportunidad al examinar heridos: conoces Gravedad exacta, plazo real y prioridad, y das +3 a la primera tirada de curación derivada.",
+  "eq": "Instrumental completo, credencial de los hospitales (banda Caro).",
+  "titN": "Médico de cámara",
+  "titT": "Tus pacientes tiran recuperación un intervalo más rápido (mensual pasa a semanal, semanal a diario) mientras los atiendas.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Kharbranth",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Medicina",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Cortar por lo sano (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Persuasión"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudición nombrado 3 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 23,
+  "nombre": "Erudito del Palanaeum",
+  "enc": "El archivo más grande del mundo cobra la entrada. Tú ya amortizaste la tuya.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Historia, Filosofía natural, Teología, Escritura y archivo, Leyes y gobierno, Perspicacia, Arte",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio",
+  "cap": "Vía establecida. Aplicación de escuela: cuando puedas citar fuente, tiras la erudición pertinente en lugar de Persuasión; el objetivo opone saber propio o cede.",
+  "tec": "Cita exacta — 1 Oportunidad: recuerdas la fuente y dónde está: tu afirmación pasa a documentada y nadie puede descartarla sin fuente propia.",
+  "eq": "Credencial de acceso, notas de años (banda Normal: la entrada del Palanaeum se paga).",
+  "titN": "Maestro del Palanaeum",
+  "titT": "Acceso total y préstamo: el documento que la trama necesita existe en el archivo si es plausible; la DJ tasa el carril, no lo niega.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Kharbranth",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "El favor pequeño (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Historia",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudición nombrado 3 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 24,
+  "nombre": "Asaltante de las Tierras Heladas",
+  "enc": "Golpear y desaparecer en el hielo. La ley termina donde empieza la ventisca.",
+  "atr": "Vigor +1, Destreza +1",
+  "cur": "Lucha, Tiro, Sigilo, Supervivencia, Vigilancia, Hurto, Aptitud física",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: hielo, ventisca y tierra marginal.",
+  "tec": "Golpe y niebla — 1 Oportunidad tras tu ataque: te desplazas una banda de distancia sin provocar Explotar la apertura.",
+  "eq": "Pieles, hacha corta, trineo ligero (banda Trivial).",
+  "titN": "Señor del deshielo",
+  "titT": "Tu banda es facción: los asentamientos marginales pagan paso o protección. Renta e influencia fuera de la ley.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Tierras Heladas",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Lucha",
+     "Tiro"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Postura de hierro (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Sigilo",
+     "Supervivencia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Vigilancia",
+     "Hurto"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 25,
+  "nombre": "Cazador de las tundras",
+  "enc": "Sobrevivir donde nada debería. Cada invierno que vuelves es un argumento.",
+  "atr": "Percepción +1, Vigor +1",
+  "cur": "Supervivencia, Tiro, Vigilancia, Trato con animales, Sigilo, Medicina, Artesanía",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Oficio",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: tundra y clima extremo.",
+  "tec": "Refugio — 1 Oportunidad: siempre hay refugio: el grupo pasa la noche sin tiradas de clima ni consumo extra.",
+  "eq": "Arco, trampas, abrigo doble (banda Trivial).",
+  "titN": "El que vuelve",
+  "titT": "Una vez por historia, una muerte por entorno (frío, caída, hambre) se convierte en herida Grave. Solo entorno, nunca combate.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Tierras Heladas",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Medicina"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Trato con animales",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "Lo que la pieza pide (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 26,
+  "nombre": "Cuarto hijo",
+  "enc": "Los tres primeros sostienen la casa; el cuarto protege al pueblo. Currículo de cazador, no de soldado.",
+  "atr": "Vigor +1, Percepción +1",
+  "cur": "Tiro, Supervivencia, Vigilancia, Aptitud física, Trato con animales, Medicina, Sigilo",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+  "est": "Medio (honor familiar)",
+  "cap": "Lectura del terreno. Ámbito: la montaña y sus pasos.",
+  "tec": "Deber del cuarto — 1 Oportunidad cuando atacan a tu protegido: el ataque te apunta a ti y ganas +3 a tu próxima tirada contra ese enemigo.",
+  "eq": "Arco de cuerno, abrigos, amuleto familiar (banda Trivial).",
+  "titN": "Escudo del pueblo",
+  "titT": "Mientras guardes un lugar declarado, la sorpresa contra tu gente es imposible dentro de tu ámbito.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Picos Comecuernos",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Trato con animales",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 27,
+  "nombre": "Cocinero unkalaki",
+  "enc": "El prestigio de los Picos se sirve caliente. Nadie discute con la boca llena.",
+  "atr": "Comunicación +1, Percepción +1",
+  "cur": "Artesanía, Comercio, Etiqueta, Persuasión, Perspicacia, Trato con animales, Supervivencia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+  "est": "Medio a alto entre unkalaki",
+  "cap": "Gajes del oficio. Oficio: la cocina (Artesanía, Comercio).",
+  "tec": "Mesa de paz — 1 Oportunidad al servir: la escena social baja un nivel de tensión (mínimo 0 fuera de combate).",
+  "eq": "Cuchillos, ollas de cobre, especias (banda Normal: las especias no son baratas).",
+  "titN": "Cocinero de nuatoma",
+  "titT": "Tu mesa es territorio: quien come de ella queda en tregua y en deuda menor. Palanca social vinculante.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Picos Comecuernos",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤1",
+    "adel": "Nadie recuerda mi cara (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Persuasión"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤2",
+    "adel": "Talento oficio nombrado 2 (oficio, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Perspicacia",
+     "Artesanía (repetida)"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤3",
+    "adel": "Talento oficio nombrado 3 (oficio, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 28,
+  "nombre": "Kaluk'i'iki (guía)",
+  "enc": "Lagos de cráter, aire fino y los dioses cerca. Alguien tiene que saber por dónde y hablar con qué.",
+  "atr": "Percepción +1, Inteligencia +1",
+  "cur": "Supervivencia, Vigilancia, Teología, Medicina, Trato con animales, Navegación, Perspicacia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+  "est": "Medio",
+  "cap": "Lectura del terreno. Ámbito: los Picos: lagos de cráter, aguas shishi y pasos altos.",
+  "tec": "Agua que ve — 1 Oportunidad junto a un lago de cráter: haces una pregunta sobre lo que el agua ha visto pasar; la respuesta es verdadera.",
+  "eq": "Bastón, ofrendas, los pasos en la memoria (banda Trivial).",
+  "titN": "Voz junto al agua",
+  "titT": "Los spren del lago te reconocen: una vez por historia pides su intervención (MARCADOR: los lagos tocan Shadesmar; depende de la cola de spren).",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Picos Comecuernos",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Teología",
+     "Medicina"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Trato con animales",
+     "Navegación"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "nombre": "Chamán de piedra",
+  "enc": "La orden que gobierna Shinovar y guarda la Piedra. La ley aquí no se discute: se administra.",
+  "atr": "Presencia +1, Inteligencia +1",
+  "cur": "Teología, Leyes y gobierno, Historia, Persuasión, Etiqueta, Perspicacia, Medicina",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Alto",
+  "cap": "Jurisdicción. Ámbito: quien pise Shinovar o profese sus leyes. La piedra es sagrada y tu palabra la administra.",
+  "tec": "Ley de la piedra — 1 Oportunidad: declaras tabú un objeto o lugar concreto: los shin no lo tocarán; el forastero que lo haga queda marcado con delito registrado.",
+  "eq": "Vestiduras, símbolo de la orden (banda Barato; la orden provee).",
+  "titN": "Guardián de la Piedra",
+  "titT": "Custodias reliquias: sabes qué son las Hojas de honor y decides quién las porta. Palanca mayor de campaña.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Shinovar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Talento erudición nombrado 1 (erudición, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Historia",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudición nombrado 3 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "nombre": "El que sustrae",
+  "enc": "Soldado de monasterio. Sustraer vidas es lo más bajo que existe; por eso lo cargáis vosotros y nadie más.",
+  "atr": "Destreza +1, Vigor +1",
+  "cur": "Armas, Lucha, Aptitud física, Teología, Historia, Etiqueta, Perspicacia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Erudición",
+  "est": "Bajo en Shinovar; temido fuera",
+  "cap": "Filo medido",
+  "tec": "Peso asumido — 1 Oportunidad al herir: matar solo cuando se elige: reduces en 2 la Gravedad que infliges, declarándolo tras ver el daño.",
+  "eq": "Armas del monasterio (las mejores de Shinovar), hábito (banda Normal).",
+  "titN": "Portador de honor",
+  "titT": "Puedes ser juzgado digno de una Hoja de honor. Acceso, no posesión: el Guardián de la Piedra decide.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Shinovar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Teología",
+     "Historia"
+    ],
+    "libre": "1 de Marcial o Erudición, rango ≤1",
+    "adel": "Talento marcial nombrado 1 (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Erudición, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Etiqueta"
+    ],
+    "libre": "1 de Marcial o Erudición, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "nombre": "El que añade",
+  "enc": "Granjero o cocinero: que nadie pase hambre. En Shinovar, eso te pone por encima del guerrero.",
+  "atr": "Vigor +1, Comunicación +1",
+  "cur": "Artesanía, Supervivencia, Trato con animales, Comercio, Persuasión, Medicina, Teología",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+  "est": "Medio: los que añaden, por encima",
+  "cap": "Gajes del oficio. Oficio: labranza y cocina (Artesanía, Supervivencia, Trato con animales).",
+  "tec": "Añadir siempre — 1 Oportunidad: de lo poco sale bastante: raciones o material para el grupo entero donde solo había para uno.",
+  "eq": "Aperos y semillas, la tierra blanda de Shinovar en la memoria (banda Trivial).",
+  "titN": "Anciano de los campos",
+  "titT": "En Shinovar tu palabra pesa como la de un chamán en lo civil: Jurisdicción de hecho en disputas de tierra y sustento.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Shinovar",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Artesanía",
+     "Supervivencia"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤1",
+    "adel": "Talento oficio nombrado 1 (oficio, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Trato con animales",
+     "Persuasión"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤2",
+    "adel": "Talento oficio nombrado 2 (oficio, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Medicina"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤3",
+    "adel": "Talento oficio nombrado 3 (oficio, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "nombre": "Oficial naval",
+  "enc": "La dotación es un solo cuerpo y tú eres su voz. El mar no perdona órdenes tardías.",
+  "atr": "Presencia +1, Percepción +1",
+  "cur": "Navegación, Mando, Táctica, Vigilancia, Aptitud física, Comercio, Etiqueta",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio a alto",
+  "cap": "Sincronía. Aplicación de escuela: la dotación a tus órdenes cuenta como aliados para tu Sincronía.",
+  "tec": "Barlovento — 1 Oportunidad en maniobra naval: robas la posición: tu nave gana la banda de distancia que quieras respecto al rival.",
+  "eq": "Uniforme, sable, catalejo, plaza a bordo (banda Normal).",
+  "titN": "Capitán de flota",
+  "titT": "Hasta tres naves maniobran con Sincronía bajo tus señales.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Thaylenah",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Navegación",
+     "Mando"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Talento marcial nombrado 1 (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Táctica",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Aptitud física",
+     "Etiqueta"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "nombre": "Aprendiz de gremio",
+  "enc": "Subastas, contratos y astilleros: todo lo que Thaylenah vende pasa por un gremio, y tú aprendes el tuyo.",
+  "atr": "Comunicación +1, Inteligencia +1",
+  "cur": "Comercio, Persuasión, Etiqueta, Perspicacia, Artesanía, Navegación, Leyes y gobierno",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: el ramo del gremio que elijas, y las dos habilidades de tu currículo que lo sostienen.",
+  "tec": "Letra pequeña — 1 Oportunidad al cerrar trato: añades una cláusula que la otra parte no leyó; se descubre cuando te convenga.",
+  "eq": "Libros de cuentas, aval del gremio (banda Normal; crédito hasta Caro).",
+  "titN": "Maestro de gremio",
+  "titT": "Asiento y voto: fijas los precios locales de tu ramo una banda arriba o abajo. Palanca económica de facción.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Thaylenah",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Comercio",
+     "Artesanía"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤1",
+    "adel": "Talento oficio nombrado 1 (oficio, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Etiqueta"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤2",
+    "adel": "Talento oficio nombrado 2 (oficio, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Perspicacia",
+     "Navegación"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤3",
+    "adel": "Talento oficio nombrado 3 (oficio, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "nombre": "Alto guardia",
+  "enc": "Casas juradas a defender el reino: cinco hojas y tres armaduras. Tú juras antes de tocar ninguna.",
+  "atr": "Vigor +1, Presencia +1",
+  "cur": "Armas, Lucha, Aptitud física, Etiqueta, Vigilancia, Perspicacia, Historia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Alto",
+  "cap": "Filo medido",
+  "tec": "Juramento en pie — 1 Oportunidad cuando atacan a tu protegido a tu alcance: el ataque te apunta a ti y tu próximo Explotar la apertura no consume acción.",
+  "eq": "Media armadura de calidad, espada jurada, librea (banda Caro; de la casa).",
+  "titN": "Portador jurado",
+  "titT": "La casa te confía esquirla (hoja o armadura) mientras el juramento viva. Préstamo condicional: la esquirla es de la corona.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Thaylenah",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Etiqueta",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Talento marcial nombrado 1 (marcial, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "nombre": "Polemista marabeziano",
+  "enc": "La disputa formal como deporte nacional. Ganar a gritos es perder dos veces.",
+  "atr": "Comunicación +1, Inteligencia +1",
+  "cur": "Persuasión, Perspicacia, Filosofía natural, Historia, Etiqueta, Arte, Leyes y gobierno",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Medio",
+  "cap": "Vía establecida. Aplicación de escuela: puedes forzar que un conflicto social se resuelva como debate reglado; eso lo convierte en procedimiento.",
+  "tec": "Tercera réplica — 1 Oportunidad en debate: guardas la réplica: cancela el próximo +3 en contra que compren contra ti.",
+  "eq": "La palabra y una barca (banda Trivial).",
+  "titN": "Árbitro",
+  "titT": "Presides disputas: en el debate que arbitras defines qué resultado significa qué. Cambias las apuestas del conflicto social.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Lagopuro",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Filosofía natural",
+     "Historia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Talento social nombrado 1 (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "Talento social nombrado 2 (social, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "nombre": "Nómada Tu Bayla",
+  "enc": "Los caminos del interior entre Marabezia, Emul y Tukar. Sin asentamiento fijo, con todas las rutas.",
+  "atr": "Vigor +1, Comunicación +1",
+  "cur": "Supervivencia, Trato con animales, Comercio, Vigilancia, Aptitud física, Persuasión, Sigilo",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: rutas del interior y tierra de nadie.",
+  "tec": "El camino largo — 1 Oportunidad viajando: el atajo que no está en mapas: el grupo gana un intervalo de tiempo y llega antes de lo posible.",
+  "eq": "Recua, tiendas, mercancía de trueque (banda Barato).",
+  "titN": "Madre / Padre de ruta",
+  "titT": "El clan mueve lo que nadie más: contrabando y paso franco como facción. Las rutas son renta e influencia.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Lagopuro",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Trato con animales"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Vigilancia",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 37,
+  "nombre": "Guardián de las canciones",
+  "enc": "La memoria del pueblo cabe en ritmos. Si tú olvidas, olvidan todos.",
+  "atr": "Comunicación +1, Inteligencia +1",
+  "cur": "Arte, Historia, Teología, Persuasión, Perspicacia, Medicina, Etiqueta",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio",
+  "cap": "Mundo conocido. Ámbito: la memoria cantada del pueblo oyente: hechos, linajes y pactos.",
+  "tec": "Ritmo de la Memoria — 1 Oportunidad: entonas el ritmo exacto: un oyente presente recuerda o reconoce lo que la canción manda.",
+  "eq": "Nada que no lleves dentro (banda Trivial).",
+  "titN": "Cantor de los Cinco",
+  "titT": "Compones canción nueva: lo que cantas entra en la memoria del pueblo. Creas precedente cultural vinculante.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Oyentes de las Llanuras",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Arte",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Talento erudición nombrado 1 (erudición, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Talento erudición nombrado 2 (erudición, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Teología",
+     "Medicina"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Talento erudición nombrado 3 (erudición, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 38,
+  "nombre": "Pareja de guerra",
+  "enc": "Dos que luchan como uno. La mitad de tu Defensa camina al lado.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Lucha, Armas, Aptitud física, Vigilancia, Perspicacia, Táctica, Medicina",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Medio",
+  "cap": "Sincronía. Aplicación de escuela: con tu pareja no exige declarar la misma acción; basta actuar sobre el mismo objetivo.",
+  "tec": "Espalda con espalda — 1 Oportunidad: tu pareja y tú transferís hasta 3 puntos de fatiga entre ambos.",
+  "eq": "Armas gemelas; forma guerrera (ascendencia, sin coste).",
+  "titN": "Pareja jurada",
+  "titT": "Si tu pareja cae a 0 de fatiga, actúas dos turnos por ronda hasta el final de la escena. Una vez por escena.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Oyentes de las Llanuras",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Talento marcial nombrado 1 (marcial, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Lucha",
+     "Armas"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Talento marcial nombrado 2 (marcial, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Táctica"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Talento marcial nombrado 3 (marcial, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 39,
+  "nombre": "Cantor de los abismos",
+  "enc": "Las Llanuras Quebradas eran vuestras antes de los humanos. Los abismos no son obstáculo: son casa.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Supervivencia, Sigilo, Vigilancia, Tiro, Aptitud física, Trato con animales, Historia",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+  "est": "Bajo a medio",
+  "cap": "Lectura del terreno. Ámbito: las Llanuras Quebradas y sus abismos.",
+  "tec": "Salto de grieta — 1 Oportunidad al moverte por los abismos: cruzas donde nadie puede seguirte; el perseguidor necesita un rodeo de escena.",
+  "eq": "Cuerda, lanzas ligeras; forma apropiada (ascendencia, sin coste).",
+  "titN": "Voz de las Llanuras",
+  "titT": "Las Llanuras esconden a los tuyos: tu banda entera cuenta el terreno como ámbito propio mientras la guíes.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Oyentes de las Llanuras",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Murmullos en la corte (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Vigilancia",
+     "Trato con animales"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 40,
+  "nombre": "Siervo de los Fusionados",
+  "enc": "Voz o brazo de un dios menor con milenios de rabia. Sobrevivir a tu señor ya es carrera.",
+  "atr": "Presencia +1, y a elegir: Comunicación +1 (vía Voz) o Destreza +1 (vía Brazo)",
+  "cur": "Etiqueta, Perspicacia, Persuasión, Mando, Armas, Vigilancia, Historia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Marcial",
+  "est": "Medio a alto dentro del imperio",
+  "cap": "Jurisdicción. Ámbito: autoridad delegada: quien reconozca al Fusionado que sirves.",
+  "tec": "En su nombre — 1 Oportunidad: la amenaza cuenta como hecha por tu señor: el objetivo responde a ese miedo y ganas +3 a tu próxima tirada social de coacción.",
+  "eq": "Librea del señor; arma o sellos según vía (banda Normal; del Fusionado).",
+  "titN": "Favorito",
+  "titT": "Tu señor te escucha: una vez por historia pides su intervención directa. La factura la decide él.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Imperio cantor",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Vigilancia"
+    ],
+    "libre": "1 de Social o Marcial, rango ≤1",
+    "adel": "Talento social nombrado 1 (social, R2)",
+    "acc": "Segunda opinión (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Marcial, rango ≤2",
+    "adel": "Talento social nombrado 2 (social, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Mando"
+    ],
+    "libre": "1 de Social o Marcial, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 41,
+  "nombre": "Peregrino / sin tierra",
+  "enc": "Sin nación, sin casa, sin retorno. El camino es la identidad y la falta de equipaje, el método.",
+  "atr": "Vigor +1, Percepción +1",
+  "cur": "Supervivencia, Teología, Persuasión, Perspicacia, Medicina, Historia, Arte",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Mundo conocido. Ámbito: santuarios, caridades y casas que acogen.",
+  "tec": "Nada que quitarme — 1 Oportunidad al sufrir un Conflicto de Recurso o de Vínculo: no tienes nada que perder: el Conflicto se disuelve.",
+  "eq": "Bastón, manto, cuenco (banda Trivial).",
+  "titN": "El que llegó",
+  "titT": "Eliges el destino final del peregrinaje: alcanzarlo cuenta como meta mayor cumplida (PX de meta) y te da figura moral en el registro de facciones.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Sin país",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Supervivencia",
+     "Persuasión"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Medicina"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Historia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 42,
+  "nombre": "Agente Sangre Espectral",
+  "enc": "Una organización con los ojos puestos más allá de Roshar. No sabes el propósito; sabes tu parte.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Engaño, Sigilo, Hurto, Perspicacia, Vigilancia, Filosofía natural, Etiqueta",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Erudición",
+  "est": "Medio (financiación oscura)",
+  "cap": "Tarifa vigente",
+  "tec": "Tres vidas — 1 Oportunidad: la organización ya preparó esta ciudad: hay un alijo o piso franco donde lo necesitas.",
+  "eq": "Fondos operativos renovables (banda Normal), un símbolo que no debes enseñar.",
+  "titN": "Portador del sello",
+  "titT": "Conoces parte del propósito: acceso a medios de otros mundos. Un objeto invertido menor de Scadrial: el puente entre escenarios.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Sin país",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Sigilo",
+     "Hurto"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "Orden imperiosa (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Vigilancia",
+     "Etiqueta"
+    ],
+    "libre": "1 de Campo o Erudición, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 43,
+  "nombre": "Cantamundos",
+  "enc": "Llevas los pueblos dentro y los cuentas donde no los conocen. El mundo se sostiene sobre quien lo narra.",
+  "atr": "Comunicación +1, Inteligencia +1",
+  "cur": "Arte, Historia, Perspicacia, Engaño, Etiqueta, Comercio, Supervivencia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Bajo a medio",
+  "cap": "Mundo conocido. Ámbito: pueblos, costumbres y quién manda dónde.",
+  "tec": "El cuento adecuado — 1 Oportunidad ante un público: cuentas la historia que necesitaban: su disposición mejora un paso.",
+  "eq": "Instrumento, memoria enorme, calzado gastado (banda Trivial).",
+  "titN": "Cantamundos mayor",
+  "titT": "Te preceden: en cualquier asentamiento tu nombre llegó antes: estatus efectivo medio-alto y audiencia con quien mande.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Sin país",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Arte",
+     "Historia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Talento social nombrado 1 (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Engaño"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "Talento social nombrado 2 (social, R3)",
+    "acc": "Todo tiene un valor (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Etiqueta",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "Las paredes oyen (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 44,
+  "nombre": "Niño de la calle",
+  "enc": "Todas las ciudades tienen calles y tú eres de todas. Lo que se cae, se recoge.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Hurto, Sigilo, Perspicacia, Persuasión, Supervivencia, Aptitud física, Comercio",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Mundo conocido. Ámbito: las calles: quién manda, qué se mueve, por dónde no pasar.",
+  "tec": "Por los tejados — 1 Oportunidad al huir: la calle te traga: escapas de la vista; retomarte exige una escena nueva.",
+  "eq": "Lo puesto y tres escondrijos (banda Trivial).",
+  "titN": "El que salió",
+  "titT": "Las calles te recuerdan: red de informantes menores en cada ciudad. Ojos por todas partes, como facción informal.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Sin país",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Perspicacia",
+     "Persuasión"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Talento campo nombrado 1 (campo, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Hurto",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Talento campo nombrado 2 (campo, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Comercio"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "Talento campo nombrado 3 (campo, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 45,
+  "nombre": "Revolucionario",
+  "enc": "Siempre hay alguien harto. Tu oficio es encontrarlo, juntarlo con los demás y ponerle fecha.",
+  "atr": "Comunicación +1, Presencia +1",
+  "cur": "Persuasión, Mando, Engaño, Escritura y archivo, Sigilo, Perspicacia, Leyes y gobierno",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo, o el que finjas",
+  "cap": "Mundo conocido. Ámbito: los descontentos: en cada ciudad sabes quién está harto y de qué.",
+  "tec": "La chispa — 1 Oportunidad en una escena pública: el malestar se hace acto: la multitud hace una cosa ahora (bloquear, abuchear, dispersarse, esconder a alguien).",
+  "eq": "Plantillas de imprenta de mano, nombres que no apuntas (banda Trivial a Barato).",
+  "titN": "Comité",
+  "titT": "La célula es facción: células coordinadas en varias ciudades. El registro de facciones te trata como poder emergente con agenda propia.",
+  "mundo": "Roshar",
+  "era": "",
+  "etq": "Sin país",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Sigilo"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Talento social nombrado 1 (social, R2)",
+    "acc": "Carga impetuosa (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Mando"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Talento social nombrado 2 (social, R3)",
+    "acc": "El ojo del tasador (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Talento social nombrado 3 (social, R4)",
+    "acc": "El valor de las personas (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 101,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Cabeza de casa",
+  "enc": "La fortaleza, el apellido y las arquillas. Tu trabajo es que la casa siga existiendo el mes que viene.",
+  "atr": "Presencia +1, Comunicación +1",
+  "cur": "Etiqueta, Mando, Persuasión, Perspicacia, Leyes y gobierno, Comercio, Historia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Alto",
+  "cap": "Jurisdicción. Ámbito: tu casa — criados, soldados, parientes y clientes. Quien coma de ella obedece o queda en falta registrada ante el apellido.",
+  "tec": "Palabra de la casa — 1 Oportunidad: una orden tuya ya se ha cumplido antes de que la dieras; declaras qué criado o soldado lo hizo y cuándo salió.",
+  "eq": "Fortaleza en Luthadel, librea, carruaje y escolta (banda Muy caro, de la casa).",
+  "titN": "Lord de Luthadel",
+  "titT": "Tu voto cuenta en la corte del lord Legislador: puedes proponer un matrimonio o una ruina, y el resto de las Grandes Casas está obligado a responder.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Tratar con un obligador (social, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Etiqueta",
+     "Mando"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "La noche en el baile (social, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "El informe que todos creen (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 103,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Escriba de casa",
+  "enc": "La guerra entre Grandes Casas es económica antes que alomántica, y la pelean los libros de cuentas.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Escritura y archivo, Comercio, Leyes y gobierno, Historia, Etiqueta, Perspicacia, Filosofía natural",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Medio",
+  "cap": "Vía establecida. Ámbito: los libros de la casa, sus contratos y los aranceles del canal.",
+  "tec": "Arancel favorable — 1 Oportunidad en un trato o un transporte: la tarifa, el peaje o el arancel que se aplica resulta ser el que te conviene, y está escrito.",
+  "eq": "Libros de cuentas, útiles de escritura, acceso al archivo de la casa (banda Normal).",
+  "titN": "Intendente",
+  "titT": "Firmas en nombre de la casa: tus compromisos la obligan, y deshacerlos le cuesta un escándalo público.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Comercio"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "La historia oficial (erudición, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "Lo que el Ministerio enterró (erudición, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "La fecha exacta (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 104,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Dominio de Terris",
+  "nombre": "Guardador",
+  "enc": "Llevas dentro lo que el Ministerio borró. Si tú lo olvidas, se pierde del mundo.",
+  "atr": "Inteligencia +1, Determinación +1",
+  "cur": "Historia, Teología, Filosofía natural, Medicina, Escritura y archivo, Arte, Perspicacia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Bajo: sirviente a ojos del imperio",
+  "cap": "Mundo conocido. Ámbito: la memoria guardada — historias, lenguas, religiones y oficios que el Ministerio declaró inexistentes.",
+  "tec": "Lo que nadie recuerda — 1 Oportunidad: recitas de memoria un dato que fue borrado. Es cierto, y nadie puede desmentirlo porque no queda copia.",
+  "eq": "Ropa de sirviente y nada escrito: escribirlo sería la muerte (banda Trivial).",
+  "titN": "Guardián del saber",
+  "titT": "Tu memoria entra en el registro de facciones: los guardadores te buscan y te consultan, y lo que tú pierdas no lo recupera nadie.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Arte"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "La mente abierta (erudición, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Historia",
+     "Teología"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "El precedente (erudición, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Filosofía natural",
+     "Medicina"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "Lo que mató al anterior (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 105,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Dominio de Terris",
+  "nombre": "Mayordomo terrisano",
+  "enc": "El imperio te envía a servir en una casa ajena. Nadie sabe la casa mejor que tú, y eso incluye a su señor.",
+  "atr": "Inteligencia +1, Comunicación +1",
+  "cur": "Etiqueta, Perspicacia, Escritura y archivo, Comercio, Artesanía, Persuasión, Historia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Oficio",
+  "est": "Bajo de derecho, alto de hecho",
+  "cap": "Vía establecida. Ámbito: la casa a la que sirves, su protocolo y su servicio.",
+  "tec": "Ya está dispuesto — 1 Oportunidad: lo que tu señor va a necesitar está preparado desde esta mañana, y tú decides qué era.",
+  "eq": "Librea de la casa a la que sirves y las llaves de todo (banda Normal, prestado).",
+  "titN": "Mayordomo mayor",
+  "titT": "Gobiernas la casa por dentro: decides quién entra, quién sirve y quién se va, y tu señor se entera después.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤1",
+    "adel": "El precio de callarse (social, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤2",
+    "adel": "Hablar como skaa, hablar como noble (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Artesanía",
+     "Persuasión"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤3",
+    "adel": "Testigos de clan (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 106,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Dominio de Terris",
+  "nombre": "Pastora de la tundra",
+  "enc": "Los hombres salen de aquí como sirvientes. Las que sobreviven al programa de cría se quedan con el ganado, la mina y el invierno.",
+  "atr": "Vigor +1, Determinación +1",
+  "cur": "Supervivencia, Trato con animales, Artesanía, Vigilancia, Aptitud física, Medicina, Teología",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Oficio",
+  "est": "Bajo",
+  "cap": "Gajes del oficio. Oficio: el ganado, la mina y la tierra helada (Trato con animales, Supervivencia, Artesanía).",
+  "tec": "Cuenta del rebaño — 1 Oportunidad: sabes exactamente qué falta y desde cuándo, sea de un rebaño, de un almacén o de una aldea.",
+  "eq": "Cayado, pieles, un perro y el paso de los montes en la memoria (banda Trivial).",
+  "titN": "La que cuenta los inviernos",
+  "titT": "Tu aldea te obedece antes que al Ministerio: una vez por historia la aldea entera te cubre, y el programa de cría no encuentra a quien viene buscando.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Artesanía",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤1",
+    "adel": "Andar en la ceniza (campo, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Supervivencia",
+     "Trato con animales"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤2",
+    "adel": "Lo que corre por el barrio (campo, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Medicina"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤3",
+    "adel": "La ciudad de noche (campo, R4)",
+    "acc": "La traducción exacta (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 107,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Obligador del Ministerio",
+  "enc": "Sin un obligador delante no hay contrato, ni matrimonio, ni venta. El imperio funciona porque tú firmas.",
+  "atr": "Presencia +1, Inteligencia +1",
+  "cur": "Leyes y gobierno, Teología, Escritura y archivo, Etiqueta, Perspicacia, Persuasión, Comercio",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Alto",
+  "cap": "Jurisdicción. Ámbito: quien profese la religión del lord Legislador, y todo acuerdo que necesite testigo imperial.",
+  "tec": "Sin mi sello no hay trato — 1 Oportunidad: un acuerdo cerrado sin ti queda nulo, y todos los presentes saben que lo está.",
+  "eq": "Túnicas grises, tatuajes de tu cantón, sello y credencial (banda Normal; el Ministerio provee).",
+  "titN": "Alto prelado",
+  "titT": "Mandas un cantón: abres o cierras una investigación, y los inquisidores de acero responden a tu llamada. Lo que no controlas es qué hacen al llegar.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Teología"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "El contrato leído dos veces (erudición, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "La traducción exacta (erudición, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Persuasión"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "Publicarlo (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 108,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Capataz de plantación",
+  "enc": "Mil skaa, una cuota y una cosecha que hay que limpiar de ceniza todos los días. El noble propietario no pisa por aquí.",
+  "atr": "Vigor +1, Presencia +1",
+  "cur": "Mando, Aptitud física, Supervivencia, Trato con animales, Comercio, Perspicacia, Armas",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio",
+  "cap": "Jurisdicción. Ámbito: la dotación skaa a tu cargo y los capataces menores bajo tus órdenes.",
+  "tec": "La cuota sale — 1 Oportunidad: la cosecha, la carga o el trabajo del día está hecho a tiempo, y declaras a quién le ha costado.",
+  "eq": "Látigo, caballo y el registro de la dotación (banda Normal).",
+  "titN": "Administrador de hacienda",
+  "titT": "La hacienda es tuya de hecho: rentas anuales en banda Normal, y el propietario firma lo que tú le pongas delante.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Mando",
+     "Supervivencia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Cerrar el hueco (marcial, R2)",
+    "acc": "Lo que cuentan los metales (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Trato con animales"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "El golpe que decide (marcial, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "El duelo decidido (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 109,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Barquero de canal",
+  "enc": "Los canales son el aparato circulatorio del imperio. Todo lo que se mueve entre dominios pasa por una pértiga como la tuya.",
+  "atr": "Vigor +1, Percepción +1",
+  "cur": "Navegación, Aptitud física, Vigilancia, Comercio, Supervivencia, Artesanía, Lucha",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Oficio",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: el canal — esclusas, riberas, pasos, puentes y lo que se mueve por ellos.",
+  "tec": "Doble fondo — 1 Oportunidad al ser registrado: la carga que no deberías llevar no aparece, y declaras dónde iba escondida.",
+  "eq": "Barcaza o plaza en una, bichero y pértiga (banda Barato).",
+  "titN": "Patrón de ruta",
+  "titT": "La ruta es tuya: mueves lo que nadie más mueve entre dos dominios, y tu contrabando entra al registro de facciones.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Aptitud física",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤1",
+    "adel": "Dormir con un ojo (campo, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Navegación",
+     "Comercio"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤2",
+    "adel": "Bajar a lo oscuro (campo, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Artesanía",
+     "Lucha"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤3",
+    "adel": "La red del barrio (campo, R4)",
+    "acc": "La traducción exacta (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 110,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Guardia de guarnición",
+  "enc": "Skaa armado por el imperio para vigilar a los skaa. Tu fuerza no eres tú: es que los ocho os movéis igual.",
+  "atr": "Vigor +1, Destreza +1",
+  "cur": "Armas, Lucha, Aptitud física, Táctica, Vigilancia, Mando, Leyes y gobierno",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Bajo a medio; paga y comida",
+  "cap": "Sincronía. Ámbito: tu escuadra, y cualquiera que forme contigo.",
+  "tec": "Cerrad la calle — 1 Oportunidad: la escuadra bloquea una salida que nadie había descrito. Nadie pasa por ahí sin tirar.",
+  "eq": "Lanza o garrote, media armadura y los colores de la guarnición (banda Normal; la guarnición provee).",
+  "titN": "Sargento de la Guarnición",
+  "titT": "Tu escuadra mantiene Sincronía aunque tú caigas, y puedes requisar alojamiento, comida y monturas en nombre del imperio.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Mando"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Salir del alcance (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Aguantar de pie (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Táctica"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "El intercambio entero (marcial, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 111,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Ratero",
+  "enc": "La bruma sube todas las noches y todo el mundo se encierra. Tú te acostumbraste, y por eso la ciudad de noche es tuya.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Hurto, Sigilo, Vigilancia, Aptitud física, Perspicacia, Engaño, Comercio",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: la ciudad de noche, en las brumas — tejados, callejones, desagües y lo que se cruza en ellos.",
+  "tec": "Las brumas tapan — 1 Oportunidad de noche y al aire libre: la bruma se cierra donde te conviene. Nadie puede seguirte ni describirte después.",
+  "eq": "Lo puesto, ganzúas y tres escondrijos (banda Trivial).",
+  "titN": "Dueño del barrio",
+  "titT": "El barrio es tuyo de noche: una red de ojos en cada calle, y nada entra ni sale del distrito sin que te llegue.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Aptitud física",
+     "Perspicacia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Perderse a propósito (campo, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Hurto",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Las llaves que no son llaves (campo, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Engaño"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "No estuve nunca (campo, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 112,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Cuadrilla de ladrones",
+  "enc": "Seis personas, un plan y un golpe que nadie ha intentado. Lo que te mantiene vivo no es tu mano: es que los otros cinco sepan dónde vas a estar.",
+  "atr": "Destreza +1, Comunicación +1",
+  "cur": "Sigilo, Hurto, Engaño, Perspicacia, Táctica, Vigilancia, Persuasión",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Sincronía. Aplicación de escuela: con tu cuadrilla no hace falta declarar la misma acción; basta con que hayáis planeado el golpe juntos.",
+  "tec": "Estaba en el plan — 1 Oportunidad: lo que acaba de pasar ya lo habíais previsto. Declaras qué parte del plan lo cubre, y un aliado se coloca donde haga falta.",
+  "eq": "La herramienta del golpe y un piso franco compartido (banda Barato).",
+  "titN": "Jefe de cuadrilla",
+  "titT": "Tu cuadrilla es facción: gente, pisos y contactos a escala de organización, y los golpes grandes se te proponen a ti primero.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Sigilo",
+     "Hurto"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Puñales en las sombras (campo, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Donde nadie mira (campo, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Persuasión"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "La puerta que nadie cerró (campo, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 113,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Artesano",
+  "enc": "Skaa con licencia imperial. Eres propiedad del sistema y a la vez la única persona del barrio a la que el sistema necesita.",
+  "atr": "Destreza +1, Inteligencia +1",
+  "cur": "Artesanía, Comercio, Perspicacia, Escritura y archivo, Filosofía natural, Persuasión, Vigilancia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+  "est": "Medio: skaa con licencia",
+  "cap": "Gajes del oficio. Oficio: tu taller (Artesanía, Comercio).",
+  "tec": "Marca del taller — 1 Oportunidad: reconoces quién hizo una pieza, o una pieza tuya aparece donde no debería y sabes por qué mano pasó.",
+  "eq": "Taller con licencia imperial y herramientas propias (banda Normal).",
+  "titN": "Maestro con licencia",
+  "titT": "Tu licencia cubre a quien tú digas: puedes dar trabajo legal —y por tanto papeles— a quien no debería tenerlos.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤1",
+    "adel": "Secar y sellar (oficio, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤2",
+    "adel": "El paso de aduana (oficio, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Persuasión"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤3",
+    "adel": "La ruta abierta (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 114,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Herborista",
+  "enc": "Todas las plantas son pardas y la ceniza se mete en los pulmones. Lo que cura y lo que mata sale del mismo mortero.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Medicina, Supervivencia, Filosofía natural, Artesanía, Comercio, Perspicacia, Sigilo",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Bajo",
+  "cap": "Gajes del oficio. Oficio: la botica (Medicina, Supervivencia).",
+  "tec": "Dos usos — 1 Oportunidad al preparar algo: lo que has hecho sirve además para lo contrario, y solo tú sabes cuál de los dos frascos es cuál.",
+  "eq": "Botica, mortero, hierbas pardas y un cajón de ceniza cernida (banda Barato).",
+  "titN": "Boticaria del barrio",
+  "titT": "El barrio entero depende de ti: sabes quién está enfermo, quién embarazada y quién envenenado antes que nadie, y nadie se atreve a denunciarte.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Supervivencia",
+     "Artesanía"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "El arreglo de campo (oficio, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Medicina",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "La obra bien hecha (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "La pieza imposible (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 115,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Médico de casa",
+  "enc": "Atiendes a la familia entera y por eso sabes de ella más que su mayordomo. Un médico que habla no vuelve a trabajar.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Medicina, Filosofía natural, Perspicacia, Etiqueta, Escritura y archivo, Persuasión, Artesanía",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Social",
+  "est": "Medio a alto",
+  "cap": "Tarifa vigente",
+  "tec": "Lo que el cuerpo cuenta — 1 Oportunidad al examinar a alguien: sabes qué le ha pasado de verdad, y si ha sufrido la ruptura.",
+  "eq": "Instrumental completo y permiso para entrar en la casa a cualquier hora (banda Caro, de la casa).",
+  "titN": "Médico de cámara",
+  "titT": "Tus Secretos alcanzan a la casa como institución y no solo a una persona, y ya nadie se atreve a prescindir de ti.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Medicina",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤1",
+    "adel": "Veneno y remedio (erudición, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Perspicacia",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤2",
+    "adel": "Operar en la mesa (erudición, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Medicina (repetida)"
+    ],
+    "libre": "1 de Erudición o Social, rango ≤3",
+    "adel": "El archivo completo (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 116,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Dama de salón",
+  "enc": "Noble, con acceso a todo y sin una sola atribución legal. Las casas se arruinan en los bailes, no en los tejados.",
+  "atr": "Presencia +1, Comunicación +1",
+  "cur": "Etiqueta, Perspicacia, Persuasión, Engaño, Arte, Historia, Comercio",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Alto, y sin ningún poder reconocido",
+  "cap": "Tarifa vigente",
+  "tec": "La lista de invitados — 1 Oportunidad antes de un baile: decides quién ha sido invitado y quién no, y nadie recuerda que fueras tú.",
+  "eq": "Vestuario de corte, joyas e invitación permanente (banda Muy caro, de la casa).",
+  "titN": "Señora del salón",
+  "titT": "Tu baile es la corte: lo que se acuerda en él obliga a las casas, y tú decides quién habla con quién y en qué orden.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Arte",
+     "Historia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Hablar por encima (social, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "Lo que me debes (social, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Engaño"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "La palabra que obliga (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 117,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Criada de confianza",
+  "enc": "Skaa, dentro de la fortaleza, con llaves de todo. Estás en la habitación cuando se dicen las cosas y para ellos no estás.",
+  "atr": "Percepción +1, Comunicación +1",
+  "cur": "Perspicacia, Vigilancia, Etiqueta, Artesanía, Engaño, Sigilo, Persuasión",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo, e invisible",
+  "cap": "Mundo conocido. Ámbito: el servicio — quién sirve en qué casa, qué se oye en cada cocina y qué se tira a la basura.",
+  "tec": "Nadie me ve — 1 Oportunidad: estabas en la habitación cuando pasó, y nadie lo recuerda ni lo pone en duda.",
+  "eq": "Uniforme, llaves de servicio y lo que cabe en un bolsillo (banda Trivial).",
+  "titN": "Ama de llaves",
+  "titT": "El servicio de la ciudad te responde: una red de criadas en cada fortaleza, y las casas no saben que existe.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Vigilancia",
+     "Artesanía"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "La verdad incómoda (social, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Perspicacia",
+     "Etiqueta"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Partir el bando (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Engaño",
+     "Sigilo"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Nombre en la ciudad (social, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 118,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Mataneblinos",
+  "enc": "Las casas se matan con brumosos, y alguien tiene que saber cómo se mata a uno. Nada de metal encima: madera, obsidiana, cuerda y mucha paciencia.",
+  "atr": "Percepción +1, Destreza +1",
+  "cur": "Armas, Lucha, Aptitud física, Vigilancia, Táctica, Perspicacia, Sigilo",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Medio mientras te necesiten, y nadie te recuerda después",
+  "cap": "Filo medido",
+  "tec": "Terreno preparado — 1 Oportunidad antes de que empiece: declaras una cosa del sitio que habías preparado contra un alomante —sin un anclaje metálico, a oscuras, con la salida tapiada— y estaba así desde antes de que llegara.",
+  "eq": "Bastón de duelo y hojas de obsidiana, escudo de madera y una armadura sin una sola pieza de metal (banda Normal).",
+  "titN": "Cazador de brumosos",
+  "titT": "Eres lo que una casa manda cuando la otra tiene un nacido de la bruma: puedes preparar una noche entera contra un alomante y ganarla, y las casas pagan por que no trabajes para la rival.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "El hueco de la guardia (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Armas",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "No estar donde golpean (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Táctica"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Romper la línea (marcial, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 119,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Esclavo de los Pozos",
+  "enc": "Hathsin. Te metieron ahí a arrancar geodas de atium de unas cuevas de cristal que cortan al pasar. Legalmente estás muerto.",
+  "atr": "Vigor +1, Determinación +1",
+  "cur": "Aptitud física, Supervivencia, Vigilancia, Sigilo, Artesanía, Medicina, Lucha",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+  "est": "Ninguno: legalmente estás muerto",
+  "cap": "Lectura del terreno. Ámbito: Hathsin — las cuevas de cristal, los turnos, las vías de agua y los pasos que los guardias no andan.",
+  "tec": "Las cuevas respiran — 1 Oportunidad bajo tierra: sabes por dónde entra el aire, y por tanto por dónde se sale.",
+  "eq": "Nada. Un trapo, y las manos cortadas hasta el hueso (banda Trivial).",
+  "titN": "El que salió",
+  "titT": "De los Pozos no sale nadie, así que eres un rumor: una vez por historia alguien te ayuda solo por lo que significa que estés vivo.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Aptitud física",
+     "Artesanía"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤1",
+    "adel": "La fortuna es de los que arriesgan (campo, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤2",
+    "adel": "Caer bien (campo, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Sigilo",
+     "Lucha"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤3",
+    "adel": "La salida preparada (campo, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 120,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Revolucionario",
+  "enc": "Siempre hay alguien harto. Tu oficio es encontrarlo, juntarlo con los demás y ponerle fecha.",
+  "atr": "Comunicación +1, Presencia +1",
+  "cur": "Persuasión, Mando, Engaño, Escritura y archivo, Sigilo, Perspicacia, Leyes y gobierno",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo, o el que finjas",
+  "cap": "Mundo conocido. Ámbito: los descontentos — en cada ciudad sabes quién está harto y de qué.",
+  "tec": "La chispa — 1 Oportunidad en una escena pública: el malestar se hace acto. La multitud hace una cosa ahora: bloquear, abuchear, dispersarse o esconder a alguien.",
+  "eq": "Plantillas de imprenta de mano y nombres que no apuntas en ningún sitio (banda Trivial a Barato).",
+  "titN": "Comité",
+  "titT": "La célula es facción: células coordinadas en varias ciudades, y el registro de facciones te trata como poder emergente con agenda propia.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Sigilo"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Sonrisa del veneno (social, R2)",
+    "acc": "Encajar (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Mando"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "La amenaza que no se dice (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "El favor cobrado (social, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 121,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Luthadel",
+  "nombre": "Maestro de armas de casa",
+  "enc": "Entrenas a la guardia de la casa, peleas sus duelos y diriges sus noches de guerra. Lo que la casa no puede hacer en público lo haces tú con una hoja.",
+  "atr": "Destreza +1, Presencia +1",
+  "cur": "Armas, Táctica, Aptitud física, Lucha, Etiqueta, Mando, Perspicacia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio: sirves a la casa, no eres de la casa",
+  "cap": "Filo medido",
+  "tec": "Medir al rival — 1 Oportunidad antes del primer intercambio: conoces el arma, la escuela y la actitud que prefiere tu oponente, y eliges cuál de los dos actúa primero.",
+  "eq": "Juego de armas de la casa, cota ligera bajo la librea y la llave de la sala de armas (banda Normal; la casa provee).",
+  "titN": "Maestro de la casa",
+  "titT": "Diriges las noches de guerra de tu casa: decides contra quién y cuándo, y una casa rival que te sepa enfrente negocia antes de atacar.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Etiqueta",
+     "Mando"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Pelea de bodega (marcial, R2)",
+    "acc": "Lo que cuentan los metales (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Táctica"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Entrar y salir (marcial, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Aptitud física",
+     "Lucha"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Pie que no cede (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 122,
+  "era": "Era 1 · Mundo de ceniza",
+  "etq": "Transversales",
+  "nombre": "Asesino",
+  "enc": "Las casas se hacen la guerra de noche y por encargo. Tú eres el encargo: una hoja, un frasco y la librea de un oficio que no es el tuyo.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Armas, Sigilo, Vigilancia, Perspicacia, Aptitud física, Hurto, Etiqueta",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Campo",
+  "est": "Ninguna que puedas reconocer en público: lo que tienes son clientes",
+  "cap": "Filo medido",
+  "tec": "Donde no se ve — 1 Oportunidad: tu ataque no deja marca de cómo se hizo. La herida parece otra cosa —una caída, unas fiebres, una pelea de taberna— y solo una tirada de Medicina contra 17 puede decir lo contrario.",
+  "eq": "Hoja estrecha, un frasco sin etiqueta y la librea de un oficio ajeno (banda Barato).",
+  "titN": "Nombre que se paga",
+  "titT": "Las casas te contratan sin llegar a conocerte: puedes hacer que un heredero, un capataz o un obligador desaparezca, y lo que de verdad vendes es que nadie sabrá para quién trabajabas.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Armas",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Través de la batalla (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Sigilo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "El amago leído (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Hurto"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Dos tiempos (marcial, R4)",
+    "acc": "El trato redondo (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 201,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Elendel",
+  "nombre": "Policía de Elendel",
+  "enc": "Placa de octante, revólver reglamentario y un parte que hay que rellenar. Tu fuerza es que hay a quién apelar.",
+  "atr": "Presencia +1, Percepción +1",
+  "cur": "Leyes y gobierno, Vigilancia, Perspicacia, Tiro, Mando, Persuasión, Escritura y archivo",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio",
+  "cap": "Jurisdicción. Ámbito: la ley de Elendel dentro de los ocho octantes.",
+  "tec": "Queda constancia — 1 Oportunidad: el hecho entra en el parte del octante. El infractor sufre +3 en contra en su próxima tirada social ante cualquier autoridad de la Cuenca.",
+  "eq": "Revólver reglamentario, placa de octante, abrigo del cuerpo (banda Normal; el cuerpo provee).",
+  "titN": "Capitán de octante",
+  "titT": "Mandas un octante: abres investigaciones, pides registros a los otros siete, y tu palabra basta para una orden sin pasar por un juez.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Fuego de cobertura (marcial, R2)",
+    "acc": "Lo que cuentan los metales (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Perspicacia",
+     "Mando"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "Tirador de los Áridos (marcial, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Tiro",
+     "Persuasión"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Pólvora medida (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 202,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Elendel",
+  "nombre": "Senador",
+  "enc": "Escaño electo o heredado, da igual: el Senado reparte la Cuenca y tú estás dentro de la sala donde se reparte.",
+  "atr": "Presencia +1, Comunicación +1",
+  "cur": "Leyes y gobierno, Persuasión, Etiqueta, Perspicacia, Mando, Historia, Comercio",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Alto",
+  "cap": "Jurisdicción. Ámbito: la ley que tú mismo escribes, y quien dependa de una licencia, una concesión o un presupuesto de la ciudad.",
+  "tec": "Enmienda de última hora — 1 Oportunidad: una línea que nadie leyó está en el texto aprobado, y te conviene.",
+  "eq": "Escaño, despacho en el Senado y un secretario que no te es leal (banda Caro).",
+  "titN": "Cabeza de bancada",
+  "titT": "Mueves los votos de tu bancada: una ley de la Cuenca pasa o se hunde porque tú lo decides, y las ciudades exteriores lo notan al mes siguiente.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Historia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Tratar con un obligador (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Etiqueta"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "La noche en el baile (social, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Mando"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "El informe que todos creen (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 203,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Elendel",
+  "nombre": "Magnate",
+  "enc": "La nobleza ya no manda: manda el capital. Tienes la fábrica, la línea de ferrocarril y la deuda de media ciudad.",
+  "atr": "Comunicación +1, Inteligencia +1",
+  "cur": "Comercio, Persuasión, Perspicacia, Etiqueta, Escritura y archivo, Leyes y gobierno, Artesanía",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Social",
+  "est": "Alto, de dinero y no de cuna",
+  "cap": "Tarifa vigente",
+  "tec": "Cuenta abierta en mi nombre — 1 Oportunidad: el crédito, el material o el transporte que hace falta ya está pagado, y declaras a quién se lo debes ahora.",
+  "eq": "Fábrica o línea de ferrocarril, oficina con antesala, crédito hasta Muy caro (banda Muy caro).",
+  "titN": "Dueño de la línea",
+  "titT": "Tu empresa es facción: fijas precios y fletes de tu ramo una banda arriba o abajo, y hay ciudades exteriores que dependen de tus horarios para comer.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Comercio",
+     "Escritura y archivo"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤1",
+    "adel": "Secar y sellar (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤2",
+    "adel": "El paso de aduana (oficio, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Etiqueta",
+     "Artesanía"
+    ],
+    "libre": "1 de Oficio o Social, rango ≤3",
+    "adel": "La ruta abierta (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 204,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Elendel",
+  "nombre": "Detective privado",
+  "enc": "Sin placa, sin respaldo y sin nadie a quien rendir cuentas. Lo único que tienes es que haces el trabajo que la policía no puede.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Perspicacia, Vigilancia, Leyes y gobierno, Engaño, Escritura y archivo, Persuasión, Tiro",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Medio",
+  "cap": "Vía establecida. Ámbito: la investigación — pruebas, testigos, expedientes y lo que un juzgado admite.",
+  "tec": "El cabo que nadie siguió — 1 Oportunidad: declaras un detalle de la escena que la policía pasó por alto. Estaba ahí, y ahora consta.",
+  "eq": "Despacho de una habitación, revólver, cámara de placas (banda Normal).",
+  "titN": "Nombre en la puerta",
+  "titT": "Tus informes se admiten en un juzgado de Elendel sin que declares: conviertes un conflicto en un expediente que otros tendrán que seguir.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Vigilancia",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "El precio de callarse (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Perspicacia",
+     "Engaño"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Hablar como skaa, hablar como noble (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Persuasión"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "Testigos de clan (social, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 205,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Elendel",
+  "nombre": "Duelista de bastones",
+  "enc": "En la Cuenca los caballeros no se matan: se humillan. Un par de bastones, un club y una reputación que se apuesta cada noche.",
+  "atr": "Destreza +1, Presencia +1",
+  "cur": "Armas, Aptitud física, Etiqueta, Perspicacia, Lucha, Persuasión, Historia",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Medio a alto",
+  "cap": "Filo medido",
+  "tec": "Doble guardia — 1 Oportunidad con un bastón en cada mano: tu Defensa usa Armas en lugar de Lucha hasta tu próximo turno, y el siguiente que te ataque queda Vulnerable.",
+  "eq": "Par de bastones de duelo, traje de corte impecable, invitación permanente al club (banda Normal).",
+  "titN": "Maestro de sala",
+  "titT": "Tienes sala propia: los duelos de la ciudad se celebran donde tú dices y con las reglas que tú fijas, y eso decide a quién se deja de invitar.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Etiqueta",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Culatazo (marcial, R2)",
+    "acc": "Lo que cuentan los metales (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Armas",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "El golpe que decide (marcial, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Lucha",
+     "Persuasión"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "El duelo decidido (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 206,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Ciudades exteriores",
+  "nombre": "Ingeniero ferroviario",
+  "enc": "La Cuenca se mantiene unida con hierro, carbón y puentes que aguantan por poco. Tú decides por dónde pasa el progreso.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Artesanía, Filosofía natural, Comercio, Escritura y archivo, Aptitud física, Vigilancia, Mando",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: la vía, el puente y la locomotora (Artesanía, Filosofía natural).",
+  "tec": "Lo aguanta — 1 Oportunidad: la estructura, la máquina o el puente resiste una vez más de lo que debería, y declaras qué parte va a ceder después.",
+  "eq": "Útiles de trazado, plaza en el tren y un vagón taller (banda Normal).",
+  "titN": "Jefe de obra",
+  "titT": "Tu firma abre una línea: decides por dónde pasa el ferrocarril, y eso hace o deshace un pueblo entero sin que nadie lo vote.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Aptitud física"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "El arreglo de campo (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "Hierro y vapor (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "La vía del medallón (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 207,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Ciudades exteriores",
+  "nombre": "Revolucionario del exterior",
+  "enc": "Elendel fija los precios, los fletes y las leyes, y aquí se pagan. Tu oficio es encontrar a quien está harto y ponerle fecha.",
+  "atr": "Comunicación +1, Presencia +1",
+  "cur": "Persuasión, Mando, Engaño, Escritura y archivo, Perspicacia, Leyes y gobierno, Sigilo",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo, o el que finjas",
+  "cap": "Mundo conocido. Ámbito: los descontentos de la Cuenca — en cada ciudad sabes quién está harto de Elendel y de qué.",
+  "tec": "La chispa — 1 Oportunidad en una escena pública: el malestar se hace acto. La multitud hace una cosa ahora: bloquear la vía, abuchear, dispersarse o esconder a alguien.",
+  "eq": "Imprenta de mano y una lista de nombres que no está escrita en ningún sitio (banda Barato).",
+  "titN": "Comité de ciudad",
+  "titT": "La célula es facción: comités coordinados en varias ciudades exteriores, y el Senado de Elendel te nombra en sus debates.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Leyes y gobierno"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Hablar por encima (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Mando"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Lo que me debes (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Engaño",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "La palabra que obliga (social, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 208,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Ciudades exteriores",
+  "nombre": "Periodista de hoja de noticias",
+  "enc": "Una prensa de mano, un nombre que firma y un plazo de cierre. Vives de secretos ajenos y lo haces por escrito.",
+  "atr": "Comunicación +1, Percepción +1",
+  "cur": "Escritura y archivo, Perspicacia, Persuasión, Engaño, Vigilancia, Historia, Comercio",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Oficio",
+  "est": "Bajo a medio",
+  "cap": "Tarifa vigente",
+  "tec": "Sale mañana — 1 Oportunidad: lo que acabas de averiguar entra en la hoja de mañana, y el objetivo sabe que va a salir.",
+  "eq": "Libreta, acceso a una prensa y un salvoconducto de redacción que no sirve de mucho (banda Barato).",
+  "titN": "Director de redacción",
+  "titT": "Tu hoja llega a toda la Cuenca: puedes hacer cierto un rumor publicándolo, y desmentirlo exige otro periódico, no una tirada.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Escritura y archivo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤1",
+    "adel": "La verdad incómoda (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Perspicacia",
+     "Persuasión"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤2",
+    "adel": "Partir el bando (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Engaño",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Oficio, rango ≤3",
+    "adel": "Nombre en la ciudad (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 209,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Los Áridos",
+  "nombre": "Guardián de la Ley",
+  "enc": "Una placa de hojalata, cien kilómetros de nada y nadie por encima a quien apelar. Aquí la ley eres tú o no hay.",
+  "atr": "Destreza +1, Determinación +1",
+  "cur": "Tiro, Vigilancia, Supervivencia, Perspicacia, Trato con animales, Aptitud física, Leyes y gobierno",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Medio: la placa aquí no respalda, solo señala",
+  "cap": "Filo medido",
+  "tec": "Desenfundar primero — 1 Oportunidad al iniciar un enfrentamiento: actúas antes que todos los presentes, sea cual sea la actitud que declararon.",
+  "eq": "Revólver, rifle de palanca, caballo y una placa de hojalata (banda Normal).",
+  "titN": "Alguacil de los Áridos",
+  "titT": "Tu nombre llega antes que tú: en los Áridos tu palabra basta para una horca o un indulto, y no hay instancia superior que lo revise.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Cerrar el hueco (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Supervivencia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "Aguantar de pie (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Trato con animales",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "El intercambio entero (marcial, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 210,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Los Áridos",
+  "nombre": "Forajido",
+  "enc": "Un cartel con tu cara en tres pueblos y una recompensa que sube cada mes. Conoces los Áridos mejor que quien te busca.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Tiro, Supervivencia, Sigilo, Trato con animales, Vigilancia, Engaño, Aptitud física",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Campo, Marcial",
+  "est": "Bajo, con recompensa encima",
+  "cap": "Lectura del terreno. Ámbito: los Áridos — cañones, vías, pueblos mineros y pozos de agua.",
+  "tec": "El cañón que no está en el mapa — 1 Oportunidad al huir o al emboscar: declaras un paso del terreno que nadie conocía, y es tuyo.",
+  "eq": "Revólver, caballo, guardapolvo y un cartel con tu cara mal dibujada (banda Barato).",
+  "titN": "Jefe de banda",
+  "titT": "Tu banda es facción: los pueblos pagan paso o protección, y las compañías mineras ponen precio a tu cabeza en las hojas de Elendel.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Tiro",
+     "Engaño"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤1",
+    "adel": "Andar en la ceniza (campo, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Supervivencia",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤2",
+    "adel": "Lo que corre por el barrio (campo, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Trato con animales",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Marcial, rango ≤3",
+    "adel": "La ciudad de noche (campo, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 211,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Los Áridos",
+  "nombre": "Explorador de los Áridos",
+  "enc": "Abres ruta donde no hay. Las compañías mineras te pagan por decirles dónde hay agua, y los clanes por no decírselo.",
+  "atr": "Percepción +1, Vigor +1",
+  "cur": "Supervivencia, Vigilancia, Trato con animales, Navegación, Aptitud física, Comercio, Medicina",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Oficio",
+  "est": "Bajo a medio",
+  "cap": "Mundo conocido. Ámbito: los Áridos — dónde hay agua, qué clan acampa dónde y qué compañía manda en cada pueblo.",
+  "tec": "Aquí hay agua — 1 Oportunidad: declaras un recurso del camino —agua, refugio, forraje o un corral— y existe donde dices que está.",
+  "eq": "Mula, cantimploras, catalejo y mapas que has hecho tú (banda Barato).",
+  "titN": "Guía de compañía",
+  "titT": "Lo que tú declaras habitable se puebla y lo que declaras seco se abandona: una compañía minera entera planifica según tus informes.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Navegación",
+     "Aptitud física"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤1",
+    "adel": "Dormir con un ojo (campo, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Supervivencia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤2",
+    "adel": "Bajar a lo oscuro (campo, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Trato con animales",
+     "Comercio"
+    ],
+    "libre": "1 de Campo o Oficio, rango ≤3",
+    "adel": "La red del barrio (campo, R4)",
+    "acc": "El precedente (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 212,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Enclaves terrisanos",
+  "nombre": "Anciano del Sínodo",
+  "enc": "El consejo de ancianos gobierna el enclave, y tú tienes asiento. Sumisión, docilidad y una dignidad que no se negocia.",
+  "atr": "Presencia +1, Determinación +1",
+  "cur": "Leyes y gobierno, Teología, Perspicacia, Persuasión, Historia, Etiqueta, Medicina",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Alto entre terrisanos",
+  "cap": "Jurisdicción. Ámbito: quien pertenezca a un enclave terrisano de la Cuenca.",
+  "tec": "El Sínodo se reúne — 1 Oportunidad: convocas al consejo, y lo que allí se decida queda registrado. Nadie del enclave puede alegar después que no lo sabía.",
+  "eq": "Tinningdar, joyería de ancianidad y asiento en el consejo (banda Normal).",
+  "titN": "Voz del Sínodo",
+  "titT": "Hablas por todos los enclaves de la Cuenca: tu dictamen obliga a los terrisanos, y Elendel tiene que negociar contigo y no con ellos.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Perspicacia",
+     "Persuasión"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Sonrisa del veneno (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Teología"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "La amenaza que no se dice (social, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Historia",
+     "Etiqueta"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "El favor cobrado (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 213,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Enclaves terrisanos",
+  "nombre": "Erudito del enclave",
+  "enc": "Los terrisanos valoran la erudición por encima del dinero. Tus bibliotecas guardan lo de antes del Catacendro, y no hay copia fuera.",
+  "atr": "Inteligencia +1, Determinación +1",
+  "cur": "Historia, Filosofía natural, Escritura y archivo, Teología, Medicina, Perspicacia, Arte",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Medio",
+  "cap": "Vía establecida. Ámbito: las bibliotecas y los registros terrisanos, y el procedimiento para consultarlos.",
+  "tec": "Está en los registros — 1 Oportunidad: el dato existe en un archivo del enclave y puedes citarlo. Tu afirmación pasa a documentada, y desmentirla exige otra fuente.",
+  "eq": "Acceso a las bibliotecas del enclave, cuadernos y tinningdar (banda Normal).",
+  "titN": "Maestro del enclave",
+  "titT": "Te confían los registros que el Sínodo no muestra: lo que sabes de la feruquimia y de antes del Catacendro no está en ninguna otra parte, y eso te pone en la lista de todo el que quiera saberlo.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "La historia oficial (erudición, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Historia",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "Lo que el Ministerio enterró (erudición, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Medicina"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "La fecha exacta (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 214,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Enclaves terrisanos",
+  "nombre": "Orfebre de mentes de metal",
+  "enc": "Los brazaletes, los anillos y los pendientes terrisanos no son adorno: son mentes de metal. Y alguien tiene que hacerlas.",
+  "atr": "Destreza +1, Inteligencia +1",
+  "cur": "Artesanía, Filosofía natural, Comercio, Perspicacia, Etiqueta, Escritura y archivo, Vigilancia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Medio a alto",
+  "cap": "Gajes del oficio. Oficio: la joyería feruquímica (Artesanía, Filosofía natural).",
+  "tec": "Reconozco mi mano — 1 Oportunidad ante una mente de metal: sabes quién la hizo, para quién, y si se ha usado hoy.",
+  "eq": "Banco de orfebre, balanza de precisión y metales puros bajo llave (banda Caro).",
+  "titN": "Orfebre del Sínodo",
+  "titT": "Haces las mentes de metal de los ferrines de la Cuenca: sabes quién lleva qué, y eso es la información más peligrosa de Scadrial.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "Quién compra esto (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "La obra bien hecha (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Etiqueta",
+     "Escritura y archivo"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "La pieza imposible (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 215,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Sangre koloss",
+  "nombre": "Mercenario de clan",
+  "enc": "Familia, comunidad y un cuerpo que pesa el doble que el de cualquiera. Los clanes de los Áridos alquilan lo que tienen.",
+  "atr": "Vigor +1, Destreza +1",
+  "cur": "Lucha, Armas, Aptitud física, Táctica, Vigilancia, Supervivencia, Mando",
+  "cre": "5 hab. + 2 tal. · tipos de talento: Marcial, Campo",
+  "est": "Bajo a medio",
+  "cap": "Sincronía. Ámbito: tu clan, y cualquiera que lleve tus marcas.",
+  "tec": "Los míos vienen detrás — 1 Oportunidad: un pariente del clan aparece en la escena, y declaras de dónde venía y por qué.",
+  "eq": "Arma grande, marcas de clan y un guardapolvo que no te tapa (banda Barato).",
+  "titN": "Lanza del clan",
+  "titT": "El clan entero responde a tu llamada: una facción armada en los Áridos, y las compañías mineras negocian contigo antes de contratar escolta.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Supervivencia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Salir del alcance (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Lucha",
+     "Armas"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "No estar donde golpean (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Aptitud física",
+     "Táctica"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "Romper la línea (marcial, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 216,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Sangre koloss",
+  "nombre": "Ranchero de morag",
+  "enc": "Un rancho en los Áridos, una manada de morags y un hierro propio. Aquí la ley de Elendel llega con tres semanas de retraso.",
+  "atr": "Vigor +1, Comunicación +1",
+  "cur": "Trato con animales, Supervivencia, Comercio, Aptitud física, Vigilancia, Artesanía, Persuasión",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Oficio, Campo",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: el ganado y la tierra (Trato con animales, Supervivencia).",
+  "tec": "La manada sabe — 1 Oportunidad: tu ganado o tu montura reacciona antes que tú a lo que viene, y declaras qué era.",
+  "eq": "Rancho, manada de morags, caballo y perros (banda Normal).",
+  "titN": "Dueño de la marca",
+  "titT": "Tu hierro vale en toda la Cuenca: mueves ganado y carne a escala de facción, y en tu rancho manda tu palabra.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Comercio",
+     "Aptitud física"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤1",
+    "adel": "El libro cuadrado (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Trato con animales",
+     "Supervivencia"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤2",
+    "adel": "El trato redondo (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Artesanía"
+    ],
+    "libre": "1 de Oficio o Campo, rango ≤3",
+    "adel": "Mi marca vale (oficio, R4)",
+    "acc": "El precedente (erudición, R3)"
+   }
+  ]
+ },
+ {
+  "n": 217,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Sangre koloss",
+  "nombre": "Portavoz de clan",
+  "enc": "Los clanes comercian con los pueblos o los saquean, y alguien tiene que decidir cuál de las dos cosas. Ese eres tú.",
+  "atr": "Comunicación +1, Presencia +1",
+  "cur": "Persuasión, Perspicacia, Etiqueta, Leyes y gobierno, Comercio, Historia, Mando",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Social, Erudición",
+  "est": "Medio",
+  "cap": "Vía establecida. Ámbito: el trato de clan — acuerdos, parentescos y deudas de sangre.",
+  "tec": "Ante testigos — 1 Oportunidad: el acuerdo se cierra con testigos del clan. Romperlo pasa a ser deuda de sangre, y los dos lo sabéis.",
+  "eq": "Marcas de portavoz, caballo y el libro de parentescos entero en la memoria (banda Barato).",
+  "titN": "Palabra de los clanes",
+  "titT": "Hablas por varios clanes a la vez: puedes abrir o cerrar los Áridos a una compañía entera, y el Senado tiene que recibirte.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Leyes y gobierno",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤1",
+    "adel": "Orden imperiosa (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Perspicacia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤2",
+    "adel": "El acuerdo de mínimos (social, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Etiqueta",
+     "Historia"
+    ],
+    "libre": "1 de Social o Erudición, rango ≤3",
+    "adel": "Hablar por los dos bandos (social, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 218,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Malwish",
+  "nombre": "Piloto de aeronave",
+  "enc": "Máscara, correajes y una nave del sur. Tu pueblo lleva tres siglos construyendo lo que el norte todavía no entiende.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Navegación, Vigilancia, Táctica, Artesanía, Aptitud física, Mando, Etiqueta",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Oficio",
+  "est": "Medio a alto entre malwish",
+  "cap": "Sincronía. Aplicación de escuela: la tripulación a tus órdenes cuenta como aliados para tu Sincronía.",
+  "tec": "Toda la nave a la vez — 1 Oportunidad: la tripulación ejecuta una maniobra que no habías declarado, y la nave gana la banda de distancia que quieras respecto al rival.",
+  "eq": "Máscara de piloto, gafas, correajes y plaza en una aeronave (banda Caro, de la flota).",
+  "titN": "Capitán de aeronave",
+  "titT": "Hasta tres naves maniobran con Sincronía bajo tus señales, y cruzas fronteras que nadie más cruza sin dar explicaciones.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Navegación",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Oficio, rango ≤1",
+    "adel": "El hueco de la guardia (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Táctica",
+     "Artesanía"
+    ],
+    "libre": "1 de Marcial o Oficio, rango ≤2",
+    "adel": "Entrar y salir (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Aptitud física",
+     "Mando"
+    ],
+    "libre": "1 de Marcial o Oficio, rango ≤3",
+    "adel": "Pie que no cede (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 219,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Malwish",
+  "nombre": "Mecánico de medallones",
+  "enc": "Los medallones hacen la feruquimia portátil y transferible. Es la tecnología que el sur guarda con más celo, y la montas tú.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Artesanía, Filosofía natural, Comercio, Escritura y archivo, Perspicacia, Vigilancia, Etiqueta",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: los medallones y los artefactos de armonio (Artesanía, Filosofía natural).",
+  "tec": "Lo abro y lo entiendo — 1 Oportunidad ante un medallón o un artefacto investido: sabes qué hace, quién lo hizo y qué le falta.",
+  "eq": "Máscara, banco de precisión y una caja de medallones en préstamo que tienes que devolver (banda Caro, de la flota).",
+  "titN": "Maestro de medallones",
+  "titT": "Haces medallones nuevos: puedes repartir un atributo feruquímico a quien no nació con él, y eso es lo que el sur no quiere que el norte aprenda.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "La herramienta que falta (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "El archivo propio (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Vigilancia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "El precio de todo (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 220,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Ratero de la ciudad",
+  "enc": "Azoteas, alcantarillas, vías de tranvía y almacenes de aduana. La ciudad moderna tiene tres plantas y las tres son tuyas.",
+  "atr": "Destreza +1, Percepción +1",
+  "cur": "Hurto, Sigilo, Vigilancia, Aptitud física, Perspicacia, Engaño, Comercio",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Campo, Social",
+  "est": "Bajo",
+  "cap": "Lectura del terreno. Ámbito: la ciudad moderna — azoteas, alcantarillado, vías, almacenes y lo que se cruza entre ellos.",
+  "tec": "Por arriba — 1 Oportunidad al huir o al entrar: declaras una vía por las azoteas, el alcantarillado o un tejado de vía, y está ahí.",
+  "eq": "Lo puesto, ganzúas y un derringer que no has disparado nunca (banda Trivial a Barato).",
+  "titN": "Dueño del octante",
+  "titT": "Red de informantes en tu octante: nada se mueve de noche sin que te llegue, y la policía lo sabe y te usa en lugar de detenerte.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Aptitud física",
+     "Perspicacia"
+    ],
+    "libre": "1 de Campo o Social, rango ≤1",
+    "adel": "Perderse a propósito (campo, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Hurto",
+     "Sigilo"
+    ],
+    "libre": "1 de Campo o Social, rango ≤2",
+    "adel": "Las llaves que no son llaves (campo, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Engaño"
+    ],
+    "libre": "1 de Campo o Social, rango ≤3",
+    "adel": "No estuve nunca (campo, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 221,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Erudito realmático",
+  "enc": "Estudias la investidura con método, cuadernos y revisión de pares. Hay gente dispuesta a matar por lo que estás a punto de publicar.",
+  "atr": "Inteligencia +1, Percepción +1",
+  "cur": "Filosofía natural, Historia, Escritura y archivo, Teología, Perspicacia, Artesanía, Medicina",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Medio",
+  "cap": "Mundo conocido. Ámbito: el estado del arte de la investidura — quién investiga qué, qué se ha publicado y qué se ha retirado de circulación.",
+  "tec": "Ya lo han intentado — 1 Oportunidad: alguien estudió esto antes. Declaras quién, dónde está su trabajo y qué le salió mal.",
+  "eq": "Laboratorio compartido, cuadernos cifrados y suscripción a tres revistas (banda Normal).",
+  "titN": "Catedrático",
+  "titT": "Tu cátedra es facción: dirigís una línea de investigación con fondos, y lo que publicáis cambia lo que la Cuenca cree posible.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Escritura y archivo",
+     "Perspicacia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "La mente abierta (erudición, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Historia"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "El mapa de los dieciséis (erudición, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Teología",
+     "Artesanía"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "Lo que mató al anterior (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 222,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Púgil de feria",
+  "enc": "Te pagan por sangrar delante de gente. En los cuadriláteros de Elendel y Bilming la fuerza de sangre koloss es espectáculo y negocio ajeno.",
+  "atr": "Vigor +1, Destreza +1",
+  "cur": "Lucha, Aptitud física, Perspicacia, Vigilancia, Medicina, Persuasión, Comercio",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Social",
+  "est": "Bajo: te pagan por sangrar",
+  "cap": "Filo medido",
+  "tec": "Lo tenía medido — 1 Oportunidad tras impactar: agarrar, derribar o desarmar no paga su modificador de dificultad, y todo el pabellón lo ha visto.",
+  "eq": "Vendas, protector de boca y un contrato que no te conviene (banda Trivial).",
+  "titN": "Campeón del circuito",
+  "titT": "Tu nombre llena un pabellón: puedes exigir el combate que quieras y con las condiciones que quieras, y quien te lo niegue pierde la taquilla.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Perspicacia",
+     "Vigilancia"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤1",
+    "adel": "Pelea de bodega (marcial, R2)",
+    "acc": "Lo que cuentan los metales (erudición, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Lucha",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤2",
+    "adel": "El amago leído (marcial, R3)",
+    "acc": "El arreglo de campo (oficio, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Persuasión",
+     "Comercio"
+    ],
+    "libre": "1 de Marcial o Social, rango ≤3",
+    "adel": "Dos tiempos (marcial, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 223,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Sanador",
+  "enc": "Medicina de verdad, con hospital, instrumental y antisépticos. En la Era 2 ya no se muere de lo que se moría antes.",
+  "atr": "Inteligencia +1, Destreza +1",
+  "cur": "Medicina, Filosofía natural, Perspicacia, Escritura y archivo, Artesanía, Persuasión, Etiqueta",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Erudición, Oficio",
+  "est": "Medio",
+  "cap": "Gajes del oficio. Oficio: la medicina (Medicina, Filosofía natural).",
+  "tec": "Queda en pie — 1 Oportunidad: un herido que iba a caer aguanta la escena entera, y declaras qué le va a costar después.",
+  "eq": "Maletín completo, consulta propia o plaza en un hospital (banda Caro).",
+  "titN": "Médico jefe",
+  "titT": "Tus pacientes tiran recuperación un intervalo más rápido mientras los atiendas, y tu consulta no puede ser registrada sin orden judicial.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Medicina",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤1",
+    "adel": "El contrato leído dos veces (erudición, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Perspicacia",
+     "Escritura y archivo"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤2",
+    "adel": "El precedente (erudición, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Persuasión",
+     "Etiqueta"
+    ],
+    "libre": "1 de Erudición o Oficio, rango ≤3",
+    "adel": "Publicarlo (erudición, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ },
+ {
+  "n": 224,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Mataneblinos",
+  "enc": "Te llaman cuando el sospechoso quema. Nada de metal encima: cerámica, madera, aluminio y saber exactamente qué puede hacerte cada pareja.",
+  "atr": "Percepción +1, Inteligencia +1",
+  "cur": "Armas, Vigilancia, Filosofía natural, Perspicacia, Táctica, Aptitud física, Leyes y gobierno",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Marcial, Campo",
+  "est": "Medio: lo paga quien lo necesita, y nadie te invita a cenar",
+  "cap": "Mundo conocido. Ámbito: los alománticos de la Cuenca — quién quema qué, qué lo contrarresta y quién lo oculta.",
+  "tec": "Sin metal encima — 1 Oportunidad: tu golpe o tu posición dejan al alomante sin nada metálico que empujar, y declaras qué acaba de perder.",
+  "eq": "Bastón y hojas de cerámica, gorra forrada de aluminio, chaleco sin una pieza de metal (banda Caro: el aluminio no se regala).",
+  "titN": "Cazador de alomantes",
+  "titT": "Te contratan los octantes de Elendel, las compañías de las ciudades exteriores y, de cuando en cuando, el bando que no deberías: sabes qué alomante vive dónde y de qué metal, y tu palabra basta para que lo detengan sin orden.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad marcial",
+    "nombradas": [
+     "Vigilancia",
+     "Filosofía natural"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤1",
+    "adel": "Través de la batalla (marcial, R2)",
+    "acc": "Nombres y casas (social, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Armas",
+     "Perspicacia"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤2",
+    "adel": "El que cubre (marcial, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Táctica",
+     "Aptitud física"
+    ],
+    "libre": "1 de Marcial o Campo, rango ≤3",
+    "adel": "La espalda del oponente (marcial, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 225,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Corredor de recados",
+  "enc": "No eres de ninguna banda y todas te usan. Llevas sobres, nombres y avisos de un octante a otro, y lo que de verdad vendes es saber quién está dónde esta noche.",
+  "atr": "Comunicación +1, Percepción +1",
+  "cur": "Perspicacia, Vigilancia, Engaño, Comercio, Sigilo, Persuasión, Hurto",
+  "cre": "4 hab. + 3 tal. · tipos de talento: Social, Campo",
+  "est": "Bajo, y te conviene que siga así",
+  "cap": "Mundo conocido. Ámbito: la calle de tu ciudad — quién manda en cada manzana, quién debe a quién, qué se mueve de noche y quién pregunta por ti.",
+  "tec": "Alguien me lo debe — 1 Oportunidad: en esta calle hay alguien que te debe un favor pequeño, y lo cobras ahora. Declaras quién es y por qué te lo debe.",
+  "eq": "Lo puesto, una bolsa cruzada con doble fondo y una lista de nombres que no está escrita (banda Trivial a Barato).",
+  "titN": "Dueño del recado",
+  "titT": "Nada se mueve de noche en tu octante sin que te llegue: puedes hacer que un mensaje llegue o no llegue, y las bandas negocian contigo para no tener que hablarse entre ellas.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Vigilancia",
+     "Comercio"
+    ],
+    "libre": "1 de Social o Campo, rango ≤1",
+    "adel": "Hablar en su idioma (social, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad de campo",
+    "nombradas": [
+     "Perspicacia",
+     "Engaño"
+    ],
+    "libre": "1 de Social o Campo, rango ≤2",
+    "adel": "Cambiar de cara (social, R3)",
+    "acc": "La mente abierta (erudición, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Sigilo",
+     "Persuasión"
+    ],
+    "libre": "1 de Social o Campo, rango ≤3",
+    "adel": "La sala se calla (social, R4)",
+    "acc": "La obra bien hecha (oficio, R3)"
+   }
+  ]
+ },
+ {
+  "n": 226,
+  "era": "Era 2 · Tras el Catacendro",
+  "etq": "Transversales",
+  "nombre": "Secador de esporas",
+  "enc": "Lo que sale de la tierra no vale nada mojado. Tu oficio es secarlo, prensarlo y sellarlo antes de que el aire haga lo que hace, y saber exactamente cuánta humedad es demasiada.",
+  "atr": "Destreza +1, Inteligencia +1",
+  "cur": "Artesanía, Filosofía natural, Comercio, Perspicacia, Medicina, Escritura y archivo, Vigilancia",
+  "cre": "3 hab. + 4 tal. · tipos de talento: Oficio, Erudición",
+  "est": "Medio, y depende de para quién trabajes",
+  "cap": "Gajes del oficio. Oficio: el secado, el prensado y el sellado (Artesanía, Filosofía natural).",
+  "tec": "Mi mano en el vidrio — 1 Oportunidad ante una partida sellada: sabes quién la cerró, con qué la han cortado y si el vidrio ha perdido la estanqueidad alguna vez.",
+  "eq": "Banco de secado, prensa de husillo, balanza de precisión, cera, vidrio de repuesto y un higrómetro de latón que no dejas de mirar (banda Caro).",
+  "titN": "Marca en el vidrio",
+  "titT": "Tu sello en el lacre vale en toda la Cuenca: se paga el doble por una partida que se sabe que no ha cogido humedad, y quien falsifique tu marca tiene a tus clientes en contra antes que a la ley.",
+  "mundo": "Scadrial",
+  "filas": [
+   {
+    "r": "R1",
+    "grupo": "Cualquier habilidad de oficio",
+    "nombradas": [
+     "Filosofía natural",
+     "Perspicacia"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤1",
+    "adel": "Todo tiene un valor (oficio, R2)",
+    "acc": "Mano en la culata (marcial, R1)"
+   },
+   {
+    "r": "R2",
+    "grupo": "Cualquier habilidad erudita",
+    "nombradas": [
+     "Artesanía",
+     "Comercio"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤2",
+    "adel": "El proveedor que no pregunta (oficio, R3)",
+    "acc": "El precio de callarse (social, R2)"
+   },
+   {
+    "r": "R3",
+    "grupo": "Cualquier habilidad social",
+    "nombradas": [
+     "Medicina",
+     "Escritura y archivo"
+    ],
+    "libre": "1 de Oficio o Erudición, rango ≤3",
+    "adel": "Anotado y sellado (oficio, R4)",
+    "acc": "Las llaves que no son llaves (campo, R3)"
+   }
+  ]
+ }
+]

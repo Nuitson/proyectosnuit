@@ -1,0 +1,4220 @@
+[
+ {
+  "n": "Carga impetuosa",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Peso del yunque",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Leer la guardia",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Pie firme",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Través de la batalla",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Danza de la lanza",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Aguantar la línea",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Arquero de campaña",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura del viento",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura del humo",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura del fuego",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura de hierro",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El golpe que abre",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Tanto en la corte como en la batalla",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La segunda intención",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura de la enredadera",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura de la piedra",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Postura de la sangre",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Murmullos en la corte",
+  "fam": "Social",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La deuda recordada",
+  "fam": "Social",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Quién manda aquí",
+  "fam": "Social",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Sonrisa del veneno",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Orden imperiosa",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Hablar en su idioma",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El silencio que pesa",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Cortar por lo sano",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El favor pequeño",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Nadie recuerda mi cara",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La palabra dada",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Palabras de hierro",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Segunda opinión",
+  "fam": "Erudición",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Anotado queda",
+  "fam": "Erudición",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Etimología de las lenguas",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El ojo del tasador",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Lo que la pieza pide",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El triaje del cirujano",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Nada se desecha",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El precio justo",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La mano firme",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Anotado queda",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Segunda opinión",
+  "fam": "Oficio",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Sifón de gemas",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "roshar",
+  "mundos": [
+   "Roshar"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Todo tiene un valor",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El ojo del tasador",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Etimología de las lenguas",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El valor de las personas",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Lo que la pieza pide",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La mano ligera",
+  "fam": "Campo",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "El tercer juego de llaves",
+  "fam": "Campo",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "No estaba allí",
+  "fam": "Campo",
+  "r": 1,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Puñales en las sombras",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La fortuna es de los que arriesgan",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Manos de más",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Contarlo distinto",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Peso muerto",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La letalidad de lo pequeño",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "La salida de atrás",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Las paredes oyen",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "cuerpo": "",
+  "opps": [],
+  "pendiente": true
+ },
+ {
+  "n": "Lectura de líneas",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "hierro y acero",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Las líneas dejan de decirte solo dónde hay metal: te dicen qué es. Distingues una moneda de una hebilla, un arma envainada de una herramienta, y cuentas cuántas piezas lleva encima alguien en banda Media. Sin tirada: es lectura, no acción.",
+  "opps": [
+   [
+    "1",
+    "sabes qué pieza sostiene la estructura: la viga, el pasador, el gozne"
+   ],
+   [
+    "1",
+    "localizas el metal que alguien esconde en un compartimento de tu banda"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El trago seco",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Beber un vial deja de costarte el movimiento (ALO-03): lo haces como parte de cualquier otra acción, una vez por ronda. Lo que separa a un alomante entrenado de uno que no lo está no es cuánto quema, es no perder un turno en cargar.",
+  "opps": [
+   [
+    "1",
+    "bebes además el vial que un aliado adyacente te tienda"
+   ],
+   [
+    "1",
+    "nadie de la escena ve que has bebido"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Oído de estaño",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "estaño",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Potencia + Percepción + Vigilancia contra 14. Aíslas un sonido entre todos los que te llegan: una voz en una sala llena, una respiración detrás de una puerta, el clic de un percutor. Con el estaño quemando, el ruido deja de ser penalizador y pasa a ser información.",
+  "opps": [
+   [
+    "1",
+    "sabes cuántos son y en qué banda están"
+   ],
+   [
+    "1",
+    "reconoces la voz si la habías oído antes"
+   ],
+   [
+    "2",
+    "y lo que suene a continuación no te deja Aturdido"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Aguantar el arrastre",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "peltre",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "El arrastre de peltre te cuesta 1 punto de Fatiga menos por escena, con un mínimo de 1. Y si el arrastre te deja a 0, recuperas la opción que el arrastre quita: puedes asumir una herida en lugar de caer.",
+  "opps": [
+   [
+    "1",
+    "la herida que asumes es Leve en lugar de Grave"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Mano de aplacador",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "latón",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Al aplacar, reparte los puntos entre dos objetivos de la misma escena en lugar de volcarlos en uno. Cada uno recibe lo que le asignes, con el tope de ALO-05 contado por objetivo.",
+  "opps": [
+   [
+    "1",
+    "ninguno de los dos nota la emoción ajena, aunque el margen fuera menor que 3"
+   ],
+   [
+    "1",
+    "un tercer objetivo recibe 1 punto"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El sabor del metal",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Distingues de un trago qué metal llevas en la boca y si está refinado. Nunca tragas metal sin refinar por error (ALO-12), y detectas si un vial ha sido cortado, aguado o cambiado por otro.",
+  "opps": [
+   [
+    "1",
+    "sabes con qué lo han cortado"
+   ],
+   [
+    "1",
+    "y reconoces la mano que lo embotelló, si la conocías"
+   ]
+  ],
+  "nota": "Escrito para la campaña de la Cuenca: el género son suspensiones de metales caros, y este talento es el que convierte el obrador en un personaje.",
+  "pendiente": false
+ },
+ {
+  "n": "Guardar a destiempo",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Puedes guardar en una mente de metal mientras haces otra cosa: ya no hace falta una escena dedicada a ello. El ritmo no cambia —magnitud por tiempo se conserva igual (FER-02)—, solo deja de ocuparte el tiempo entero.",
+  "opps": [
+   [
+    "1",
+    "guardas el doble de carga en el mismo rato, a cambio de que el penalizador se le note a todo el mundo en escena"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La mente escondida",
+  "fam": "Investidura",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una de tus mentes de metal no parece lo que es: un botón, un empaste, el pasador de un cinturón. Quitártela exige encontrarla primero —Percepción + Vigilancia contra 17— y solo entonces la maniobra de quitar un objeto de FER-05.",
+  "opps": [
+   [
+    "1",
+    "la mente sigue contigo aunque te registren a conciencia"
+   ],
+   [
+    "2",
+    "y eliges cuál de tus mentes es la escondida al empezar la escena"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lanzamonedas",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "acero",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tras impactar con una moneda empujada, la moneda sigue: atacas a un segundo objetivo de tu banda o de una más lejos, a −3, sin gastar otra acción.",
+  "opps": [
+   [
+    "1",
+    "el −3 no se aplica"
+   ],
+   [
+    "1",
+    "la moneda vuelve a tu mano y no se consume"
+   ],
+   [
+    "2",
+    "y el segundo ataque conserva el Perforante que compraste para el primero"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Anclarse",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "hierro y acero",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando empujas o tiras de algo más pesado que tú y la regla dice que te mueves tú, puedes elegir no moverte: te anclas contra el suelo o una viga y el metal cede. Cuesta 1 punto extra y tu empuje cuenta como si fueras un escalón de tamaño mayor.",
+  "opps": [
+   [
+    "1",
+    "el anclaje aguanta el resto de la escena sin volver a pagarlo"
+   ],
+   [
+    "2",
+    "y arrancas lo que empujabas en lugar de moverlo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Nube cerrada",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "cobre",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tu nube de cobre pasa de banda Corta a Media y se desplaza contigo sin gastar acción.",
+  "opps": [
+   [
+    "1",
+    "eliges a quién deja fuera: un aliado dentro de la banda queda sin cobertura si eso te conviene"
+   ],
+   [
+    "1",
+    "un Buscador que la sondee cree que dentro no hay nadie, en lugar de saber que hay nube"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El pulso leído",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "bronce",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Potencia + Percepción + Vigilancia contra 17. No solo sabes que alguien quema y de qué pareja: sabes su Potencia aproximada y cuánto le queda de reserva.",
+  "opps": [
+   [
+    "1",
+    "y si está avivando o solo quemando"
+   ],
+   [
+    "1",
+    "lo sigues por los pulsos aunque salga de tu banda"
+   ],
+   [
+    "2",
+    "distingues a dos alomantes que queman el mismo metal"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Enardecer a la sala",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "cinc",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Enardeces a un grupo entero en lugar de a una persona, pagando por la tabla de tamaño. El dado de ánimo volátil pasa a toda la escena y la Tolerancia baja 1 por punto para todos los del grupo.",
+  "opps": [
+   [
+    "1",
+    "eliges una emoción distinta para un objetivo concreto del grupo"
+   ],
+   [
+    "2",
+    "nadie del grupo llega al margen 3 que delata la emoción ajena"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Reserva repartida",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tus viales van en dosis: bebes de un vial la cantidad que quieras y el resto se conserva. Además, la reserva máxima que puedes llevar de un metal sube de 5 a 7 puntos.",
+  "opps": [
+   [
+    "1",
+    "recuperas un vial que creías gastado: quedaba un trago"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Extraer de golpe",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Por una vez, tu Potencia feruquímica deja de ser el tope de escalones (FER-03): extraes el doble en una sola acción, y la mente de metal queda vacía sea lo que fuere lo que guardara.",
+  "opps": [
+   [
+    "1",
+    "la mente conserva una carga en lugar de quedarse a cero"
+   ],
+   [
+    "2",
+    "los escalones duran una ronda más"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Dos mentes a la vez",
+  "fam": "Investidura",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Puedes guardar en una mente y extraer de otra en la misma ronda, si son de metales distintos. Es lo más cerca que llega un ferrín del oficio de un guardador.",
+  "opps": [
+   [
+    "1",
+    "las dos pueden ser del mismo metal: guardas en una y extraes de la otra"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Volar con monedas",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "acero",
+  "nat": "acción de movimiento",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cada punto de acero te da dos bandas en lugar de una, vertical incluida, y mientras te desplaces así no provocas Explotar la apertura. Caer no te hiere si hay metal debajo de ti para frenarte.",
+  "opps": [
+   [
+    "1",
+    "un aliado que te agarre viene contigo"
+   ],
+   [
+    "2",
+    "cambias de dirección en el aire una vez por punto gastado"
+   ]
+  ],
+  "nota": "Toca el abierto 7 del núcleo (daño por caída): aquí se resuelve solo para quien tiene este talento. El caso general sigue sin escribir.",
+  "pendiente": false
+ },
+ {
+  "n": "Brazo de peltre",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "peltre",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "El arrastre se reparte en lugar de cobrarse de golpe: pierdes la mitad de la Fatiga al acabar la escena y la otra mitad al acabar la siguiente. Puedes encadenar dos escenas de peltre, y la cuenta llega igual.",
+  "opps": [
+   [
+    "1",
+    "la mitad diferida se reduce en 1"
+   ],
+   [
+    "2",
+    "y la escena siguiente no suma arrastre nuevo al que ya debes"
+   ]
+  ],
+  "nota": "Escrito a propósito sobre el arrastre y no sobre la mitigación: T-S4 avisa de que el peltre en actitud Beligerante ya puede apagar la letalidad, y subirlo más sería empeorar una tensión abierta.",
+  "pendiente": false
+ },
+ {
+  "n": "Sombra del momento",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "electro",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Mientras quemas electro actúas antes que todos en el primer intercambio y tu Defensa sube 2. Con 1 punto más puedes deshacer tu propia acción ya declarada y cambiarla: viste cómo salía.",
+  "opps": [
+   [
+    "1",
+    "la deshaces después de ver el dado, y el relanzamiento no te cuesta Confianza"
+   ],
+   [
+    "2",
+    "y un aliado de tu banda actúa cuando tú"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Mano de cromo",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "cromo",
+  "nat": "acción de contacto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "La maniobra de contacto (+2, INV-13) deja de necesitar piel: te basta tocar el metal que lleve encima —un arma, una hebilla, una moneda en el bolsillo—. Y el drenaje te dice qué metales tenía.",
+  "opps": [
+   [
+    "1",
+    "drenas solo el metal que elijas en lugar de todos"
+   ],
+   [
+    "2",
+    "el objetivo no sabe que lo has tocado hasta que intente quemar"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lastre de aluminio",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "aluminio",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Quemas aluminio para vaciarte a propósito. Mientras estés vacío, ninguna emoción ajena te mueve, ningún nicrosil te detona y ningún atium te lee, y sales de cualquier efecto alomántico que estuvieras sufriendo. El precio es literal: te quedas a cero de todo.",
+  "opps": [
+   [
+    "1",
+    "conservas la reserva de un metal que elijas"
+   ],
+   [
+    "2",
+    "y en la escena siguiente un solo vial te llena todas las reservas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La carga de siglos",
+  "fam": "Investidura",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una de tus mentes de metal es heredada: viene con carga que no guardaste tú. La DJ fija cuánta y de qué. No se rellena sola, pero mientras tenga algo puedes consultar lo que dejó quien la llenó: un recuerdo, un camino, una cara.",
+  "opps": [
+   [
+    "1",
+    "lo que recuerdas es exactamente lo que hacía falta"
+   ],
+   [
+    "2",
+    "y sabes quién la llenó, y cuándo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Maestro de la pareja",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En tu pareja de metal, el tope por acción sube 2 por encima de tu Potencia. Sigues pagando cada punto; lo que cambia es cuántos puedes verter de una vez. Es lo más cerca que llega un mortal de romper el Factor 1 sin un clavo ni una gota de lerasium.",
+  "opps": [
+   [
+    "1",
+    "una vez por escena, el exceso por encima de tu Potencia no gasta reserva"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Nube de ciudad",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "cobre",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tu nube cubre un edificio entero o una manzana —banda Larga— y dura la escena sin que la mantengas. Dentro no se emiten pulsos: ni los tuyos ni los de nadie, y los tuyos pueden quemar sin que la Inquisición los huela.",
+  "opps": [
+   [
+    "2",
+    "la nube se queda donde la dejaste y tú te vas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La sala en la mano",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "cinc y latón",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Enardeces y aplacas en la misma acción y sobre la misma escena: subes una emoción en un bando y la bajas en el otro. La Tolerancia de la escena pasa a ser la que tú declares, y el dado de ánimo volátil lo tiras tú.",
+  "opps": [
+   [
+    "2",
+    "nadie de la sala llega al margen que delata la emoción ajena"
+   ],
+   [
+    "3",
+    "la escena entera queda en tu cuenta abierta en lugar de en la de ellos"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Vaciarse entero",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "duraluminio",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Al quemar duraluminio eliges qué metal detona, en lugar de que sea el que estuvieras quemando, y la reserva de duraluminio no se consume.",
+  "opps": [
+   [
+    "2",
+    "la reserva detonada queda a 1 en lugar de a 0"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Guardador",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "feruquimia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Llevas tantas mentes de metal como parejas entrenes y extraes de todas en la misma ronda. Dejas de ser alguien con un truco y pasas a ser un archivo con piernas: lo que el Sínodo guarda, lo guardas tú.",
+  "opps": [
+   [
+    "1",
+    "una mente robada vuelve a tus manos antes de la escena siguiente"
+   ],
+   [
+    "2",
+    "sabes qué guarda cualquier mente de metal que toques"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Componedor",
+  "fam": "Investidura",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "componer",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Exige ser nacidoble del mismo metal (FER-06). Alimentas tu Feruquimia con tu Alomancia: cuando quemas tu metal, lo quemado se convierte en carga de tu mente de ese metal. Tus reservas feruquímicas dejan de ser una cuenta; lo único que te limita es cuánto metal tengas encima.",
+  "opps": [
+   [
+    "2",
+    "la conversión no consume la reserva alomántica"
+   ]
+  ],
+  "nota": "Cerrado con candado: el abierto 1 del núcleo deja al nacidoble fuera de PJ en la v1. Este talento existe escrito para los PNJ y para cuando se abra.",
+  "pendiente": false
+ },
+ {
+  "n": "El intercambio entero",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Mientras mantengas la actitud Beligerante, cada herida que asumas en lugar de esquivarla te da +3 al siguiente ataque de la escena, y se acumula. Es la escuela de quien gana cambiando sangre por sangre.",
+  "opps": [
+   [
+    "1",
+    "la herida que asumes baja un nivel de gravedad"
+   ],
+   [
+    "2",
+    "y el acumulado no se pierde al cambiar de actitud"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Romper la línea",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "acción de ataque",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Armas + Vigor contra la Defensa más alta del grupo. Atacas con un solo dado a todos los enemigos de tu banda 0; cada uno resuelve su daño por separado.",
+  "opps": [
+   [
+    "2",
+    "los que no superen la mitigación quedan Tumbados"
+   ],
+   [
+    "1",
+    "avanzas una banda tras el golpe"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Pie que no cede",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En actitud Beligerante y consciente, no te pueden Tumbar, empujar ni desarmar. Quien te empuje con acero se mueve él, no tú, sea cual sea el peso.",
+  "opps": [
+   [
+    "1",
+    "y quien lo intente queda Vulnerable"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Dos tiempos",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "destreza",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una vez por ronda, tras impactar, te desplazas una banda sin provocar Explotar la apertura. Si acabas fuera de la banda del que atacaste, su próximo ataque contra ti va a −3.",
+  "opps": [
+   [
+    "1",
+    "dos bandas en lugar de una"
+   ],
+   [
+    "2",
+    "y un segundo enemigo pierde su reacción"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La espalda del oponente",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "destreza",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Lucha + Destreza contra 17. Cruzas a la banda del enemigo y sales por detrás: queda Vulnerable hasta su próximo turno. Pierdes cualquier cobertura que tuvieras.",
+  "opps": [
+   [
+    "1",
+    "no pierdes la cobertura"
+   ],
+   [
+    "2",
+    "y el aliado que lo tenga encarado ataca gratis"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Leer el intercambio",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "percepción",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En actitud Defensiva conoces la actitud declarada de todos los enemigos de la escena antes de actuar, y el primer ataque que recibas cada ronda sufre −3.",
+  "opps": [
+   [
+    "1",
+    "el −3 pasa a −6 contra un enemigo cuya actitud hayas leído"
+   ],
+   [
+    "2",
+    "y un aliado de tu banda recibe el mismo −3"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El contragolpe",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "percepción",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando un enemigo te falla un ataque estando tú en actitud Defensiva, atacas gratis a su banda. Una vez por ronda.",
+  "opps": [
+   [
+    "1",
+    "esta vez no cuenta para el límite de una por ronda"
+   ],
+   [
+    "2",
+    "y si impactas, pierde su siguiente acción"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El arma que tengas",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "comun",
+  "eje": "general",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cualquier objeto que empuñes cuenta como el arma que mejor sepas usar, en daño y letalidad: una silla, una barra de cortina, un bastón, una pala. Lo que no cambia son las etiquetas del arma original.",
+  "opps": [
+   [
+    "1",
+    "y el objeto no se rompe al usarlo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Pólvora medida",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Exige arma de fuego. Recargas como parte de tu ataque en lugar de gastar una acción, y tu arma no se atasca.",
+  "opps": [
+   [
+    "1",
+    "disparas dos veces en la misma acción, el segundo a −3"
+   ],
+   [
+    "2",
+    "y el disparo atraviesa la cobertura ligera"
+   ]
+  ],
+  "nota": "Primera entrada del bloque de armas de fuego, que el módulo de la Cuenca pedía desde que se escribieron siete armas sin un solo talento. Solo Era 2.",
+  "pendiente": false
+ },
+ {
+  "n": "El duelo decidido",
+  "fam": "Marcial",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En un duelo formal —bastones de Elendel, cuchillos de los Áridos, el desafío de un club—, 2d10 + Armas + Presencia contra 17: resuelves el duelo en una tirada, con el resultado que declares (sangre, humillación o rendición). Fuera de un duelo formal no sirve de nada.",
+  "opps": [
+   [
+    "1",
+    "y la sala queda a tu favor en la escena social siguiente"
+   ],
+   [
+    "2",
+    "tu rival acepta en público la condición que pongas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La palabra que obliga",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "acuerdo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Persuasión + Presencia contra 17. Cierras un acuerdo con tanto peso que romperlo cuesta: quien lo rompa sufre +3 en contra en toda tirada social contigo y con quien lo sepa, hasta que lo compense.",
+  "opps": [
+   [
+    "1",
+    "el acuerdo vale ante terceros que no estaban"
+   ],
+   [
+    "2",
+    "y el otro no puede negar después que lo aceptó"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Nombre en la ciudad",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "reputación",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tu nombre llega antes que tú. En cualquier escena de una ciudad donde hayas actuado, el primero que te reconozca te concede una banda de Tolerancia.",
+  "opps": [
+   [
+    "1",
+    "y declara para quién trabaja"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El favor cobrado",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "deuda",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una vez por sesión, convierte una cuenta abierta a tu favor en una acción del deudor a tu favor, sin tirada y en el momento que elijas.",
+  "opps": [
+   [
+    "1",
+    "la cuenta no se cierra al cobrarla"
+   ],
+   [
+    "2",
+    "y lo hace delante de quien más le cuesta"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Hablar por los dos bandos",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "intriga",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En una negociación entre dos partes puedes representar a las dos a la vez: ninguna sabe lo que has prometido a la otra hasta que tú lo decidas.",
+  "opps": [
+   [
+    "1",
+    "y el acuerdo que sale te beneficia más que a ninguna de las dos"
+   ],
+   [
+    "2",
+    "las dos siguen confiando en ti al descubrirlo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La sala se calla",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "presencia",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando tomas la palabra, nadie te interrumpe: ninguna acción social ajena se resuelve antes de la tuya en esa escena.",
+  "opps": [
+   [
+    "1",
+    "y nadie puede cambiar de tema hasta que acabes"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Orden que se obedece",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "mando",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Mando + Presencia contra 17. Un grupo de secuaces a tus órdenes actúa como uno y mantiene la orden toda la escena sin más tiradas, incluso contra su propio interés.",
+  "opps": [
+   [
+    "1",
+    "y aguantan una herida antes de romperse"
+   ],
+   [
+    "2",
+    "obedecen aunque la orden sea morir"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La mentira que aguanta",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "engaño",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una mentira que hayas sostenido una escena entera se vuelve difícil de deshacer: quien la ponga en duda necesita una prueba material, no una tirada.",
+  "opps": [
+   [
+    "1",
+    "la prueba material que alguien tenía ya no sirve"
+   ],
+   [
+    "2",
+    "y quien la dudó queda en evidencia"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Dos vidas",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "engaño",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Mantienes una segunda identidad completa: casa, oficio y conocidos. Cambiar de una a otra es una escena, no una tirada, y quien conozca a una no reconoce a la otra salvo que tenga motivo y saque un margen de 6.",
+  "opps": [
+   [
+    "1",
+    "la segunda identidad tiene una posición social distinta de la tuya"
+   ],
+   [
+    "2",
+    "y hay una tercera, a medio hacer"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que no se dice",
+  "fam": "Social",
+  "r": 4,
+  "capa": "comun",
+  "eje": "perspicacia",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Perspicacia + Percepción contra 17. En una escena social conoces de cada presente la única cosa que no quiere que se sepa ahí. No sabes por qué; sabes qué.",
+  "opps": [
+   [
+    "1",
+    "y quién más de la sala lo sabe"
+   ],
+   [
+    "2",
+    "lo sueltas sin que parezca que has sido tú"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El informe que todos creen",
+  "fam": "Social",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "documento",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Engaño + Comunicación contra 17. Pones una versión por escrito y la haces circular —parte de octante, hoja de noticias, carta sellada de un obligador— y pasa a ser la versión oficial. Desmentirla exige otro documento, no una tirada.",
+  "opps": [
+   [
+    "1",
+    "nadie averigua de quién salió"
+   ],
+   [
+    "2",
+    "y la versión oficial te atribuye un mérito que no tuviste"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Testigos de clan",
+  "fam": "Social",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "clan",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Lo que cierras ante testigos de clan no se rompe sin coste de sangre: quien lo rompa se convierte en objetivo de su propio clan. En los Áridos tu palabra vale lo que un contrato de Elendel.",
+  "opps": [
+   [
+    "1",
+    "el testigo puede ser cualquiera que lleve tus marcas"
+   ],
+   [
+    "2",
+    "y el clan ejecuta la deuda sin que tú lo pidas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El archivo completo",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "comun",
+  "eje": "memoria",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Lo que hayas leído una vez lo recuerdas literal: puedes citar un documento palabra por palabra años después, y la cita cuenta como prueba ante quien la reconozca.",
+  "opps": [
+   [
+    "1",
+    "recuerdas además quién lo firmó y en qué estado estaba el papel"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La ley que nadie leyó",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "comun",
+  "eje": "leyes",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Leyes y gobierno + Inteligencia contra 17. Existe una norma vigente que te da la razón y que nadie había invocado en décadas. La DJ dice de qué cuerpo legal sale; no puede negar que exista.",
+  "opps": [
+   [
+    "1",
+    "y obliga a la otra parte a actuar hoy"
+   ],
+   [
+    "2",
+    "deroga de hecho la norma que te estorbaba"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El diagnóstico que nadie da",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "comun",
+  "eje": "medicina",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Medicina + Inteligencia contra 17. Ante un herido o un enfermo conoces la causa real, el plazo y lo que hace falta, aunque esté oculto, envenenado o investido.",
+  "opps": [
+   [
+    "1",
+    "y el tratamiento está a tu alcance"
+   ],
+   [
+    "2",
+    "sabes quién lo causó"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La doctrina vuelta",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "comun",
+  "eje": "teología",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Teología + Presencia contra 17. Usas la fe del otro contra él: lo que creía que lo obligaba pasa a obligarlo a lo que tú quieres.",
+  "opps": [
+   [
+    "1",
+    "y la sala lo acepta como doctrina"
+   ],
+   [
+    "2",
+    "el otro no puede volver atrás sin apostatar"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La fecha exacta",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "historia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En Historia y Teología no te equivocas de siglo: sitúas cualquier objeto, documento o costumbre en su época y su origen. Donde la historia ha sido reescrita —y en el Imperio Final lo ha sido toda— notas la costura.",
+  "opps": [
+   [
+    "1",
+    "sabes qué se borró, aunque no qué decía"
+   ],
+   [
+    "2",
+    "y quién ordenó borrarlo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que mató al anterior",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "realmática",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Filosofía natural + Inteligencia contra 17. Ante un fenómeno investido —un artefacto, una burbuja, una mente de metal, un clavo—, sabes qué le pasó al último que lo manipuló mal, y por qué.",
+  "opps": [
+   [
+    "1",
+    "y cómo evitarlo"
+   ],
+   [
+    "2",
+    "sabes además quién lo hizo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Publicarlo",
+  "fam": "Erudición",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "realmática",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Pones por escrito un hallazgo y lo haces circular: lo que la Cuenca creía imposible pasa a ser posible. Una vez por campaña, eso cambia una regla del mundo que la DJ y tú acordéis.",
+  "opps": [
+   [
+    "2",
+    "y tu nombre queda unido a él para siempre, con lo bueno y con lo malo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La pieza imposible",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "comun",
+  "eje": "artesanía",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Artesanía + Destreza contra 17. Haces en una escena lo que debería llevar semanas. Sale bien: lo que se paga es el precio o el plazo de otra cosa.",
+  "opps": [
+   [
+    "1",
+    "y no cuesta material raro"
+   ],
+   [
+    "2",
+    "la pieza sale mejor de lo que pedías"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Mi marca vale",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "comun",
+  "eje": "comercio",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Lo que lleva tu marca se vende una banda de precio por encima, y nadie que la conozca duda de su calidad. Falsificarla exige un margen de 6, y si falla, el falsificador queda señalado.",
+  "opps": [
+   [
+    "1",
+    "y un cliente te adelanta el pago"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El precio de todo",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "comun",
+  "eje": "comercio",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tasas de un vistazo cualquier objeto, incluido lo investido y lo ilegal: banda de precio, a quién se le vende y qué pierde quien lo pierda.",
+  "opps": [
+   [
+    "1",
+    "y sabes quién lo quiere ahora mismo"
+   ],
+   [
+    "2",
+    "sabes de quién era antes"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Anotado y sellado",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "comun",
+  "eje": "archivo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Escritura y archivo + Inteligencia contra 17. Produces un documento que pasa cualquier control: un pase, una licencia, un albarán, una inscripción de registro. Descubrirlo exige comparar con el original, y el original está donde tú lo dejaste.",
+  "opps": [
+   [
+    "1",
+    "el documento lleva una firma auténtica"
+   ],
+   [
+    "2",
+    "y el original ya no existe"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El taller que no para",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "comun",
+  "eje": "artesanía",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tienes gente trabajando para ti: entre sesiones tu obrador produce o repara una cosa de banda Normal sin que tú estés. Lo que no controlas es qué más hacen con tus herramientas.",
+  "opps": [
+   [
+    "1",
+    "esta vez la cosa es de banda Caro"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La ruta abierta",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "navegación",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Navegación + Percepción contra 17. Abres una vía que no estaba: un paso de canal en la Era 1, un desvío de ferrocarril o un corredor de aeronave en la Era 2. Mientras la mantengas, mueves mercancía por donde nadie más puede.",
+  "opps": [
+   [
+    "1",
+    "y nadie más la encuentra esta sesión"
+   ],
+   [
+    "2",
+    "la ruta aguanta toda la campaña"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La vía del medallón",
+  "fam": "Oficio",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "artefacto",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "2d10 + Artesanía + Inteligencia contra 17. Ante un artefacto investido —medallón malwish, mente de metal, dispositivo de armonio—, lo abres sin romperlo: sabes qué hace, lo reproduces a medias y puedes inutilizarlo.",
+  "opps": [
+   [
+    "1",
+    "la copia funciona una vez"
+   ],
+   [
+    "2",
+    "y el dueño no nota que lo has abierto"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "No estuve nunca",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "sigilo",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Al salir de un sitio declaras que no hay rastro de que entraras: ni huellas, ni testigos que lo recuerden con seguridad, ni nada fuera de su sitio. Una prueba material puede contradecirte; la memoria de la gente, no.",
+  "opps": [
+   [
+    "1",
+    "y la prueba material tampoco está"
+   ],
+   [
+    "2",
+    "alguien recuerda haberte visto en otra parte esa noche"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La puerta que nadie cerró",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "hurto",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Hurto + Destreza contra 17. Cualquier cierre mecánico se abre: no hay cerradura, candado ni caja que te detenga, solo tiempo. Lo investido no entra aquí.",
+  "opps": [
+   [
+    "1",
+    "en una sola acción en lugar de una escena"
+   ],
+   [
+    "2",
+    "y queda cerrado detrás de ti como si nadie hubiera pasado"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La salida preparada",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "escape",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Una vez por sesión, en cualquier escena, declaras que tenías preparada una salida: un caballo, una barca, una trampilla, un contacto. Existe, y está donde dices.",
+  "opps": [
+   [
+    "1",
+    "cabe el grupo entero"
+   ],
+   [
+    "2",
+    "y nadie sabía que existía"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que llevaba encima",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "hurto",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tras un contacto con alguien —un roce en la calle, un baile, un abrazo— declaras qué objeto pequeño le has quitado, y lo tienes. No puede ser el objeto que la trama necesita; cualquier otro, sí.",
+  "opps": [
+   [
+    "1",
+    "y un segundo objeto"
+   ],
+   [
+    "2",
+    "le has dejado tú algo encima sin que lo sepa"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El rastro frío",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "supervivencia",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Supervivencia + Percepción contra 17. Sigues un rastro de días o de semanas sobre cualquier terreno, la ceniza y la piedra incluidas.",
+  "opps": [
+   [
+    "1",
+    "sabes cuántos eran y qué llevaban"
+   ],
+   [
+    "2",
+    "y dónde durmieron"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El animal que confía",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "comun",
+  "eje": "animales",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cualquier animal de monta o de trabajo te acepta a la primera, y el tuyo hace lo que le pidas aunque vaya contra su instinto: entrar en el fuego, cruzar una burbuja, aguantar una noche de brumas.",
+  "opps": [
+   [
+    "1",
+    "y te avisa de lo que viene antes de que tú lo veas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La ciudad de noche",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "terreno",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En una ciudad que conozcas, de noche, te mueves entre bandas sin tirada y sin ser visto: tejados y callejones en Luthadel, alcantarillas y vías en Elendel. Las brumas no te estorban; te tapan.",
+  "opps": [
+   [
+    "1",
+    "llevas a un acompañante contigo"
+   ],
+   [
+    "2",
+    "y sabes quién más se está moviendo esta noche"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La red del barrio",
+  "fam": "Campo",
+  "r": 4,
+  "capa": "scadrial",
+  "eje": "informantes",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Tienes informantes en un barrio o un octante: nada se mueve de noche sin que te llegue en un día. La DJ te debe una información por sesión, y tú le debes a la red un favor por cada una.",
+  "opps": [
+   [
+    "1",
+    "la información llega hoy en lugar de mañana"
+   ],
+   [
+    "2",
+    "y la red hace algo por ti sin que se lo pidas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Mano en la culata",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Exige arma de fuego. Desenfundas y disparas en la misma acción. Si el enemigo no te había visto armado, su mitigación no se aplica al primer disparo.",
+  "opps": [
+   [
+    "1",
+    "y el disparo no delata tu posición"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Encajar",
+  "fam": "Marcial",
+  "r": 1,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En actitud Beligerante, la primera herida Leve de cada escena no te aplica su penalizador. La sientes igual; no te estorba.",
+  "opps": [
+   [
+    "1",
+    "tampoco la segunda"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Fuego de cobertura",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "percepción",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Exige arma de fuego. 2d10 + Tiro + Percepción contra 14. No buscas impactar: clavas a un grupo donde está. Mientras mantengas el fuego, nadie de la banda que cubres avanza sin asumir una herida Leve.",
+  "opps": [
+   [
+    "1",
+    "un enemigo que lo intente queda Tumbado en su sitio"
+   ],
+   [
+    "2",
+    "y cubres dos bandas a la vez"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Culatazo",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "vigor",
+  "nat": "gasto",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Exige arma de fuego larga. En banda 0, el arma deja de ser inútil: cuenta como maza (daño 4, letalidad 2, Contundente) y el golpe no gasta munición.",
+  "opps": [
+   [
+    "1",
+    "y el objetivo queda Aturdido"
+   ],
+   [
+    "1",
+    "recuperas la distancia de una banda tras el golpe"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Cerrar el hueco",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "acción de ataque y movimiento",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cruzas una banda hacia un enemigo que use arma a distancia y atacas. Mientras sigas en su banda 0, su arma a distancia no puede apuntarte sin un −6.",
+  "opps": [
+   [
+    "1",
+    "el aliado que te siga llega contigo"
+   ],
+   [
+    "2",
+    "y el enemigo suelta el arma"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Salir del alcance",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "eje": "destreza",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando un enemigo declara un ataque contra ti, te desplazas una banda antes de que se resuelva. Si así sales de su alcance, el ataque se pierde. Una vez por ronda.",
+  "opps": [
+   [
+    "1",
+    "dos bandas en lugar de una"
+   ],
+   [
+    "2",
+    "y quien te atacó queda Vulnerable por el fallo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El hueco de la guardia",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "eje": "percepción",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Armas + Percepción contra 17. Esperas y golpeas donde no cubre: el ataque ignora la mitigación de armadura del objetivo.",
+  "opps": [
+   [
+    "1",
+    "y además es Perforante +1"
+   ],
+   [
+    "2",
+    "el objetivo no sabe por dónde le ha entrado"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Pelea de bodega",
+  "fam": "Marcial",
+  "r": 2,
+  "capa": "comun",
+  "eje": "general",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En un espacio cerrado y lleno de cosas —taberna, bodega, vagón, pasillo—, los muebles son tuyos: ganas +3 al ataque y a la Defensa contra quien no esté habituado a pelear ahí.",
+  "opps": [
+   [
+    "1",
+    "y el objetivo acaba contra una pared o una mesa, Tumbado"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Leer la sala",
+  "fam": "Social",
+  "r": 1,
+  "capa": "comun",
+  "eje": "perspicacia",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Perspicacia + Percepción contra 14. Al entrar en una escena social sabes quién manda de verdad, quién va a hablar primero y quién está ahí contra su voluntad.",
+  "opps": [
+   [
+    "1",
+    "y quién está armado"
+   ],
+   [
+    "1",
+    "identificas a quien te reconoce antes de que te salude"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El tono que toca",
+  "fam": "Social",
+  "r": 1,
+  "capa": "comun",
+  "eje": "etiqueta",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "No desentonas. En cualquier estrato social —un baile, un obrador, un cuartel, una taberna— tu trato es el correcto, y nadie te sitúa fuera de su mundo por cómo hablas.",
+  "opps": [
+   [
+    "1",
+    "y te toman por uno de los suyos durante una escena"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Nombres y casas",
+  "fam": "Social",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "etiqueta",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Conoces el mapa de poder de tu ciudad: en la Era 1 qué casa está en guerra con qué casa y con quién la emparentaron; en la Era 2 qué familia tiene qué negocio y a quién debe dinero.",
+  "opps": [
+   [
+    "1",
+    "y sabes qué alianza se rompió este mes"
+   ],
+   [
+    "2",
+    "sabes quién está a punto de arruinarse"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El precio de callarse",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "eje": "intriga",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Persuasión + Perspicacia contra 17. Conviertes algo que sabes en silencio pagado: el otro te da lo que pides y la cuenta queda abierta a su favor, no al tuyo.",
+  "opps": [
+   [
+    "1",
+    "la cuenta queda a tu favor en lugar de a su favor"
+   ],
+   [
+    "2",
+    "y nadie más se entera del trato"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Hablar por encima",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "eje": "mando",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando alguien te contradiga delante de otros, puedes dirigirte a la sala y no a él: su objeción no reduce la Tolerancia de la escena, y queda él como el que interrumpe.",
+  "opps": [
+   [
+    "1",
+    "y pierde una banda de Tolerancia propia"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La verdad incómoda",
+  "fam": "Social",
+  "r": 2,
+  "capa": "comun",
+  "eje": "persuasión",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Persuasión + Determinación contra 17. Dices la verdad entera, sin adornarla, en el peor momento. Funciona: quien te oiga no puede fingir que no lo ha oído, y la escena cambia de tema al tuyo.",
+  "opps": [
+   [
+    "1",
+    "y un presente se pone de tu parte en público"
+   ],
+   [
+    "2",
+    "nadie puede volver al tema anterior esta escena"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Tratar con un obligador",
+  "fam": "Social",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "burocracia",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Etiqueta + Comunicación contra 17. Ante un funcionario que tiene que sellar, registrar o autorizar algo —obligador del Ministerio en la Era 1, oficina de octante en la Era 2—, consigues el trámite hoy en lugar de en semanas.",
+  "opps": [
+   [
+    "1",
+    "y sin pagar la tasa"
+   ],
+   [
+    "2",
+    "el trámite queda registrado a nombre de otro"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que dice el papel",
+  "fam": "Erudición",
+  "r": 1,
+  "capa": "comun",
+  "eje": "archivo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Escritura y archivo + Inteligencia contra 14. Ante un montón de documentos, encuentras el que importa en una escena en lugar de en días, y sabes si falta alguno.",
+  "opps": [
+   [
+    "1",
+    "y sabes quién se llevó el que falta"
+   ],
+   [
+    "1",
+    "te llevas una copia sin que se note"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La cita que calla",
+  "fam": "Erudición",
+  "r": 1,
+  "capa": "comun",
+  "eje": "erudición",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En una discusión, citar una fuente exacta —un tratado, una ley, una escritura— da +3 a tu tirada social y obliga al otro a responder a la fuente, no a ti.",
+  "opps": [
+   [
+    "1",
+    "y el otro no conoce la fuente, así que no puede discutirla"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que cuentan los metales",
+  "fam": "Erudición",
+  "r": 1,
+  "capa": "scadrial",
+  "eje": "realmática",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Filosofía natural + Inteligencia contra 14. Al ver a alguien usar una investidura, identificas el arte y el metal: alomancia o feruquimia, qué pareja, y si está quemando o avivando.",
+  "opps": [
+   [
+    "1",
+    "y su Potencia aproximada"
+   ],
+   [
+    "2",
+    "sabes qué no puede hacer con ese metal, que es lo que de verdad sirve"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El contrato leído dos veces",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "eje": "leyes",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Leyes y gobierno + Perspicacia contra 17. Ante un acuerdo escrito, encuentras la cláusula que lo vuelve del revés: qué pasa si no se cumple, quién paga y qué puerta queda abierta.",
+  "opps": [
+   [
+    "1",
+    "y la redactas a tu favor antes de firmar"
+   ],
+   [
+    "2",
+    "la otra parte no sabe que la has visto"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Veneno y remedio",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "eje": "medicina",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Medicina + Inteligencia contra 17. Identificas una sustancia por el efecto, el olor o el residuo, y sabes qué la contrarresta y de dónde sale.",
+  "opps": [
+   [
+    "1",
+    "y tienes la dosis encima"
+   ],
+   [
+    "2",
+    "sabes quién la compró y a quién"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El sermón a medida",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "eje": "teología",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Teología + Comunicación contra 17. Hablas a un grupo en los términos de su fe: la escena social gana una banda de Tolerancia y el grupo actúa unido mientras hables.",
+  "opps": [
+   [
+    "1",
+    "y uno del grupo te sigue después"
+   ],
+   [
+    "2",
+    "el grupo desoye a su propia autoridad"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La historia oficial",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "historia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Sabes qué versión de los hechos es la que manda donde estás, y en qué se diferencia de la que tú conoces. En la Era 1 eso es un secreto que puede matarte; en la Era 2, un artículo.",
+  "opps": [
+   [
+    "1",
+    "y sabes quién sostiene la versión oficial y por qué le conviene"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La mente abierta",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "realmática",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Filosofía natural + Percepción contra 17. Ante una mente de metal, sabes de qué metal es, si tiene carga y de qué atributo, sin tocarla.",
+  "opps": [
+   [
+    "1",
+    "y aproximadamente cuánta"
+   ],
+   [
+    "2",
+    "sabes quién la llenó"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El arreglo de campo",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "eje": "artesanía",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Artesanía + Destreza contra 17. Reparas en una escena algo roto, sin taller y con lo que haya a mano. Aguanta lo que dure la sesión, y luego hay que hacerlo bien.",
+  "opps": [
+   [
+    "1",
+    "aguanta de verdad: queda reparado"
+   ],
+   [
+    "1",
+    "y sobra material para otro arreglo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Quién compra esto",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "eje": "comercio",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Comercio + Comunicación contra 17. Colocas una mercancía difícil —robada, ilegal, rara— sin preguntas. Te pagan una banda por debajo de su precio, pero te pagan hoy.",
+  "opps": [
+   [
+    "1",
+    "al precio entero"
+   ],
+   [
+    "2",
+    "y el comprador no recuerda de quién lo compró"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El libro cuadrado",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "eje": "archivo",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Llevas dos contabilidades y las dos cuadran. Una auditoría exige un margen de 6 para encontrar la diferencia, y si falla, el auditor firma que todo está en orden.",
+  "opps": [
+   [
+    "1",
+    "y el auditor se lleva una cifra que te conviene que corra"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Secar y sellar",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "artesanía",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Artesanía + Inteligencia contra 17. Secas, prensas y sellas una partida entera. Lo que sale de tus manos aguanta la humedad de un viaje; lo que sale de otras, no siempre.",
+  "opps": [
+   [
+    "1",
+    "sacas una parte más de la misma materia"
+   ],
+   [
+    "2",
+    "y el sello no se distingue del de una casa legal"
+   ]
+  ],
+  "nota": "El talento que convierte el obrador de la campaña de la Cuenca en el cuello de botella del negocio.",
+  "pendiente": false
+ },
+ {
+  "n": "Sin ruido",
+  "fam": "Campo",
+  "r": 1,
+  "capa": "comun",
+  "eje": "sigilo",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Moverte despacio no te cuesta tirada: en terreno conocido y sin prisa, pasas. Solo tiras cuando hay que ir rápido o hay alguien mirando el sitio exacto.",
+  "opps": [
+   [
+    "1",
+    "llevas a alguien contigo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El bulto que no era",
+  "fam": "Campo",
+  "r": 1,
+  "capa": "comun",
+  "eje": "hurto",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando te registren, un objeto pequeño que lleves encima no se encuentra: estaba donde nadie mira. Una vez por escena.",
+  "opps": [
+   [
+    "1",
+    "dos objetos en lugar de uno"
+   ],
+   [
+    "1",
+    "y el que te registra se lleva algo que tú querías que se llevara"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Dormir con un ojo",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "eje": "vigilancia",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Descansas sin bajar la guardia: no te sorprenden durmiendo, y una guardia nocturna no te cuesta el descanso.",
+  "opps": [
+   [
+    "1",
+    "y sabes qué te ha despertado antes de abrir los ojos"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Perderse a propósito",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "comun",
+  "eje": "escape",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Sigilo + Percepción contra 17. En una persecución, rompes el contacto: quien te seguía pierde el rastro y tiene que empezar de cero, no continuar.",
+  "opps": [
+   [
+    "1",
+    "y acabas donde querías ir, no donde te lleva la huida"
+   ],
+   [
+    "2",
+    "el perseguidor acaba siguiendo a otro"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Andar en la ceniza",
+  "fam": "Campo",
+  "r": 2,
+  "capa": "scadrial",
+  "eje": "supervivencia",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "La caída de ceniza deja de penalizarte: ves, respiras y te orientas donde los demás no. En la Era 2 el mismo oficio sirve para la tormenta de polvo de los Áridos.",
+  "opps": [
+   [
+    "1",
+    "y encuentras refugio donde no parecía haberlo"
+   ],
+   [
+    "2",
+    "borras tus huellas con la ceniza mientras andas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El golpe que decide",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "acción de ataque",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Armas + Vigor contra 17 y la Defensa, lo que sea más alto. Si impactas, la gravedad del daño sube un nivel entero en la tabla de heridas. Fallar te deja Vulnerable hasta tu próximo turno.",
+  "opps": [
+   [
+    "1",
+    "no quedas Vulnerable al fallar"
+   ],
+   [
+    "2",
+    "y el objetivo suelta lo que llevaba"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Aguantar de pie",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "vigor",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cuando una herida te dejaría Moribundo, puedes gastar y quedarte en Muy grave una ronda más antes de caer. Lo que pase en esa ronda es tuyo; después, cae.",
+  "opps": [
+   [
+    "2",
+    "dos rondas en lugar de una"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "No estar donde golpean",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "destreza",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En actitud Móvil, el primer ataque de cada enemigo contra ti en una escena falla si su margen es menor que 3. No lo esquivas: no estabas ahí.",
+  "opps": [
+   [
+    "1",
+    "también el segundo del mismo enemigo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Entrar y salir",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "destreza",
+  "nat": "acción de ataque y movimiento",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Cruzas una banda, atacas y vuelves a tu banda de partida, todo en una acción. El ataque va a −3 y no provoca Explotar la apertura en ninguno de los dos tramos.",
+  "opps": [
+   [
+    "1",
+    "el −3 no se aplica"
+   ],
+   [
+    "2",
+    "y acabas en una banda distinta de la de partida"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El amago leído",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "percepción",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En actitud Defensiva, declaras antes de su tirada qué va a hacer un enemigo. Si aciertas, su acción va a −6. Si fallas, la tuya siguiente va a −3.",
+  "opps": [
+   [
+    "1",
+    "aciertas por fuerza, sin arriesgar"
+   ],
+   [
+    "2",
+    "y un aliado se beneficia del mismo −6"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El que cubre",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "comun",
+  "eje": "percepción",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Un aliado de tu banda recibe tu mitigación en lugar de la suya hasta tu próximo turno. Las heridas las sigue cobrando él; lo que le pones es tu cuerpo delante.",
+  "opps": [
+   [
+    "1",
+    "la herida la asumes tú en su lugar"
+   ],
+   [
+    "2",
+    "y cubres a dos aliados"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Tirador de los Áridos",
+  "fam": "Marcial",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "general",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Exige arma de fuego. 2d10 + Tiro + Percepción contra 17. Disparas a una banda más allá del alcance del arma sin penalizador, y el blanco no sabe de dónde ha venido.",
+  "opps": [
+   [
+    "1",
+    "dos bandas más allá"
+   ],
+   [
+    "1",
+    "y el disparo no suena donde estás"
+   ],
+   [
+    "2",
+    "aciertas a lo que apuntabas, no al bulto: el arma, la mano, la cuerda"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que me debes",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "deuda",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Persuasión + Presencia contra 17. Conviertes un favor viejo en una obligación presente: el otro actúa ahora, y si se niega, lo sabrá quien le importa.",
+  "opps": [
+   [
+    "1",
+    "y el favor sigue debiéndose después"
+   ],
+   [
+    "2",
+    "el otro te ofrece más de lo que pedías"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Partir el bando",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "intriga",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Engaño + Perspicacia contra 17. En una escena con dos o más del mismo lado, los enfrentas entre ellos: pierden su bonificador de bando y uno de los dos pasa a hablar para ti.",
+  "opps": [
+   [
+    "1",
+    "eliges cuál de los dos"
+   ],
+   [
+    "2",
+    "y no vuelven a actuar juntos esta sesión"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La amenaza que no se dice",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "presencia",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Perspicacia + Presencia contra 17. Dejas claro lo que pasaría sin nombrarlo. Funciona como una amenaza y no cuenta como una: nadie puede acusarte de haberla hecho.",
+  "opps": [
+   [
+    "1",
+    "y el objetivo no puede contárselo a nadie sin quedar él en evidencia"
+   ],
+   [
+    "2",
+    "obedece hoy"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El acuerdo de mínimos",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "acuerdo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Persuasión + Inteligencia contra 17. Donde no hay acuerdo posible, sacas el pequeño que sí lo es: las dos partes ceden en una cosa y la escena deja de ser un bloqueo.",
+  "opps": [
+   [
+    "1",
+    "y la cesión del otro es mayor que la tuya"
+   ],
+   [
+    "2",
+    "el acuerdo pequeño abre el grande"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Cambiar de cara",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "engaño",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En medio de una escena social puedes abandonar el papel que llevabas y adoptar otro sin tirar: de criado a invitado, de acreedor a socio. Quien ya te hubiera calado no vuelve a calarte esta escena.",
+  "opps": [
+   [
+    "1",
+    "y el cambio explica retroactivamente lo que ya habías dicho"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Mandar sin estar",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "mando",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Las órdenes que diste antes de la escena se cumplen aunque tú no estés y aunque cambien las circunstancias. Tu gente improvisa en tu dirección, no en la suya.",
+  "opps": [
+   [
+    "1",
+    "y lo que han improvisado te conviene más de lo que habías mandado"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El silencio comprado",
+  "fam": "Social",
+  "r": 3,
+  "capa": "comun",
+  "eje": "intriga",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Lo que se dice delante de ti no sale de la sala sin tu permiso: los presentes entienden, sin que lo pidas, que repetirlo les costaría más de lo que les daría.",
+  "opps": [
+   [
+    "1",
+    "y alguien de la sala delata a quien iba a hablar"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La noche en el baile",
+  "fam": "Social",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "etiqueta",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Etiqueta + Presencia contra 17. En un baile de casa en la Era 1 o una recepción de Elendel en la Era 2, consigues la conversación privada que querías con quien querías, y nadie se extraña de que haya ocurrido.",
+  "opps": [
+   [
+    "1",
+    "y nadie recuerda que hablasteis"
+   ],
+   [
+    "2",
+    "el otro cree que la buscó él"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Hablar como skaa, hablar como noble",
+  "fam": "Social",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "etiqueta",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Pasas por nacido en el estrato que te convenga: acento, trato y cuánto bajas la vista. Descubrirlo exige conocerte de antes, no una tirada.",
+  "opps": [
+   [
+    "1",
+    "y arrastras contigo a un acompañante que no sabe fingir"
+   ]
+  ],
+  "nota": "Era 1 sobre todo: ahí la posición es la frontera que mata. En la Era 2 el mismo talento sirve entre la Cuenca y los Áridos.",
+  "pendiente": false
+ },
+ {
+  "n": "El precedente",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "leyes",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Leyes y gobierno + Historia contra 17. Un caso anterior resolvió esto, y a tu favor. Mientras nadie traiga otro que lo contradiga, tu interpretación es la que manda.",
+  "opps": [
+   [
+    "1",
+    "y el precedente es de una autoridad que el otro no puede recusar"
+   ],
+   [
+    "2",
+    "obliga a la otra parte a reconocerlo por escrito"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La traducción exacta",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "lenguas",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Historia + Inteligencia contra 17. Lees una lengua o una escritura que no conoces, si tienes material suficiente: inscripciones, un diccionario a medias, otro texto del mismo autor.",
+  "opps": [
+   [
+    "1",
+    "y en una escena en lugar de en días"
+   ],
+   [
+    "2",
+    "notas lo que el traductor anterior falseó"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Operar en la mesa",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "medicina",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Medicina + Destreza contra 17. Tratas una mutilación recién hecha: si lo consigues, la mutilación pasa a cicatriz sin dejar penalizador, en lugar de arrastrarlo hasta curarse.",
+  "opps": [
+   [
+    "1",
+    "y el paciente no pierde Fatiga en el proceso"
+   ],
+   [
+    "2",
+    "además cierras la Hemorragia"
+   ]
+  ],
+  "nota": "Engancha con la tabla única de heridas: la cicatriz es la mutilación tratada y sanada, y este talento adelanta ese paso.",
+  "pendiente": false
+ },
+ {
+  "n": "La herejía útil",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "teología",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Conoces la versión prohibida de una doctrina y sabes a quién decírsela. Ante quien ya dudaba, tu palabra pesa como la de su propia autoridad.",
+  "opps": [
+   [
+    "1",
+    "y el que te oye te protege de los suyos"
+   ],
+   [
+    "2",
+    "una autoridad reconoce en privado que tienes razón"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que el Ministerio enterró",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "historia",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Historia + Perspicacia contra 17. Sacas a la luz un dato que alguien borró a propósito: un metal ocultado, una genealogía rota, una ciudad que no figura. La DJ dice qué era; no puede decir que no había nada.",
+  "opps": [
+   [
+    "1",
+    "y tienes la prueba en la mano"
+   ],
+   [
+    "2",
+    "sabes quién lo enterró y sigue vivo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El mapa de los dieciséis",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "realmática",
+  "nat": "pasivo",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "Conoces los dieciséis metales, sus parejas y qué hace cada uno en las dos artes, aunque nunca hayas quemado nada. Saber qué puede y qué no puede hacer un alomante es lo que te mantiene vivo delante de uno.",
+  "opps": [
+   [
+    "1",
+    "y deduces qué metal lleva encima alguien por lo que evita hacer"
+   ],
+   [
+    "2",
+    "sabes qué le falta para hacer lo que intenta"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La obra bien hecha",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "eje": "artesanía",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Lo que haces no falla por tu parte. En tu oficio, la DJ no puede usar un Conflicto para que tu trabajo salga defectuoso: solo para que salga caro, tarde o a la vista de quien no debía.",
+  "opps": [
+   [
+    "1",
+    "y tampoco caro ni tarde: solo a la vista"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El trato redondo",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "eje": "comercio",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Comercio + Perspicacia contra 17. Cierras una compraventa dos bandas de precio a tu favor, y el otro se va contento. Lo que has sacado no se nota hasta que alguien haga las cuentas.",
+  "opps": [
+   [
+    "1",
+    "y el otro te debe un favor además"
+   ],
+   [
+    "2",
+    "nadie hace las cuentas"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El archivo propio",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "eje": "archivo",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Llevas años apuntándolo todo, y lo tienes ordenado. Una vez por sesión, consultas tu archivo y hay una anotación tuya sobre la persona, el sitio o la pieza de la que se está hablando.",
+  "opps": [
+   [
+    "1",
+    "y la anotación incluye quién más preguntó por lo mismo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El paso de aduana",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "comercio",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Comercio + Engaño contra 17. Metes o sacas mercancía de una ciudad sin que figure: canal en la Era 1, ferrocarril o puerto en la Era 2. Lo que pasa, pasa; lo que queda es a quién hay que seguir pagando.",
+  "opps": [
+   [
+    "1",
+    "y esta vez no hay que pagar a nadie"
+   ],
+   [
+    "2",
+    "el registro muestra que la mercancía entró legalmente"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Hierro y vapor",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "artesanía",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 2,
+  "cuerpo": "2d10 + Artesanía + Inteligencia contra 17. Ante una máquina de la Era 2 —locomotora, prensa, aeronave, generador—, la haces funcionar, la paras o la fuerzas más allá de lo que aguanta. Lo último tiene consecuencias.",
+  "opps": [
+   [
+    "1",
+    "y aguanta sin romperse"
+   ],
+   [
+    "2",
+    "nadie más sabe volver a ponerla en marcha"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Las llaves que no son llaves",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "eje": "hurto",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Llevas encima lo que hace falta: ganzúas, una cuña, un alambre, un trozo de cera. Lo que necesites para entrar en un sitio, lo tenías, siempre que sea pequeño y mundano.",
+  "opps": [
+   [
+    "1",
+    "y además una herramienta que no es pequeña"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Donde nadie mira",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "eje": "sigilo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Sigilo + Percepción contra 17. En un sitio vigilado, encuentras el punto ciego y lo usas: puedes quedarte ahí una escena entera observando, sin tirar otra vez.",
+  "opps": [
+   [
+    "1",
+    "y oyes lo que se dice desde ahí"
+   ],
+   [
+    "2",
+    "el punto ciego sirve también para salir"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Caer bien",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "comun",
+  "eje": "escape",
+  "nat": "pasivo",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Las caídas de hasta dos bandas no te hieren, solo te cuestan el turno. Y saltar a un sitio que no ves no te obliga a tirar si hay algo abajo que pueda frenarte.",
+  "opps": [
+   [
+    "1",
+    "tres bandas en lugar de dos"
+   ]
+  ],
+  "nota": "Media respuesta al abierto 7 del núcleo: el daño por caída sigue sin escribirse en general, y aquí solo se cubre a quien tiene el talento.",
+  "pendiente": false
+ },
+ {
+  "n": "Lo que corre por el barrio",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "informantes",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Perspicacia + Comunicación contra 17. En una hora de taberna sacas lo que se cuenta: quién ha aparecido, quién ha desaparecido, qué se mueve de noche y quién pregunta por vosotros.",
+  "opps": [
+   [
+    "1",
+    "y nadie recuerda que preguntaste"
+   ],
+   [
+    "2",
+    "te llega además una cosa que nadie debía contarte"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Bajar a lo oscuro",
+  "fam": "Campo",
+  "r": 3,
+  "capa": "scadrial",
+  "eje": "terreno",
+  "nat": "acción",
+  "mundos": [
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Supervivencia + Determinación contra 17. Te mueves por un subterráneo —pozo, caverna, alcantarilla, sima— sin luz y sin perderte, y sabes volver por donde entraste.",
+  "opps": [
+   [
+    "1",
+    "y guías a todo el grupo"
+   ],
+   [
+    "2",
+    "encuentras otra salida que no habías visto al entrar"
+   ]
+  ],
+  "nota": "Escrito pensando en la sima de La Querencia: es el talento de Joss.",
+  "pendiente": false
+ },
+ {
+  "n": "El dato que no cuadra",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "eje": "archivo",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Escritura y archivo + Perspicacia contra 17. Ante un registro, una contabilidad o un expediente, detectas lo alterado: qué cifra se cambió, qué página falta, qué fecha no puede ser.",
+  "opps": [
+   [
+    "1",
+    "y sabes qué decía antes"
+   ],
+   [
+    "2",
+    "reconoces la mano que hizo la corrección"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "Consultar al que sabe",
+  "fam": "Erudición",
+  "r": 2,
+  "capa": "comun",
+  "eje": "erudición",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "Conoces a alguien que de esto sabe más que tú, y te responde. Una vez por sesión obtienes una respuesta erudita fuera de tu campo, al precio de que esa persona sepa qué estás investigando.",
+  "opps": [
+   [
+    "1",
+    "y no le debes nada por ello"
+   ],
+   [
+    "2",
+    "no le dices para qué era"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El dictamen pericial",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "leyes",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + la erudición de tu campo + Presencia contra 17. Tu dictamen se admite como prueba: ante un tribunal, un consejo o un Sínodo, lo que afirmes se da por cierto salvo que otro experto lo contradiga.",
+  "opps": [
+   [
+    "1",
+    "y no hay otro experto a mano que pueda contradecirte"
+   ],
+   [
+    "2",
+    "el tribunal te pregunta a ti qué debería decidir"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La hipótesis que aguanta",
+  "fam": "Erudición",
+  "r": 3,
+  "capa": "comun",
+  "eje": "erudición",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Filosofía natural + Inteligencia contra 17. Propones una explicación de algo que nadie entiende y aciertas en lo esencial. La DJ te dice en qué te equivocas, que suele ser la parte interesante.",
+  "opps": [
+   [
+    "1",
+    "aciertas también en el detalle"
+   ],
+   [
+    "2",
+    "y sabes cómo comprobarlo"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "La herramienta que falta",
+  "fam": "Oficio",
+  "r": 2,
+  "capa": "comun",
+  "eje": "artesanía",
+  "nat": "gasto",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "En tu oficio, la herramienta que necesitas la llevabas: declaras una de banda Barato o menos y está en tu bolsa. Una vez por escena.",
+  "opps": [
+   [
+    "1",
+    "de banda Normal en lugar de Barato"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ },
+ {
+  "n": "El proveedor que no pregunta",
+  "fam": "Oficio",
+  "r": 3,
+  "capa": "comun",
+  "eje": "comercio",
+  "nat": "acción",
+  "mundos": [
+   "Roshar",
+   "Scadrial"
+  ],
+  "era": 0,
+  "cuerpo": "2d10 + Comercio + Perspicacia contra 17. Consigues un material o un repuesto que no debería estar a tu alcance, y sin dejar registro de la compra.",
+  "opps": [
+   [
+    "1",
+    "y una banda de precio por debajo"
+   ],
+   [
+    "2",
+    "el proveedor olvida la transacción"
+   ]
+  ],
+  "nota": "",
+  "pendiente": false
+ }
+]
